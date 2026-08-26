@@ -1,0 +1,10 @@
+services:
+  - type: web
+    runtime: static
+    name: bill-xray
+    buildCommand: echo "Bill X-Ray is a static site; no build step required."
+    staticPublishPath: ./public
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

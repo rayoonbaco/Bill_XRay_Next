@@ -1,0 +1,92 @@
+{
+  "schema_version": "42.1-source-registry",
+  "topic": "ACA keep-your-doctor claim",
+  "sources": [
+    {
+      "source_id": "rhetoric_white_house_green_bay_2009",
+      "lane": "RHETORIC",
+      "authority_tier": 1,
+      "publisher": "The White House",
+      "date": "2009-06-11",
+      "url": "https://obamawhitehouse.archives.gov/blog/2009/06/11/a-town-hall-and-a-health-care-model-green-bay",
+      "supported_meaning": "President Obama publicly promised that people who liked their doctors and health plans would be able to keep them.",
+      "limits": [
+        "This is evidence of the public promise, not evidence that the statute guaranteed the promise or that later outcomes matched it."
+      ]
+    },
+    {
+      "source_id": "law_aca_claim_excerpt",
+      "lane": "ENACTED_LAW",
+      "authority_tier": 1,
+      "publisher": "United States statute excerpt preserved in Bill X-Ray",
+      "date": "2010-03-23",
+      "local_source": "sources/aca_claim_law_excerpt.txt",
+      "supported_meaning": "The ACA protects certain existing coverage, protects choice among participating and available primary care providers, and requires qualified plans to ensure sufficient provider choice.",
+      "limits": [
+        "These provisions do not establish an unconditional statutory right to one specific physician regardless of network participation or availability."
+      ]
+    },
+    {
+      "source_id": "implementation_cms_2014_qhp_network_adequacy",
+      "lane": "IMPLEMENTATION",
+      "authority_tier": 1,
+      "publisher": "Centers for Medicare & Medicaid Services",
+      "date": "2013-04-05",
+      "url": "https://www.cms.gov/cciio/resources/regulations-and-guidance/downloads/2014_letter_to_issuers_04052013.pdf",
+      "supported_meaning": "CMS told qualified-health-plan issuers that network adequacy rules require a network sufficient in number and types of providers so covered services are accessible without unreasonable delay.",
+      "limits": [
+        "Network adequacy is an access standard; it is not a rule requiring every particular physician to contract with every plan or remain in a network."
+      ]
+    },
+    {
+      "source_id": "implementation_cms_2025_final_rule_network_adequacy",
+      "lane": "IMPLEMENTATION",
+      "authority_tier": 1,
+      "publisher": "Centers for Medicare & Medicaid Services",
+      "date": "2024-04-02",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/hhs-notice-benefit-and-payment-parameters-2025-final-rule",
+      "supported_meaning": "CMS later strengthened Marketplace network-adequacy oversight, including quantitative time-and-distance standards and pre-certification review requirements for certain marketplaces beginning in 2026.",
+      "limits": [
+        "Later implementation changes show that the regulatory layer evolves; they do not retroactively change what the 2010 statute literally guaranteed."
+      ]
+    },
+    {
+      "source_id": "official_analysis_gao_16_761",
+      "lane": "OFFICIAL_ANALYSIS",
+      "authority_tier": 1,
+      "publisher": "U.S. Government Accountability Office",
+      "date": "2016-09-12",
+      "url": "https://www.gao.gov/assets/gao-16-761.pdf",
+      "supported_meaning": "GAO reported concerns about exchange enrollees' ability to obtain or continue care as narrow provider networks became more prevalent; GAO cited an analysis finding exchange plans included fewer providers on average than plans outside the exchanges.",
+      "limits": [
+        "This is evidence about market experience and access concerns, not proof that the ACA statute itself caused any particular patient to lose a doctor.",
+        "The report includes evidence from studies, stakeholders, and program experience rather than a universal finding for every enrollee."
+      ]
+    },
+    {
+      "source_id": "official_analysis_gao_19_215",
+      "lane": "OBSERVED_OUTCOME",
+      "authority_tier": 1,
+      "publisher": "U.S. Government Accountability Office",
+      "date": "2019-03-06",
+      "url": "https://www.gao.gov/pdf/product/696603",
+      "supported_meaning": "GAO reported that some issuers narrowed provider networks over time and that selected issuers said narrower networks were used in part to manage claims costs and price plans competitively.",
+      "limits": [
+        "Issuer network decisions have multiple causes and incentives; this source does not establish that the ACA alone caused narrower networks.",
+        "A market-level network trend does not determine what happened to a specific patient's doctor relationship."
+      ]
+    }
+  ],
+  "empty_lanes": [
+    {
+      "lane": "COURT_INTERPRETATION",
+      "status": "NO_RELEVANT_COURT_SOURCE_LOADED_IN_PASS_42_1",
+      "meaning": "The engine must not imply that no relevant case exists. It means this pass has not loaded a controlling court interpretation of the keep-your-doctor promise."
+    },
+    {
+      "lane": "SECONDARY_INTERPRETATION",
+      "status": "INTENTIONALLY_NOT_USED_FOR_INITIAL_GATE",
+      "meaning": "Pass 42.1 proves the reality-stack architecture first with primary government sources and official analysis. Secondary commentary can be added later with explicit ideology and provenance labels."
+    }
+  ]
+}

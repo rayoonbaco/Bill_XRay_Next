@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bill X-Ray — I Read the Bill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#" aria-label="Bill X-Ray home">BILL X-RAY</a>
+    <div class="bill-switcher" aria-label="Choose a bill">
+      <button class="bill-chip active" data-bill="tcja">TCJA</button>
+      <button class="bill-chip" data-bill="ira">IRA</button>
+      <button class="bill-chip" data-bill="aca">ACA</button>
+      <button class="bill-chip" data-bill="chips">CHIPS</button>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="hero" aria-labelledby="story-title">
+      <p class="kicker">I READ THE BILL</p>
+      <p id="eyebrow" class="eyebrow"></p>
+      <h1 id="story-title"></h1>
+      <p id="dek" class="dek"></p>
+    </section>
+
+    <section class="quick-read" aria-labelledby="quick-title">
+      <p id="quick-title" class="micro-label">THE 30-SECOND VERSION</p>
+      <p id="short"></p>
+    </section>
+
+    <article id="story" class="story"></article>
+
+    <div class="homework-zone">
+      <button id="homeworkButton" class="homework-button" aria-expanded="false" aria-controls="homework">
+        CHECK MY HOMEWORK <span aria-hidden="true">→</span>
+      </button>
+      <p>See exactly what the column is standing on.</p>
+      <button id="transformationButton" class="transformation-link" aria-expanded="false" aria-controls="transformation">
+        HOW THIS BECAME HUMAN <span aria-hidden="true">&rarr;</span>
+      </button>
+      <p class="transformation-hint">Watch one real provision travel from statute to sentence.</p>
+    </div>
+  </main>
+
+  <aside id="homework" class="drawer" aria-hidden="true" aria-label="Bill X-Ray evidence">
+    <div class="drawer-head">
+      <div>
+        <p class="micro-label">RECEIPTS</p>
+        <h2>Check my homework</h2>
+      </div>
+      <button id="closeHomework" class="close-button" aria-label="Close evidence">×</button>
+    </div>
+    <p id="homeworkNote" class="drawer-note"></p>
+    <div id="receipts" class="receipts"></div>
+  </aside>
+  <section id="transformation" class="transformation" aria-hidden="true" aria-label="How Bill X-Ray transforms legislation">
+    <div class="transformation-head">
+      <div>
+        <p class="micro-label">THE TRANSFORMATION LADDER</p>
+        <h2>From Congressional language to human meaning</h2>
+        <p>One real provision. No invented facts. Watch the difficulty come off while the legal meaning stays attached.</p>
+      </div>
+      <button id="closeTransformation" class="close-button transformation-close" aria-label="Close transformation">&times;</button>
+    </div>
+    <div id="transformationBody" class="transformation-body"></div>
+  </section>
+  <div id="scrim" class="scrim" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="transformation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

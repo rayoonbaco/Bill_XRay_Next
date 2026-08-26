@@ -1,0 +1,107 @@
+{
+  "bill": "Public Law 117-167",
+  "approved": "2022-08-09",
+  "official_source": "https://www.govinfo.gov/app/details/PLAW-117publ167",
+  "receipts": [
+    {
+      "id": "chips_scope",
+      "label": "The law is much broader than semiconductor subsidies: its table of contents includes a Research and Innovation division covering DOE, NIST, NSF, NASA, research security, regional innovation, quantum networking, technology transfer, and other science programs.",
+      "section": "Table of Contents",
+      "heading": "Public Law 117-167",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 pages 1-6",
+      "limits": [
+        "A table of contents proves the law contains these programs; it does not prove their cost, effectiveness, or later implementation."
+      ],
+      "excerpt": "DIVISION A\u2014CHIPS ACT OF 2022 ... DIVISION B\u2014RESEARCH AND INNOVATION ... TITLE VII\u2014NATIONAL AERONAUTICS AND SPACE ADMINISTRATION AUTHORIZATION ACT."
+    },
+    {
+      "id": "chips_fund",
+      "label": "Section 102 appropriates $50 billion to the CHIPS for America Fund across fiscal years 2022 through 2026.",
+      "section": "SEC. 102(a)(2)",
+      "heading": "CHIPS FOR AMERICA FUND",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 pp. 7-8 \u00b7 lines 376-408",
+      "limits": [
+        "$50 billion is the sum of the five appropriations listed in the enacted text: $24.0B + $7.0B + $6.3B + $6.1B + $6.6B.",
+        "The fund supports several statutory programs; this statement does not mean $50 billion was handed directly to one company or used only for factory grants."
+      ],
+      "excerpt": "For fiscal year 2022, $24,000,000,000 ... for fiscal year 2023, $7,000,000,000 ... for fiscal year 2024, $6,300,000,000 ... for fiscal year 2025, $6,100,000,000 ... and for fiscal year 2026, $6,600,000,000."
+    },
+    {
+      "id": "chips_loans",
+      "label": "The law allows up to $6 billion of fiscal-year-2022 CHIPS funds to cover the cost of direct loans and loan guarantees supporting no more than $75 billion of loan principal.",
+      "section": "SEC. 102(a)(2)(B)",
+      "heading": "DIRECT LOANS AND LOAN GUARANTEES",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 p. 8 \u00b7 lines 417-428",
+      "limits": [
+        "The $75 billion figure is a ceiling on gross loan principal, not a $75 billion appropriation or a statement of actual loans made."
+      ],
+      "excerpt": "The Secretary of Commerce may use ... up to $6,000,000,000 ... for the cost of direct loans and loan guarantees ... not to exceed $75,000,000,000 [in principal]."
+    },
+    {
+      "id": "chips_buybacks",
+      "label": "Covered CHIPS funds may not be used to purchase listed equity securities of the recipient or its parent, or to pay dividends or other capital distributions on common stock.",
+      "section": "SEC. 102(g)",
+      "heading": "LIMITATION ON USING AMOUNTS FOR STOCK BUYBACKS OR THE PAYMENT OF DIVIDENDS",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 pp. 13-14 \u00b7 lines 724-750",
+      "limits": [
+        "This restriction governs the use of covered federal amounts. It does not, by itself, establish a blanket prohibition on every buyback or dividend funded from every other source of company money."
+      ],
+      "excerpt": "A person receiving amounts appropriated under this section or from a covered fund may not use such amounts ... to purchase an equity security ... or to pay dividends or make other capital distributions."
+    },
+    {
+      "id": "chips_guardrail",
+      "label": "Certain semiconductor-assistance recipients must enter a 10-year agreement restricting significant transactions that materially expand semiconductor manufacturing capacity in China or another foreign country of concern, subject to statutory exceptions.",
+      "section": "SEC. 103(b) / 15 U.S.C. 4652",
+      "heading": "REQUIRED AGREEMENT",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 p. 18 \u00b7 lines 950-983",
+      "limits": [
+        "The statute contains exceptions involving specified legacy-semiconductor facilities and transactions; the restriction is not an absolute ban on all activity in every foreign country."
+      ],
+      "excerpt": "During the 10-year period beginning on the date of the award ... the covered entity may not engage in any significant transaction ... involving the material expansion of semiconductor manufacturing capacity in the People\u2019s Republic of China or any other foreign country of concern."
+    },
+    {
+      "id": "chips_clawback",
+      "label": "If a covered entity does not remedy a violation of the foreign-expansion agreement, the Secretary is directed to recover the full amount of the federal financial assistance.",
+      "section": "SEC. 103(b) / 15 U.S.C. 4652",
+      "heading": "VIOLATION OF AGREEMENT",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 p. 19 \u00b7 lines 1006-1020",
+      "limits": [
+        "The recovery rule follows a statutory process that includes notice and an opportunity to remedy; this receipt does not imply every suspected transaction automatically triggers repayment."
+      ],
+      "excerpt": "If a covered entity fails to remedy a violation ... the Secretary shall recover the full amount of the Federal financial assistance provided to the covered entity under this section."
+    },
+    {
+      "id": "chips_tax_credit",
+      "label": "The law establishes an advanced manufacturing investment credit equal to 25% of qualified investment in an eligible advanced manufacturing facility.",
+      "section": "SEC. 107 / 26 U.S.C. 48D",
+      "heading": "ADVANCED MANUFACTURING INVESTMENT CREDIT",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 pp. 28-29 \u00b7 lines 1539-1597",
+      "limits": [
+        "The 25% applies to qualified investment and qualified property at eligible semiconductor or semiconductor-equipment facilities; it is not 25% of every expense incurred by every manufacturer."
+      ],
+      "excerpt": "The advanced manufacturing investment credit for any taxable year is an amount equal to 25 percent of the qualified investment ... with respect to any advanced manufacturing facility of an eligible taxpayer."
+    },
+    {
+      "id": "chips_hubs",
+      "label": "The law creates a Regional Technology and Innovation Hub program to support regional consortia, technology leadership, manufacturing, jobs, commercialization, and geographic diversity of innovation.",
+      "section": "SEC. 10621 / 15 U.S.C. 3722a",
+      "heading": "REGIONAL TECHNOLOGY AND INNOVATION HUB PROGRAM",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 pp. 278-279 \u00b7 lines 14899-14939",
+      "limits": [
+        "The program is subject to the availability of appropriations and detailed award requirements; creation of the program does not prove any particular region received funding or achieved the stated goals."
+      ],
+      "excerpt": "The Secretary shall carry out a program ... to designate eligible consortia as regional technology and innovation hubs ... to support regional economic development ... domestic job creation ... commercialization and domestic production of innovative research."
+    },
+    {
+      "id": "chips_research_security",
+      "label": "The law requires federal research agencies to bar certain research awards when a covered individual is participating in a malign foreign talent recruitment program.",
+      "section": "SEC. 10631-10632",
+      "heading": "RESEARCH SECURITY",
+      "source": "GovInfo \u00b7 Public Law 117-167 \u00b7 pp. 299-300 \u00b7 lines 16052-16116",
+      "limits": [
+        "These provisions apply through defined terms such as covered individual and malign foreign talent recruitment program; they are not a blanket prohibition on international scientific collaboration."
+      ],
+      "excerpt": "[Guidelines shall] prohibit research and development awards from being made for any proposal in which a covered individual is participating in a malign foreign talent recruitment program."
+    }
+  ]
+}
