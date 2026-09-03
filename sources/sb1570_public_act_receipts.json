@@ -1,0 +1,18 @@
+{
+  "case_id":"sb1570",
+  "bill":"Illinois SB 1570",
+  "enacted_as":"Public Act 103-0491",
+  "effective_date":"2024-01-01",
+  "authority":"Illinois General Assembly",
+  "canonical_html":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491",
+  "enrolled_pdf":"https://www.ilga.gov/legislation/103/SB/PDF/10300SB1570enr.pdf",
+  "scope":["65 ILCS 5/Art. 11 Div. 39.2","105 ILCS 5/Art. 15A"],
+  "public_receipt_ids":["authority","schools","advance_notice","rfp_contents","scope","scope_conflict","phase_one","shortlist","phase_two","small_projects","timing","impropriety","reporting"],
+  "material_warnings":[
+    "The authority is discretionary; the Act does not mandate design-build adoption.",
+    "The Act creates no appropriation or project pipeline.",
+    "Municipal and school provisions are similar but differ at the $12 million threshold and single-respondent rule.",
+    "Pre-RFP opportunity signals are investigative hypotheses unless expressly required by the Act.",
+    "Conflict and early-contact questions are fact-specific and may require Illinois procurement counsel."
+  ]
+}

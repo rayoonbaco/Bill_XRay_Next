@@ -14,6 +14,7 @@
       <button class="bill-chip" data-bill="ira">IRA</button>
       <button class="bill-chip" data-bill="aca">ACA</button>
       <button class="bill-chip" data-bill="chips">CHIPS</button>
+      <button class="bill-chip" data-bill="sb1570">IL SB 1570</button>
     </div>
   </header>
 
@@ -41,6 +42,10 @@
         HOW THIS BECAME HUMAN <span aria-hidden="true">&rarr;</span>
       </button>
       <p class="transformation-hint">Watch one real provision travel from statute to sentence.</p>
+      <button id="businessLensButton" class="business-lens-button" aria-expanded="false" aria-controls="businessLens" hidden>
+        ILLINOIS BUSINESS DEVELOPMENT LENS <span aria-hidden="true">&rarr;</span>
+      </button>
+      <p id="businessLensHint" class="business-lens-hint" hidden>What an experienced Illinois business-development leader should know.</p>
     </div>
   </main>
 
@@ -66,10 +71,23 @@
     </div>
     <div id="transformationBody" class="transformation-body"></div>
   </section>
+  <section id="businessLens" class="business-lens" aria-hidden="true" aria-label="Illinois Business Development Lens">
+    <div class="business-lens-head">
+      <div>
+        <p class="micro-label">SB 1570 ONLY</p>
+        <h2>Illinois Business Development Lens</h2>
+        <p>A company-neutral, evidence-disciplined view of legitimate opportunity recognition before formal procurement.</p>
+      </div>
+      <button id="closeBusinessLens" class="close-button" aria-label="Close business development lens">&times;</button>
+    </div>
+    <div id="businessLensBody" class="business-lens-body"></div>
+  </section>
   <div id="scrim" class="scrim" hidden></div>
 
   <script src="data.js"></script>
   <script src="transformation.js"></script>
+  <script src="transformation-examples.js"></script>
+  <script src="business-lens.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

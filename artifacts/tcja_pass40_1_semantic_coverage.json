@@ -1,0 +1,560 @@
+{
+  "schema_version": "40.1",
+  "bill_id": "TCJA",
+  "doctrine": "direct_statutory_meaning_before_editorial_prose",
+  "fact_count": 33,
+  "hold_count": 0,
+  "category_counts": {
+    "individual_tax": 4,
+    "delegated_authority": 2,
+    "specific_class": 1,
+    "business_tax": 9,
+    "family_tax": 6,
+    "estate_tax": 1,
+    "corporate_tax": 1,
+    "place_based_tax": 9
+  },
+  "guardrail": "Direct statutory facts may state what the enacted text itself sets, requires, permits, limits, or creates. They may not infer motive, distributional effect, popularity, fairness, corruption, or real-world outcome without separate evidence.",
+  "facts": [
+    {
+      "fact_id": "rates_window",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "heading": "MODIFICATION OF RATES",
+      "category": "individual_tax",
+      "statement": "For tax years 2018 through 2025, the bill replaces the individual rate tables with seven brackets ranging from 10% to 37%.",
+      "why_it_matters": "It changes the basic rate schedule used to calculate individual income tax.",
+      "source_start_line": 47,
+      "source_end_line": 78,
+      "evidence_excerpt": "``(j) Modifications for Taxable Years 2018 Through 2025.-- ``(1) In general.--In the case of a taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(A) subsection (i) shall not apply, and ``(B) this section (other than subsection (i)) shall be applied as provided in paragraphs (2) through (6). ``(2) Rate tables.-- ``(A) Married individuals filing joint returns and surviving spouses.--The following table shall be applied in lieu of the table contained in subsection (a): ``If taxable income is:                    The tax is: ------------------------------------------------------------------------ Not over $19,050.....................  10% of taxable income. Over $19,050 but not over $77,400....  $1,905, plus 12% of the excess over $19,050. Over $77,400 but not over $165,000...  $8,907, plus 22% of the excess over $77,400. Over $165,000 but not over $315,000..  $28,179, plus 24% of the excess over $165,000. Over $315,000 but not over $400,000..  $64,179, plus 32% of the excess over $315,000. [[Page 131 STAT. 2055]] Over $400,000 but not over $600,000..  $91,379, plus 35% of the excess over $400,000. Over $600,000........................  $161,379, plus 37% of the excess over $600,000.",
+      "confidence": 0.97,
+      "limits": [
+        "This fact does not say how any particular household's total tax changes."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "rate_table_indexing",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "heading": "MODIFICATION OF RATES",
+      "category": "delegated_authority",
+      "statement": "After 2018, the Treasury Secretary must issue updated versions of the temporary individual tax tables using the law's inflation-adjustment rules.",
+      "why_it_matters": "Congress sets the framework but leaves the annual table calculation to Treasury.",
+      "source_start_line": 180,
+      "source_end_line": 184,
+      "evidence_excerpt": "before January 1, 2019. ``(B) Subsequent years.--For taxable years beginning after December 31, 2018, the Secretary shall prescribe tables which shall apply in lieu of the tables contained in paragraph (2) in the same manner as under paragraphs",
+      "confidence": 0.97,
+      "limits": [
+        "This does not imply open-ended discretion; the statute specifies how the adjustment is to be made."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "kiddie_tax_special_rule",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "heading": "MODIFICATION OF RATES",
+      "category": "specific_class",
+      "statement": "The bill creates a separate temporary tax-rate method for certain children with unearned income.",
+      "why_it_matters": "A headline rate change does not apply identically to every taxpayer; this is a defined special case.",
+      "source_start_line": 194,
+      "source_end_line": 201,
+      "evidence_excerpt": "``(iii) subsection (f)(8) shall not apply. ``(4) Special rules for certain children with unearned income.-- ``(A) In general.--In the case of a child to whom subsection (g) applies for the taxable year, the rules of subparagraphs (B) and (C) shall apply in lieu of the rule under subsection (g)(1). ``(B) Modifications to applicable rate brackets.--In",
+      "confidence": 0.97,
+      "limits": [
+        "The fact does not quantify how many children pay more or less."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "qbi_20_percent",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "business_tax",
+      "statement": "The bill creates a deduction generally based on 20% of qualified business income for eligible noncorporate business owners, subject to limits elsewhere in the section.",
+      "why_it_matters": "This is one of the law's major new tax rules for pass-through business income.",
+      "source_start_line": 608,
+      "source_end_line": 654,
+      "evidence_excerpt": "SEC. 11011. DEDUCTION FOR QUALIFIED BUSINESS INCOME. (a) In General.--Part VI of subchapter B of chapter 1 is amended by adding at the end the following new section: ``SEC. 199A. <<NOTE: 26 USC 199A.>>  QUALIFIED BUSINESS INCOME. ``(a) In General.--In the case of a taxpayer other than a corporation, there shall be allowed as a deduction for any taxable year an amount equal to the sum of-- ``(1) the lesser of-- ``(A) the combined qualified business income amount of the taxpayer, or ``(B) an amount equal to 20 percent of the excess (if any) of-- ``(i) the taxable income of the taxpayer for the taxable year, over ``(ii) the sum of any net capital gain (as defined in section 1(h)), plus the aggregate amount of the qualified cooperative dividends, of the taxpayer for the taxable year, plus ``(2) the lesser of-- ``(A) 20 percent of the aggregate amount of the qualified cooperative dividends of the taxpayer for the taxable year, or ``(B) taxable income (reduced by the net capital gain (as so defined)) of the taxpayer for the taxable year. The amount determined under the preceding sentence shall not exceed the taxable income (reduced by the net capital gain (as so defined)) of the taxpayer for the taxable year. ``(b) Combined Qualified Business Income Amount.--For purposes of this section-- ``(1) In general.--The term `combined qualified business income amount' means, with respect to any taxable year, an amount equal to-- ``(A) the sum of the amounts determined under paragraph (2) for each qualified trade or business carried on by the taxpayer, plus ``(B) 20 percent of the aggregate amount of the qualified REIT dividends and qualified publicly traded partnership income of the taxpayer for the taxable year. ``(2) Determination of deductible amount for each trade or business.--The amount determined under this paragraph with respect to any qualified trade or business is the lesser of-- ``(A) 20 percent of the taxpayer's qualified business income with respect to the qualified trade or",
+      "confidence": 0.97,
+      "limits": [
+        "Eligibility and the final deductible amount depend on definitions and limits in the section."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "qbi_wage_property_limit",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "business_tax",
+      "statement": "For some taxpayers, the qualified-business-income deduction is limited by formulas tied to W-2 wages and certain business property.",
+      "why_it_matters": "The 20% headline deduction is not an unconditional 20% write-off for every business owner.",
+      "source_start_line": 656,
+      "source_end_line": 665,
+      "evidence_excerpt": "``(B) the greater of-- ``(i) 50 percent of the W-2 wages with respect to the qualified trade or business, or [[Page 131 STAT. 2064]] ``(ii) the sum of 25 percent of the W-2 wages with respect to the qualified trade or business, plus 2.5 percent of the unadjusted basis immediately after acquisition of all qualified",
+      "confidence": 0.97,
+      "limits": [
+        "The limitation has income thresholds and phase-in rules."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "qbi_phase_in",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "business_tax",
+      "statement": "The bill phases in some qualified-business-income limits over a $50,000 income range, or $100,000 for joint returns, above the section's threshold amount.",
+      "why_it_matters": "The effect of the deduction changes as taxable income moves through the phase-in range.",
+      "source_start_line": 677,
+      "source_end_line": 680,
+      "evidence_excerpt": "exceed the sum of the threshold amount plus $50,000 ($100,000 in the case of a joint return), and ``(II) the amount determined under",
+      "confidence": 0.97,
+      "limits": [
+        "The base threshold amount is defined elsewhere in the section and may be inflation-adjusted."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "excess_loss_disallowance",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "business_tax",
+      "statement": "For noncorporate taxpayers in tax years 2018 through 2025, the bill temporarily disallows excess business losses above the section's limit.",
+      "why_it_matters": "It restricts how much business loss can be used immediately against other income.",
+      "source_start_line": 1154,
+      "source_end_line": 1157,
+      "evidence_excerpt": "apply, and ``(B) any excess business loss of the taxpayer for the taxable year shall not be allowed. ``(2) Disallowed loss carryover.--Any loss which is",
+      "confidence": 0.97,
+      "limits": [
+        "This statement does not estimate who is affected or by how much."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "excess_loss_threshold",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "business_tax",
+      "statement": "The excess-business-loss calculation uses a $250,000 amount, doubled for a joint return, before inflation adjustments after 2018.",
+      "why_it_matters": "That dollar threshold determines when the temporary loss limitation starts to matter.",
+      "source_start_line": 1178,
+      "source_end_line": 1180,
+      "evidence_excerpt": "trades or businesses, plus ``(II) $250,000 (200 percent of such amount in the case of a joint return).",
+      "confidence": 0.97,
+      "limits": [
+        "The threshold is part of a formula, not a flat tax or penalty."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "loss_carryover",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "business_tax",
+      "statement": "A business loss disallowed by this temporary rule is carried into the following year as a net operating loss rather than simply disappearing.",
+      "why_it_matters": "The rule changes timing as well as immediate deductibility.",
+      "source_start_line": 1156,
+      "source_end_line": 1160,
+      "evidence_excerpt": "the taxable year shall not be allowed. ``(2) Disallowed loss carryover.--Any loss which is disallowed under paragraph (1) shall be treated as a net operating loss carryover to the following taxable year under section 172.",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "child_credit_amount",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "family_tax",
+      "statement": "For tax years 2018 through 2025, the bill increases the child tax credit amount from $1,000 to $2,000.",
+      "why_it_matters": "It directly changes the headline credit amount for qualifying children.",
+      "source_start_line": 1274,
+      "source_end_line": 1276,
+      "evidence_excerpt": "``(2) Credit amount.--Subsection (a) shall be applied by substituting `$2,000' for `$1,000'. ``(3) Limitation.--In lieu of the amount determined under",
+      "confidence": 0.97,
+      "limits": [
+        "Eligibility rules still determine whether a taxpayer can claim the credit."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "child_credit_phaseout",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "family_tax",
+      "statement": "For the temporary child-credit rules, the income threshold is $400,000 for joint returns and $200,000 for other returns.",
+      "why_it_matters": "The credit's availability changes at substantially different income levels depending on filing status.",
+      "source_start_line": 1276,
+      "source_end_line": 1279,
+      "evidence_excerpt": "``(3) Limitation.--In lieu of the amount determined under subsection (b)(2), the threshold amount shall be $400,000 in the case of a joint return ($200,000 in any other case). ``(4) Partial credit allowed for certain other dependents.--",
+      "confidence": 0.97,
+      "limits": [
+        "This fact does not calculate the phaseout for any particular taxpayer."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "other_dependents",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "family_tax",
+      "statement": "The bill adds a $500 credit for certain dependents who are not qualifying children for the main child credit.",
+      "why_it_matters": "The family-credit changes extend beyond the headline $2,000 child-credit amount.",
+      "source_start_line": 1281,
+      "source_end_line": 1285,
+      "evidence_excerpt": "subsection (a) (after the application of paragraph (2)) shall be increased by $500 for each dependent of the taxpayer (as defined in section 152) other than a qualifying child described in subsection (c). ``(B) Exception for certain noncitizens.--",
+      "confidence": 0.97,
+      "limits": [
+        "The statute includes exclusions and identification rules."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "refundable_cap",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "family_tax",
+      "statement": "The temporary rules cap the refundable portion of the child credit at $1,400 per qualifying child, with inflation adjustments after 2018.",
+      "why_it_matters": "A $2,000 credit is not necessarily the same thing as receiving $2,000 as a refund.",
+      "source_start_line": 1297,
+      "source_end_line": 1299,
+      "evidence_excerpt": "subsection (d)(1)(A) with respect to any qualifying child shall not exceed $1,400, and such subsection shall be applied without regard to paragraph (4) of this",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "refundable_threshold",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "family_tax",
+      "statement": "The bill lowers the earned-income threshold used in the refundable child-credit calculation from $3,000 to $2,500.",
+      "why_it_matters": "It changes when earned income begins to count toward the refundable calculation.",
+      "source_start_line": 1274,
+      "source_end_line": 1320,
+      "evidence_excerpt": "``(2) Credit amount.--Subsection (a) shall be applied by substituting `$2,000' for `$1,000'. ``(3) Limitation.--In lieu of the amount determined under subsection (b)(2), the threshold amount shall be $400,000 in the case of a joint return ($200,000 in any other case). ``(4) Partial credit allowed for certain other dependents.-- ``(A) In general.--The credit determined under subsection (a) (after the application of paragraph (2)) shall be increased by $500 for each dependent of the taxpayer (as defined in section 152) other than a qualifying child described in subsection (c). ``(B) Exception for certain noncitizens.-- Subparagraph (A) shall not apply with respect to any individual who would not be a dependent if subparagraph (A) of section 152(b)(3) were applied without regard to all that follows `resident of the United States'. ``(C) Certain qualifying children.--In the case of any qualifying child with respect to whom a credit is not allowed under this section by reason of paragraph (7), such child shall be treated as a dependent to whom subparagraph (A) applies. ``(5) Maximum amount of refundable credit.-- ``(A) In general.--The amount determined under subsection (d)(1)(A) with respect to any qualifying child shall not exceed $1,400, and such subsection shall be applied without regard to paragraph (4) of this subsection. ``(B) Adjustment for inflation.--In the case of a taxable year beginning after 2018, the $1,400 amount in [[Page 131 STAT. 2074]] subparagraph (A) shall be increased by an amount equal to-- ``(i) such dollar amount, multiplied by ``(ii) the cost-of-living adjustment determined under section 1(f)(3) for the calendar year in which the taxable year begins, determined by substituting `2017' for `2016' in subparagraph (A)(ii) thereof. If any increase under this clause is not a multiple of $100, such increase shall be rounded to the next lowest multiple of $100. ``(6) Earned income threshold for refundable credit.-- Subsection (d)(1)(B)(i) shall be applied by substituting `$2,500' for `$3,000'. ``(7) Social security number required.--No credit shall be",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "child_ssn",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "family_tax",
+      "statement": "The bill requires a qualifying child's Social Security number on the tax return for the child credit to be allowed under these rules.",
+      "why_it_matters": "The law adds an identification condition to claiming the credit.",
+      "source_start_line": 1319,
+      "source_end_line": 1322,
+      "evidence_excerpt": "`$2,500' for `$3,000'. ``(7) Social security number required.--No credit shall be allowed under this section to a taxpayer with respect to any qualifying child unless the taxpayer includes the social",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "personal_exemption_zero",
+      "bill_id": "TCJA",
+      "section": "SEC. 11041",
+      "heading": "SUSPENSION OF DEDUCTION FOR PERSONAL EXEMPTIONS",
+      "category": "individual_tax",
+      "statement": "For the temporary period covered by the section, the bill sets the personal exemption amount to zero.",
+      "why_it_matters": "The law changes deductions as well as tax rates and credits.",
+      "source_start_line": 1868,
+      "source_end_line": 1871,
+      "evidence_excerpt": "amended by adding at the end the following new clause: ``(iii) Years when personal exemption amount is zero.-- ``(I) In general.--In the case of",
+      "confidence": 0.97,
+      "limits": [
+        "Other provisions coordinate around the zero exemption amount; this statement does not calculate the net effect on a household."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "salt_cap",
+      "bill_id": "TCJA",
+      "section": "SEC. 11042",
+      "heading": "LIMITATION ON DEDUCTION FOR STATE AND LOCAL, ETC",
+      "category": "individual_tax",
+      "statement": "For the temporary period, the bill caps the covered state-and-local-tax deduction at $10,000, or $5,000 for married taxpayers filing separately.",
+      "why_it_matters": "This places a dollar ceiling on a major category of itemized deductions.",
+      "source_start_line": 2093,
+      "source_end_line": 2096,
+      "evidence_excerpt": "(a) and paragraph (5) of this subsection for any taxable year shall not exceed $10,000 ($5,000 in the case of a married individual filing a separate return). The preceding sentence shall not apply to any foreign taxes",
+      "confidence": 0.97,
+      "limits": [
+        "The section contains exceptions, including taxes connected with a trade or business or income-producing activity."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "mortgage_debt_limit",
+      "bill_id": "TCJA",
+      "section": "SEC. 11043",
+      "heading": "LIMITATION ON DEDUCTION FOR QUALIFIED RESIDENCE",
+      "category": "individual_tax",
+      "statement": "For new acquisition debt covered by the temporary rule, the bill lowers the mortgage-debt ceiling used for the interest deduction from $1,000,000 to $750,000, with half-sized amounts for married filing separately.",
+      "why_it_matters": "It narrows the amount of new home-acquisition debt whose interest can qualify for the deduction.",
+      "source_start_line": 2125,
+      "source_end_line": 2127,
+      "evidence_excerpt": "shall be applied by substituting `$750,000 ($375,000' for `$1,000,000 ($500,000'.",
+      "confidence": 0.97,
+      "limits": [
+        "The section contains grandfather and transition rules for earlier debt and binding contracts."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "estate_exclusion",
+      "bill_id": "TCJA",
+      "section": "SEC. 11061",
+      "heading": "INCREASE IN ESTATE AND GIFT TAX EXEMPTION",
+      "category": "estate_tax",
+      "statement": "The bill doubles the basic estate-and-gift-tax exclusion amount in the referenced rule from $5 million to $10 million before inflation adjustments.",
+      "why_it_matters": "It raises the amount that can fall under the basic exclusion rule.",
+      "source_start_line": 2431,
+      "source_end_line": 2433,
+      "evidence_excerpt": "subparagraph (A) shall be applied by substituting `$10,000,000' for `$5,000,000'.''.",
+      "confidence": 0.97,
+      "limits": [
+        "This statement does not estimate how many estates are affected."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "corporate_rate",
+      "bill_id": "TCJA",
+      "section": "SEC. 13001",
+      "heading": "21-PERCENT CORPORATE TAX RATE",
+      "category": "corporate_tax",
+      "statement": "The bill sets the federal corporate income-tax rate in section 11 at 21% of taxable income.",
+      "why_it_matters": "This is a central permanent corporate-tax change in the Act.",
+      "source_start_line": 2758,
+      "source_end_line": 2760,
+      "evidence_excerpt": "``(b) Amount of Tax.--The amount of the tax imposed by subsection (a) shall be 21 percent of taxable income.''. (b) Conforming Amendments.--",
+      "confidence": 0.97,
+      "limits": [
+        "This statement does not calculate a corporation's effective tax rate after other provisions."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "bonus_expensing_100",
+      "bill_id": "TCJA",
+      "section": "SEC. 13201",
+      "heading": "TEMPORARY 100-PERCENT EXPENSING FOR CERTAIN BUSINESS",
+      "category": "business_tax",
+      "statement": "For qualifying property placed in service after September 27, 2017 and before 2023, the bill sets the applicable bonus-depreciation percentage at 100%, followed by a scheduled phase-down.",
+      "why_it_matters": "It allows qualifying investment costs to be deducted much faster during the initial period.",
+      "source_start_line": 3341,
+      "source_end_line": 3344,
+      "evidence_excerpt": "``(i) in the case of property placed in service after September 27, 2017, and before January 1, 2023, 100 percent, ``(ii) in the case of property placed in",
+      "confidence": 0.97,
+      "limits": [
+        "Different timing rules apply to certain longer-production property and specified plants."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "interest_limit",
+      "bill_id": "TCJA",
+      "section": "SEC. 13301",
+      "heading": "LIMITATION ON DEDUCTION FOR INTEREST",
+      "category": "business_tax",
+      "statement": "The bill generally limits the business-interest deduction to business-interest income plus 30% of adjusted taxable income plus floor-plan financing interest.",
+      "why_it_matters": "It places a formula-based ceiling on interest deductions for covered businesses.",
+      "source_start_line": 4113,
+      "source_end_line": 4117,
+      "evidence_excerpt": "for such taxable year, ``(B) 30 percent of the adjusted taxable income of such taxpayer for such taxable year, plus ``(C) the floor plan financing interest of such taxpayer for such taxable year.",
+      "confidence": 0.97,
+      "limits": [
+        "The section contains exemptions and special partnership rules."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "interest_carryforward",
+      "bill_id": "TCJA",
+      "section": "SEC. 13301",
+      "heading": "LIMITATION ON DEDUCTION FOR INTEREST",
+      "category": "business_tax",
+      "statement": "Business interest disallowed by the new limit can generally be carried forward to a succeeding tax year.",
+      "why_it_matters": "Like the excess-loss rule, this can change timing rather than permanently erase every disallowed deduction.",
+      "source_start_line": 4119,
+      "source_end_line": 4125,
+      "evidence_excerpt": "than zero. ``(2) Carryforward of disallowed business interest.--The amount of any business interest not allowed as a deduction for any taxable year by reason of paragraph (1) shall be treated as business interest paid or accrued in the succeeding taxable year. ``(3) Exemption for certain small businesses.--In the case",
+      "confidence": 0.97,
+      "limits": [
+        "Partnerships have additional special rules."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_definition",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "The bill creates Qualified Opportunity Zones built around designated low-income census tracts.",
+      "why_it_matters": "It creates a new place-based tax framework rather than merely changing an existing rate or deduction.",
+      "source_start_line": 8429,
+      "source_end_line": 8432,
+      "evidence_excerpt": "``(a) Qualified Opportunity Zone Defined.--For the purposes of this subchapter, the term `qualified opportunity zone' means a population census tract that is a low-income community that is designated as a qualified opportunity zone.",
+      "confidence": 0.97,
+      "limits": [
+        "Some contiguous tracts that are not themselves low-income communities may also qualify under limited conditions."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_nomination",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "delegated_authority",
+      "statement": "State chief executives nominate Opportunity Zone tracts, and the Treasury Secretary certifies and designates them under the statute's timetable.",
+      "why_it_matters": "The law splits the designation process between state and federal officials.",
+      "source_start_line": 8437,
+      "source_end_line": 8445,
+      "evidence_excerpt": "``(A) not later than the end of the determination period, the chief executive officer of the State in which the tract is located-- ``(i) nominates the tract for designation as a qualified opportunity zone, and ``(ii) notifies the Secretary in writing of such nomination, and ``(B) the Secretary certifies such nomination and designates such tract as a qualified opportunity zone",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_25_percent",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "As a general rule, a state may designate no more than 25% of its low-income communities as Opportunity Zones, with a small-state exception in the statute.",
+      "why_it_matters": "Congress limits how broadly the zone designation can be used within a state.",
+      "source_start_line": 8472,
+      "source_end_line": 8475,
+      "evidence_excerpt": "number of population census tracts in a State that may be designated as qualified opportunity zones under this section may not exceed 25 percent of the number of low-income communities in the State.",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_contiguous",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "The law allows a limited number of contiguous tracts that are not low-income communities to be designated if their median family income is no more than 125% of the neighboring qualified low-income tract; these tracts are capped at 5% of a state's designated zones.",
+      "why_it_matters": "The program can extend beyond low-income tracts, but only under explicit proximity, income, and quantity limits.",
+      "source_start_line": 8487,
+      "source_end_line": 8492,
+      "evidence_excerpt": "zone, and ``(B) the median family income of the tract does not exceed 125 percent of the median family income of the low-income community with which the tract is contiguous. ``(2) Limitation.--Not more than 5 percent of the population census tracts designated in a State as a qualified opportunity",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_duration",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "An Opportunity Zone designation lasts through the close of the tenth calendar year beginning on or after designation.",
+      "why_it_matters": "The place designation is long-lived but not indefinite.",
+      "source_start_line": 8496,
+      "source_end_line": 8499,
+      "evidence_excerpt": "qualified opportunity zone shall remain in effect for the period beginning on the date of the designation and ending at the close of the 10th calendar year beginning on or after such date of designation. ``SEC. 1400Z-2. <<NOTE: 26 USC 1400Z-2.>>  SPECIAL RULES FOR",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_180_days",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "A taxpayer can elect to defer eligible capital gain by investing it in a qualified Opportunity Fund within 180 days of the sale or exchange.",
+      "why_it_matters": "This is the core tax incentive connecting capital gains to the new zones.",
+      "source_start_line": 8508,
+      "source_end_line": 8511,
+      "evidence_excerpt": "include so much of such gain as does not exceed the aggregate amount invested by the taxpayer in a qualified opportunity fund during the 180-day period beginning on the date of such sale or exchange,",
+      "confidence": 0.97,
+      "limits": [
+        "The statute limits eligible transactions and elections."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_deferral_end",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "Deferred Opportunity Zone gain is brought back into income no later than the earlier of disposing of the investment or December 31, 2026.",
+      "why_it_matters": "The deferral has an explicit endpoint; it is not an indefinite exclusion.",
+      "source_start_line": 8521,
+      "source_end_line": 8531,
+      "evidence_excerpt": "``(B) with respect to any sale or exchange after December 31, 2026. ``(b) Deferral of Gain Invested in Opportunity Zone Property.-- [[Page 131 STAT. 2185]] ``(1) Year of inclusion.--Gain to which subsection (a)(1)(B) applies shall be included in income in the taxable year which includes the earlier of-- ``(A) the date on which such investment is sold or",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_hold_benefits",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "The Opportunity Zone rules increase basis by 10% of deferred gain after a five-year hold and by another 5% after a seven-year hold.",
+      "why_it_matters": "The statute rewards longer holding periods with additional basis adjustments.",
+      "source_start_line": 8473,
+      "source_end_line": 8560,
+      "evidence_excerpt": "designated as qualified opportunity zones under this section may not exceed 25 percent of the number of low-income communities in the State. ``(2) Exception.--If the number of low-income communities in a State is less than 100, then a total of 25 of such tracts may be designated as qualified opportunity zones. ``(e) Designation of Tracts Contiguous With Low-income Communities.-- ``(1) In general.--A population census tract that is not a low-income community may be designated as a qualified opportunity zone under this section if-- ``(A) the tract is contiguous with the low-income community that is designated as a qualified opportunity zone, and ``(B) the median family income of the tract does not exceed 125 percent of the median family income of the low-income community with which the tract is contiguous. ``(2) Limitation.--Not more than 5 percent of the population census tracts designated in a State as a qualified opportunity zone may be designated under paragraph (1). ``(f) Period for Which Designation Is in Effect.--A designation as a qualified opportunity zone shall remain in effect for the period beginning on the date of the designation and ending at the close of the 10th calendar year beginning on or after such date of designation. ``SEC. 1400Z-2. <<NOTE: 26 USC 1400Z-2.>>  SPECIAL RULES FOR CAPITAL GAINS INVESTED IN OPPORTUNITY ZONES. ``(a) In General.-- ``(1) Treatment of gains.--In the case of gain from the sale to, or exchange with, an unrelated person of any property held by the taxpayer, at the election of the taxpayer-- ``(A) gross income for the taxable year shall not include so much of such gain as does not exceed the aggregate amount invested by the taxpayer in a qualified opportunity fund during the 180-day period beginning on the date of such sale or exchange, ``(B) the amount of gain excluded by subparagraph (A) shall be included in gross income as provided by subsection (b), and ``(C) subsection (c) shall apply. ``(2) Election.--No election may be made under paragraph (1)-- ``(A) with respect to a sale or exchange if an election previously made with respect to such sale or exchange is in effect, or ``(B) with respect to any sale or exchange after December 31, 2026. ``(b) Deferral of Gain Invested in Opportunity Zone Property.-- [[Page 131 STAT. 2185]] ``(1) Year of inclusion.--Gain to which subsection (a)(1)(B) applies shall be included in income in the taxable year which includes the earlier of-- ``(A) the date on which such investment is sold or exchanged, or ``(B) December 31, 2026. ``(2) Amount includible.-- ``(A) In general.--The amount of gain included in gross income under subsection (a)(1)(A) shall be the excess of-- ``(i) the lesser of the amount of gain excluded under paragraph (1) or the fair market value of the investment as determined as of the date described in paragraph (1), over ``(ii) the taxpayer's basis in the investment. ``(B) Determination of basis.-- ``(i) In general.--Except as otherwise provided in this clause or subsection (c), the taxpayer's basis in the investment shall be zero. ``(ii) Increase for gain recognized under subsection (a)(1)(B).--The basis in the investment shall be increased by the amount of gain recognized by reason of subsection (a)(1)(B) with respect to such property. ``(iii) Investments held for 5 years.--In the case of any investment held for at least 5 years, the basis of such investment shall be increased by an amount equal to 10 percent of the amount of gain deferred by reason of subsection (a)(1)(A). ``(iv) Investments held for 7 years.--In the case of any investment held by the taxpayer for at least 7 years, in addition to any adjustment made under clause (iii), the basis of such property",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_ten_year",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "For a qualifying Opportunity Zone investment held at least ten years, the taxpayer can elect to use fair market value as basis when the investment is sold or exchanged.",
+      "why_it_matters": "That rule can change how post-investment appreciation is taxed after a long holding period.",
+      "source_start_line": 8538,
+      "source_end_line": 8566,
+      "evidence_excerpt": "``(i) the lesser of the amount of gain excluded under paragraph (1) or the fair market value of the investment as determined as of the date described in paragraph (1), over ``(ii) the taxpayer's basis in the investment. ``(B) Determination of basis.-- ``(i) In general.--Except as otherwise provided in this clause or subsection (c), the taxpayer's basis in the investment shall be zero. ``(ii) Increase for gain recognized under subsection (a)(1)(B).--The basis in the investment shall be increased by the amount of gain recognized by reason of subsection (a)(1)(B) with respect to such property. ``(iii) Investments held for 5 years.--In the case of any investment held for at least 5 years, the basis of such investment shall be increased by an amount equal to 10 percent of the amount of gain deferred by reason of subsection (a)(1)(A). ``(iv) Investments held for 7 years.--In the case of any investment held by the taxpayer for at least 7 years, in addition to any adjustment made under clause (iii), the basis of such property shall be increased by an amount equal to 5 percent of the amount of gain deferred by reason of subsection (a)(1)(A). ``(c) Special Rule for Investments Held for at Least 10 Years.--In the case of any investment held by the taxpayer for at least 10 years",
+      "confidence": 0.97,
+      "limits": [
+        "This statement does not calculate the tax savings for any investor."
+      ],
+      "status": "COURT_CLEARED_DIRECT"
+    },
+    {
+      "fact_id": "oz_fund_90",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "heading": "OPPORTUNITY ZONES",
+      "category": "place_based_tax",
+      "statement": "A qualified Opportunity Fund must hold at least 90% of its assets in qualified Opportunity Zone property, measured under the statute's testing rule.",
+      "why_it_matters": "The tax benefit is tied to an investment vehicle that must actually keep most of its assets in qualifying zone property.",
+      "source_start_line": 8573,
+      "source_end_line": 8577,
+      "evidence_excerpt": "means any investment vehicle which is organized as a corporation or a partnership for the purpose of investing in qualified opportunity zone property (other than another qualified opportunity fund) that holds at least 90 percent of its assets in qualified opportunity zone property, determined by the",
+      "confidence": 0.97,
+      "limits": [],
+      "status": "COURT_CLEARED_DIRECT"
+    }
+  ],
+  "holds": []
+}

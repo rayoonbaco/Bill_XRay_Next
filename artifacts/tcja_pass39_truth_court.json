@@ -1,0 +1,1213 @@
+{
+  "schema_version": "39.0",
+  "bill_id": "TCJA",
+  "doctrine": "adversarial_narrowing_before_story",
+  "opinion_count": 40,
+  "verdict_counts": {
+    "QUESTION_ONLY": 38,
+    "SUPPORTED_NARROWLY": 2
+  },
+  "public_statements_allowed": 2,
+  "question_only_count": 38,
+  "guardrail": "The Truth Court may narrow or block claims. It may not invent facts, motives, consequences, or jokes.",
+  "opinions": [
+    {
+      "candidate_id": "TCJA:text:182:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "delegated_authority",
+      "source_start_line": 181,
+      "source_end_line": 183,
+      "evidence_excerpt": "``(B) Subsequent years.--For taxable years beginning after December 31, 2018, the Secretary shall prescribe tables which shall apply in lieu of the tables contained",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 181-183 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in MODIFICATION OF RATES, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:2236:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 11045",
+      "section_heading": "SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS",
+      "category": "override",
+      "source_start_line": 2235,
+      "source_end_line": 2237,
+      "evidence_excerpt": "``(g) Suspension for Taxable Years 2018 Through 2025.-- Notwithstanding subsection (a), no miscellaneous itemized deduction shall be allowed for any taxable year beginning after December 31, 2017,",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 2235-2237 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:atomic:tcja:11022:substitution:1",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "large_before_after_change",
+      "source_start_line": 1275,
+      "source_end_line": 1275,
+      "evidence_excerpt": "the case of a taxable year beginning after December 31, 2017, and before January 1, 2026, this section shall be applied as provided in paragraphs (2) through (7). ``(2) Credit amount.--Subsection (a) shall be applied by substituting `$2,000' for `$1,000'. ``(3) Limitation.--In lieu of the amount determined under subsection (b)(2), the threshold amount shall be $400,000 in the case of a joint return ($200,000 in any other case). ``(4) Partial credit allowed for certain",
+      "prosecutor": "The verified before/after change is large enough to deserve explanation: The bill changes Credit amount from $1,000 to $2,000.",
+      "defense": "A large numerical change can reflect inflation, consolidation of prior rules, a policy reset, or a threshold that affects relatively few people; size alone does not establish importance.",
+      "progressive_reading": "A progressive reader may ask who receives the benefit, who is left out, and how the change is distributed across households or income groups.",
+      "conservative_reading": "A conservative reader may ask whether the change reduces tax burdens, changes incentives, or simplifies an existing rule, and what it costs or saves.",
+      "text_referee": "The narrow numerical change is supported because it came from a publishable atomic meaning event. Broader consequence claims are not supported here.",
+      "citation_referee": "SUPPORTED for the narrow before/after statement at source lines 1275-1275; broader claims require additional evidence.",
+      "verdict": "SUPPORTED_NARROWLY",
+      "allowed_public_statement": "The bill changes Credit amount from $1,000 to $2,000.",
+      "allowed_public_question": "Who is affected by the change in Credit amount, how often does it matter, and what is the real financial consequence?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The statutory number alone does not establish budget cost, number of beneficiaries, distributional effect, or whether another limitation offsets the apparent change."
+      ],
+      "confidence": 0.93
+    },
+    {
+      "candidate_id": "TCJA:text:51:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "exception",
+      "source_start_line": 50,
+      "source_end_line": 52,
+      "evidence_excerpt": "after December 31, 2017, and before January 1, 2026-- ``(A) subsection (i) shall not apply, and ``(B) this section (other than subsection (i)) shall",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 50-52 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in MODIFICATION OF RATES, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:48:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "temporary_or_transition",
+      "source_start_line": 47,
+      "source_end_line": 49,
+      "evidence_excerpt": "``(j) Modifications for Taxable Years 2018 Through 2025.-- ``(1) In general.--In the case of a taxable year beginning",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 47-49 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in MODIFICATION OF RATES begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:195:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "specific_class",
+      "source_start_line": 194,
+      "source_end_line": 196,
+      "evidence_excerpt": "``(iii) subsection (f)(8) shall not apply. ``(4) Special rules for certain children with unearned income.--",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 194-196 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in MODIFICATION OF RATES, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1016:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "delegated_authority",
+      "source_start_line": 1015,
+      "source_end_line": 1017,
+      "evidence_excerpt": "chapter. ``(4) Regulations.--The Secretary shall prescribe such regulations as are necessary to carry out the purposes of this",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1015-1017 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in DEDUCTION FOR QUALIFIED BUSINESS INCOME, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:4093:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13221",
+      "section_heading": "CERTAIN SPECIAL RULES FOR TAXABLE YEAR OF INCLUSION",
+      "category": "override",
+      "source_start_line": 4092,
+      "source_end_line": 4094,
+      "evidence_excerpt": "(e) <<NOTE: 26 USC 451 note.>> Special Rules for Original Issue Discount.--Notwithstanding subsection (c), in the case of income from a debt instrument having original issue discount--",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 4092-4094 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does CERTAIN SPECIAL RULES FOR TAXABLE YEAR OF INCLUSION override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:atomic:tcja:11061:substitution:1",
+      "bill_id": "TCJA",
+      "section": "SEC. 11061",
+      "section_heading": "INCREASE IN ESTATE AND GIFT TAX EXEMPTION",
+      "category": "large_before_after_change",
+      "source_start_line": 2431,
+      "source_end_line": 2431,
+      "evidence_excerpt": "he following new subparagraph: ``(C) Increase in basic exclusion amount.--In the case of estates of decedents dying or gifts made after December 31, 2017, and before January 1, 2026, subparagraph (A) shall be applied by substituting `$10,000,000' for `$5,000,000'.''. (b) Conforming Amendment.--Subsection (g) of section 2001 is amended to read as follows: ``(g) Modifications to Tax Payable.-- ``(1) Modifications to gift tax payable to reflect different tax rates.--For purposes o",
+      "prosecutor": "The verified before/after change is large enough to deserve explanation: The bill changes Increase in basic exclusion amount from $5,000,000 to $10,000,000.",
+      "defense": "A large numerical change can reflect inflation, consolidation of prior rules, a policy reset, or a threshold that affects relatively few people; size alone does not establish importance.",
+      "progressive_reading": "A progressive reader may ask who receives the benefit, who is left out, and how the change is distributed across households or income groups.",
+      "conservative_reading": "A conservative reader may ask whether the change reduces tax burdens, changes incentives, or simplifies an existing rule, and what it costs or saves.",
+      "text_referee": "The narrow numerical change is supported because it came from a publishable atomic meaning event. Broader consequence claims are not supported here.",
+      "citation_referee": "SUPPORTED for the narrow before/after statement at source lines 2431-2431; broader claims require additional evidence.",
+      "verdict": "SUPPORTED_NARROWLY",
+      "allowed_public_statement": "The bill changes Increase in basic exclusion amount from $5,000,000 to $10,000,000.",
+      "allowed_public_question": "Who is affected by the change in Increase in basic exclusion amount, how often does it matter, and what is the real financial consequence?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The statutory number alone does not establish budget cost, number of beneficiaries, distributional effect, or whether another limitation offsets the apparent change."
+      ],
+      "confidence": 0.93
+    },
+    {
+      "candidate_id": "TCJA:text:366:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11002",
+      "section_heading": "INFLATION ADJUSTMENTS BASED ON CHAINED CPI",
+      "category": "exception",
+      "source_start_line": 365,
+      "source_end_line": 367,
+      "evidence_excerpt": "``(ii) the CPI for calendar year 2016. ``(C) Special rule for adjustments with a base year after 2016.--For purposes of any provision of this title",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 365-367 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in INFLATION ADJUSTMENTS BASED ON CHAINED CPI, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:50:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "temporary_or_transition",
+      "source_start_line": 49,
+      "source_end_line": 51,
+      "evidence_excerpt": "``(1) In general.--In the case of a taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(A) subsection (i) shall not apply, and",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 49-51 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in MODIFICATION OF RATES begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:606:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11002",
+      "section_heading": "INFLATION ADJUSTMENTS BASED ON CHAINED CPI",
+      "category": "specific_class",
+      "source_start_line": 605,
+      "source_end_line": 607,
+      "evidence_excerpt": "PART II--DEDUCTION FOR QUALIFIED BUSINESS INCOME OF PASS-THRU ENTITIES",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 605-607 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in INFLATION ADJUSTMENTS BASED ON CHAINED CPI, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1211:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "section_heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "delegated_authority",
+      "source_start_line": 1210,
+      "source_end_line": 1212,
+      "evidence_excerpt": "an item. ``(5) Additional reporting.--The Secretary shall prescribe such additional reporting requirements as the Secretary",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1210-1212 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:4962:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13309",
+      "section_heading": "RECHARACTERIZATION OF CERTAIN GAINS IN THE CASE OF",
+      "category": "override",
+      "source_start_line": 4961,
+      "source_end_line": 4963,
+      "evidence_excerpt": "shall be treated as short-term capital gain, notwithstanding section 83 or any election in effect under section 83(b).",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 4961-4963 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does RECHARACTERIZATION OF CERTAIN GAINS IN THE CASE OF override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:397:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11002",
+      "section_heading": "INFLATION ADJUSTMENTS BASED ON CHAINED CPI",
+      "category": "exception",
+      "source_start_line": 396,
+      "source_end_line": 398,
+      "evidence_excerpt": "follows: ``(A) except as provided in paragraph (8), by increasing the minimum and maximum dollar amounts for",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 396-398 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in INFLATION ADJUSTMENTS BASED ON CHAINED CPI, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1077:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "temporary_or_transition",
+      "source_start_line": 1076,
+      "source_end_line": 1078,
+      "evidence_excerpt": "``(i) Termination.--This section shall not apply to taxable years beginning after December 31, 2025.''.",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1076-1078 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in DEDUCTION FOR QUALIFIED BUSINESS INCOME begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:608:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "source_start_line": 607,
+      "source_end_line": 609,
+      "evidence_excerpt": "SEC. 11011. DEDUCTION FOR QUALIFIED BUSINESS INCOME.",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 607-609 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:4298:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13301",
+      "section_heading": "LIMITATION ON DEDUCTION FOR INTEREST",
+      "category": "delegated_authority",
+      "source_start_line": 4297,
+      "source_end_line": 4299,
+      "evidence_excerpt": "election shall be made at such time and in such manner as the Secretary shall prescribe, and, once made, shall be irrevocable.",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 4297-4299 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in LIMITATION ON DEDUCTION FOR INTEREST, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:5508:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13501",
+      "section_heading": "TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE",
+      "category": "override",
+      "source_start_line": 5507,
+      "source_end_line": 5509,
+      "evidence_excerpt": "of certain partnership interests.-- ``(A) In general.--Notwithstanding any other provision of this subtitle, if a nonresident alien",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 5507-5509 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:668:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "exception",
+      "source_start_line": 667,
+      "source_end_line": 669,
+      "evidence_excerpt": "``(3) Modifications to limit based on taxable income.-- ``(A) Exception from limit.--In the case of any taxpayer whose taxable income for the taxable year does",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 667-669 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1151:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "section_heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "temporary_or_transition",
+      "source_start_line": 1150,
+      "source_end_line": 1152,
+      "evidence_excerpt": "other than a corporation beginning after December 31, 2017, and before January 1, 2026-- ``(A) subsection (j) (relating to limitation on",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1150-1152 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:645:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "source_start_line": 644,
+      "source_end_line": 646,
+      "evidence_excerpt": "``(A) the sum of the amounts determined under paragraph (2) for each qualified trade or business carried on by the taxpayer, plus",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 644-646 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:5638:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13501",
+      "section_heading": "TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE",
+      "category": "delegated_authority",
+      "source_start_line": 5637,
+      "source_end_line": 5639,
+      "evidence_excerpt": "when used in such section. ``(6) Regulations.--The Secretary shall prescribe such regulations or other guidance as may be necessary to carry out",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 5637-5639 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:7098:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13603",
+      "section_heading": "TREATMENT OF QUALIFIED EQUITY GRANTS",
+      "category": "override",
+      "source_start_line": 7097,
+      "source_end_line": 7099,
+      "evidence_excerpt": "substantial risk of forfeiture, notwithstanding whether the value of the stock has declined during the deferral",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 7097-7099 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does TREATMENT OF QUALIFIED EQUITY GRANTS override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1002:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "exception",
+      "source_start_line": 1001,
+      "source_end_line": 1003,
+      "evidence_excerpt": "include the Commonwealth of Puerto Rico. ``(ii) Special rule for applying limit.--In the case of any taxpayer described in clause (i),",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1001-1003 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1228:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11021",
+      "section_heading": "INCREASE IN STANDARD DEDUCTION",
+      "category": "temporary_or_transition",
+      "source_start_line": 1227,
+      "source_end_line": 1229,
+      "evidence_excerpt": "is amended by adding at the end the following new paragraph: ``(7) Special rules for taxable years 2018 through 2025.--In the case of a taxable year beginning after December 31, 2017,",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1227-1229 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in INCREASE IN STANDARD DEDUCTION begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:672:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "source_start_line": 671,
+      "source_end_line": 673,
+      "evidence_excerpt": "applied without regard to subparagraph (B). ``(B) Phase-in of limit for certain taxpayers.-- ``(i) In general.--If--",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 671-673 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:6177:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13520",
+      "section_heading": "TAX REPORTING FOR LIFE SETTLEMENT TRANSACTIONS",
+      "category": "delegated_authority",
+      "source_start_line": 6176,
+      "source_end_line": 6178,
+      "evidence_excerpt": "return for such taxable year (at such time and in such manner as the Secretary shall prescribe) setting forth-- ``(A) the name, address, and TIN of such person,",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 6176-6178 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in TAX REPORTING FOR LIFE SETTLEMENT TRANSACTIONS, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:8117:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13821",
+      "section_heading": "MODIFICATION OF TAX TREATMENT OF ALASKA NATIVE",
+      "category": "override",
+      "source_start_line": 8116,
+      "source_end_line": 8118,
+      "evidence_excerpt": "``(e) Prohibition on Deduction.--Notwithstanding section 247, no deduction shall be allowed to a Native Corporation for purposes of any",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 8116-8118 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does MODIFICATION OF TAX TREATMENT OF ALASKA NATIVE override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1077:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "exception",
+      "source_start_line": 1076,
+      "source_end_line": 1078,
+      "evidence_excerpt": "``(i) Termination.--This section shall not apply to taxable years beginning after December 31, 2025.''.",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1076-1078 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1230:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11021",
+      "section_heading": "INCREASE IN STANDARD DEDUCTION",
+      "category": "temporary_or_transition",
+      "source_start_line": 1229,
+      "source_end_line": 1231,
+      "evidence_excerpt": "the case of a taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(A) Increase in standard deduction.--Paragraph (2)",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1229-1231 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in INCREASE IN STANDARD DEDUCTION begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:736:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "source_start_line": 735,
+      "source_end_line": 737,
+      "evidence_excerpt": "or business during the taxable year. ``(6) Qualified property.--For purposes of this section: ``(A) In general.--The term `qualified property'",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 735-737 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:6827:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13602",
+      "section_heading": "EXCISE TAX ON EXCESS TAX-EXEMPT ORGANIZATION EXECUTIVE",
+      "category": "delegated_authority",
+      "source_start_line": 6826,
+      "source_end_line": 6828,
+      "evidence_excerpt": "``(d) Regulations.--The Secretary shall prescribe such regulations as may be necessary to prevent avoidance of the tax under this section,",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 6826-6828 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in EXCISE TAX ON EXCESS TAX-EXEMPT ORGANIZATION EXECUTIVE, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:8872:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 14101",
+      "section_heading": "DEDUCTION FOR FOREIGN-SOURCE PORTION OF DIVIDENDS",
+      "category": "override",
+      "source_start_line": 8871,
+      "source_end_line": 8873,
+      "evidence_excerpt": "respect to which such domestic corporation is also a United States shareholder, then, notwithstanding any other provision of this title--",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 8871-8873 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does DEDUCTION FOR FOREIGN-SOURCE PORTION OF DIVIDENDS override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1285:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "exception",
+      "source_start_line": 1284,
+      "source_end_line": 1286,
+      "evidence_excerpt": "qualifying child described in subsection (c). ``(B) Exception for certain noncitizens.-- Subparagraph (A) shall not apply with respect to any",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1284-1286 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1269:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "temporary_or_transition",
+      "source_start_line": 1268,
+      "source_end_line": 1270,
+      "evidence_excerpt": "``(h) Special Rules for Taxable Years 2018 Through 2025.-- ``(1) In general.--In the case of a taxable year beginning",
+      "prosecutor": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "defense": "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point.",
+      "progressive_reading": "A progressive reader may ask whether the temporary period protects people during a transition or reflects budget constraints.",
+      "conservative_reading": "A conservative reader may ask whether a temporary rule hides the long-run policy choice or creates uncertainty.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1268-1270 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What changes when the temporary or transition rule in INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT begins or ends?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The detected date may be only one part of a larger effective-date or transition scheme.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:836:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "source_start_line": 835,
+      "source_end_line": 837,
+      "evidence_excerpt": "means any trade or business other than-- ``(A) a specified service trade or business, or ``(B) the trade or business of performing services",
+      "prosecutor": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "defense": "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries.",
+      "progressive_reading": "A progressive reader may ask who is protected, excluded, or burdened by the boundary Congress drew.",
+      "conservative_reading": "A conservative reader may ask whether the boundary is administrable, neutral, and justified rather than arbitrary or preferential.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 835-837 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:8729:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "section_heading": "OPPORTUNITY ZONES",
+      "category": "delegated_authority",
+      "source_start_line": 8728,
+      "source_end_line": 8730,
+      "evidence_excerpt": "income as provided by section 691. ``(4) Regulations.--The Secretary shall prescribe such regulations as may be necessary or appropriate to carry out the",
+      "prosecutor": "Congress may be leaving an important implementation choice to an agency or official.",
+      "defense": "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.",
+      "progressive_reading": "A progressive reader may ask whether agency discretion is needed to administer a complex rule fairly and consistently.",
+      "conservative_reading": "A conservative reader may ask whether Congress delegated too much policy choice to unelected officials.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 8728-8730 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Exactly what decision is delegated in OPPORTUNITY ZONES, what limits apply, and who is affected by that decision?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:9046:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 14102",
+      "section_heading": "SPECIAL RULES RELATING TO SALES OR TRANSFERS INVOLVING",
+      "category": "override",
+      "source_start_line": 9045,
+      "source_end_line": 9047,
+      "evidence_excerpt": "foreign corporation held for 1 year or more, then, notwithstanding any other provision of this title-- ``(i) the foreign-source portion of such",
+      "prosecutor": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "defense": "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.",
+      "progressive_reading": "A progressive reader may ask whether the override prevents an older rule from frustrating the new policy goal.",
+      "conservative_reading": "A conservative reader may ask why an ordinary rule was displaced and whether the exception expands government power or complexity.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 9045-9047 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "What ordinary rule does SPECIAL RULES RELATING TO SALES OR TRANSFERS INVOLVING override, and what changes because of that override?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    },
+    {
+      "candidate_id": "TCJA:text:1286:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "exception",
+      "source_start_line": 1285,
+      "source_end_line": 1287,
+      "evidence_excerpt": "``(B) Exception for certain noncitizens.-- Subparagraph (A) shall not apply with respect to any individual who would not be a dependent if subparagraph",
+      "prosecutor": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "defense": "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.",
+      "progressive_reading": "A progressive reader may ask whether the exception prevents unfair treatment of an edge case or vulnerable group.",
+      "conservative_reading": "A conservative reader may ask whether the exception creates unequal treatment, complexity, or a special carve-out.",
+      "text_referee": "The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.",
+      "citation_referee": "QUESTION ONLY: source lines 1285-1287 support the observed wording, not a broader public claim.",
+      "verdict": "QUESTION_ONLY",
+      "allowed_public_statement": null,
+      "allowed_public_question": "Who falls inside and outside the exception in INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT, and what practical difference does it make?",
+      "forbidden_inferences": [
+        "motive or intent not stated in evidence",
+        "corruption, favoritism, waste, or deception without independent proof",
+        "budget cost, beneficiary count, or distributional effect not established here",
+        "causal claims about real-world outcomes not established by the statutory excerpt"
+      ],
+      "unresolved_context": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed.",
+        "Resolve referenced law, definitions, scope, and practical effect before promoting this to a factual claim."
+      ],
+      "confidence": 0.88
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+========================================================================
+ BILL X-RAY NEXT - PASS 44.1 SMOKE CAST
+ PUBLIC LANGUAGE CLEAN ROOM
+========================================================================
+
+YOUR DUTIES THIS PASS
+  1. Run ONE_CLICK_PASS_44_1.bat from this project folder.
+  2. Read the CLEAR / NEEDS REVIEW result.
+  3. If CLEAR, open START_BILL_XRAY_PUBLIC.bat.
+  4. Click TCJA, IRA, and ACA and skim only the public articles.
+  5. Confirm the articles sound like journalism for citizens, not notes from our build process.
+  6. CHECK MY HOMEWORK should still open the unchanged evidence drawer.
+
+WHAT THIS PASS MUST PROVE
+  - The Pass 44 design and interaction remain intact.
+  - Development vocabulary is forbidden on the public article surface.
+  - TCJA, IRA, and ACA speak only about the law, the record, and uncertainty.
+  - Receipts and provenance remain available downstairs.
+
+PUBLIC LANGUAGE CONTRACT
+  Bill choices: 3 -> TCJA, IRA, ACA
+  Public evidence doorways: 1 -> CHECK MY HOMEWORK
+  TCJA public paragraphs: 12
+  IRA public paragraphs: 12
+  ACA public paragraphs: 6
+  Forbidden upstairs: cold trial, evidence packet, Reality Stack, pass/test/gate/engine/architecture language
+  Downstairs evidence terminology: allowed when the reader asks for receipts
+
+AUTOMATED VERDICT: CLEAR
+
+RAY CLEAN-ROOM GATE
+  Does every article now read as though the product simply knows the subject,
+  without telling the reader how we built or tested the product?

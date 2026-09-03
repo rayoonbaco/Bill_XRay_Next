@@ -5,10 +5,10 @@ import sys; sys.path.insert(0,str(ROOT))
 from src.teacher_gate import grade,load_data
 
 class Pass45Tests(unittest.TestCase):
-    def test_four_bills_on_public_surface(self):
-        data=load_data(); self.assertEqual(set(data),{'tcja','ira','aca','chips'})
+    def test_five_bills_on_public_surface(self):
+        data=load_data(); self.assertEqual(set(data),{'tcja','ira','aca','chips','sb1570'})
         h=(ROOT/'public/index.html').read_text(encoding='utf-8')
-        self.assertEqual(h.count('data-bill='),4); self.assertIn('data-bill="chips"',h)
+        self.assertEqual(h.count('data-bill='),5); self.assertIn('data-bill="chips"',h); self.assertIn('data-bill="sb1570"',h)
     def test_chips_has_real_receipts(self):
         b=load_data()['chips']; self.assertGreaterEqual(len(b['receipts']),8)
         for r in b['receipts']:

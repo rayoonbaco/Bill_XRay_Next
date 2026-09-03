@@ -1,0 +1,144 @@
+{
+  "schema_version": "42",
+  "doctrine": "Do not decide whether rhetoric is true by keyword matching. Decompose the claim, reconstruct the legal promise it would require, compare that promise with verified statutory mechanisms, and preserve what the statute cannot answer.",
+  "aca_keep_doctor": {
+    "schema_version": "42",
+    "bill_id": "ACA",
+    "claim": {
+      "claim_id": "aca_keep_doctor_obama",
+      "speaker": "President Barack Obama",
+      "claim": "If you like your doctor, you can keep your doctor.",
+      "source_url": "https://obamawhitehouse.archives.gov/the-press-office/weekly-address-president-obama-outlines-goals-health-care-reform",
+      "source_type": "official_white_house_archive",
+      "scope_note": "Pass 42 compares the public claim with selected verified statutory mechanisms; it does not adjudicate later implementation outcomes."
+    },
+    "claim_clauses": [
+      {
+        "clause_id": "keep_specific_doctor",
+        "plain_claim": "A person who likes a particular doctor will be able to keep that doctor under the reform.",
+        "legal_test": "Does the statute create an unconditional right to continue using the same specific physician?",
+        "status": "NOT_ESTABLISHED_AS_UNCONDITIONAL_GUARANTEE",
+        "explanation": "The reviewed provisions protect provider choice within participating networks and preserve certain existing coverage, but they contain conditions and do not create an unconditional guarantee that one specific doctor will remain participating and available.",
+        "evidence_ids": [
+          "aca_participating_primary_care_choice",
+          "aca_network_choice",
+          "aca_existing_coverage"
+        ]
+      },
+      {
+        "clause_id": "reform_does_not_force_plan_termination",
+        "plain_claim": "The reform itself will not force a person to terminate qualifying existing coverage.",
+        "legal_test": "Does the Act itself require people enrolled at enactment to terminate that coverage?",
+        "status": "SUPPORTED_WITH_SCOPE_LIMITS",
+        "explanation": "Section 1251 says the Act must not be construed to require termination of coverage held on the date of enactment, subject to the grandfathered-coverage framework.",
+        "evidence_ids": [
+          "aca_existing_coverage"
+        ]
+      },
+      {
+        "clause_id": "meaningful_provider_choice",
+        "plain_claim": "The law protects a person's ability to choose a doctor rather than assigning one specific doctor to them.",
+        "legal_test": "Does the law require some provider choice?",
+        "status": "SUPPORTED_WITH_CONDITIONS",
+        "explanation": "The law protects choice among participating primary care providers who are available and requires qualified plans to ensure a sufficient choice of providers.",
+        "evidence_ids": [
+          "aca_participating_primary_care_choice",
+          "aca_network_choice"
+        ]
+      }
+    ],
+    "law_evidence": [
+      {
+        "evidence_id": "aca_existing_coverage",
+        "section": "SEC. 1251",
+        "relationship": "QUALIFIES",
+        "law_says": "The Act says it must not be read to require a person to terminate health coverage they had on the date of enactment, and it creates grandfathered treatment for qualifying existing coverage.",
+        "why_it_matters": "This protects continuity from a command in the Act itself, but it is a rule about coverage, not a guarantee that a particular physician stays available.",
+        "evidence_excerpt": "ERAGE. (a) No Changes to Existing Coverage.-- (1) In general.--Nothing in this Act (or an amendment made by this Act) shall be construed to require that an individual terminate coverage under a group health plan or health insurance coverage in which such individual was enrolled on the date of enactment of this Act. (2) Continuation of coverage.--With respect to a group health plan or health insurance coverage in which an individual was enrolled on the date of",
+        "limits": [
+          "It does not say an insurer, employer, or doctor can never change or end an arrangement.",
+          "Keeping a health plan and keeping a particular doctor are different legal questions."
+        ],
+        "source_path": "/mnt/data/pass42/work/Bill_XRay_Next/sources/aca_claim_law_excerpt.txt"
+      },
+      {
+        "evidence_id": "aca_participating_primary_care_choice",
+        "section": "PHS Act SEC. 2719A(a), added by ACA",
+        "relationship": "PARTIALLY_SUPPORTS",
+        "law_says": "When a plan uses a participating-primary-care-provider designation, it must let an enrollee choose any participating primary care provider who is available to accept that person.",
+        "why_it_matters": "The statute protects choice inside the participating network. The words participating and available are conditions.",
+        "evidence_excerpt": ", or enrollee of a participating primary care provider, then the plan or issuer shall permit each participant, beneficiary, and enrollee to designate any participating primary care provider who is available to accept such individual. ``(b) Coverage of Emergency Services.-- ``(1) In general.--If a group health plan, or a health insurance issuer offering group or individual health insurance issuer, provides or covers any benefits with respect to services in an emergency department of a hospital, t",
+        "limits": [
+          "This does not require a specific doctor to participate in the plan's network.",
+          "This does not require a doctor to remain available or continue accepting a patient."
+        ],
+        "source_path": "/mnt/data/pass42/work/Bill_XRay_Next/sources/aca_claim_law_excerpt.txt"
+      },
+      {
+        "evidence_id": "aca_network_choice",
+        "section": "ACA SEC. 1311(c)(1)(B)",
+        "relationship": "PARTIALLY_SUPPORTS",
+        "law_says": "Qualified health plans must ensure a sufficient choice of providers and tell enrollees about in-network and out-of-network provider availability.",
+        "why_it_matters": "The law requires meaningful provider choice, but sufficient choice is not the same as a guarantee of one named physician.",
+        "evidence_excerpt": "individuals with significant health needs; (B) ensure a sufficient choice of providers (in a manner consistent with applicable network adequacy provisions under section 2702(c) of the Public Health Service Act), and provide information to enrollees and prospective enrollees on the availability of in-network and out-of-network providers; (C) include within health insurance plan networks th",
+        "limits": [
+          "Network-adequacy protection does not itself promise that every existing doctor will remain in every network."
+        ],
+        "source_path": "/mnt/data/pass42/work/Bill_XRay_Next/sources/aca_claim_law_excerpt.txt"
+      }
+    ],
+    "verdict": {
+      "classification": "CLAIM_BROADER_THAN_STATUTORY_GUARANTEE",
+      "short": "The law protects provider choice and some existing coverage, but the reviewed provisions do not guarantee that every person can keep one specific doctor regardless of network participation or availability.",
+      "not_a_verdict_on": [
+        "Whether particular people later kept or lost doctors in practice.",
+        "Whether later regulations, contracts, insurer decisions, employer decisions, or market changes caused a doctor relationship to continue or end.",
+        "The speaker's motive or intent."
+      ]
+    },
+    "public_render": {
+      "headline": "THEY SAID THIS",
+      "claim": "If you like your doctor, you can keep your doctor.",
+      "law_answer": "The law protects provider choice and some existing coverage, but the reviewed provisions do not guarantee that every person can keep one specific doctor regardless of network participation or availability.",
+      "what_the_law_does_protect": [
+        "Certain existing coverage is protected from being terminated merely because the Act requires it.",
+        "Where a plan uses a participating primary care provider, the enrollee may choose any participating provider who is available to accept them.",
+        "Qualified plans must provide a sufficient choice of providers."
+      ],
+      "what_the_law_does_not_establish": [
+        "An unconditional right to one particular doctor forever.",
+        "A requirement that a particular doctor remain in a particular insurer's network.",
+        "A promise that market or contractual relationships outside the statutory guarantee will never change."
+      ],
+      "human_conclusion": "The political sentence is simpler and broader than the statutory machinery. The law protects choice, but it protects choice through conditions such as participating networks and provider availability. Bill X-Ray should show that gap rather than stamp TRUE or FALSE on it."
+    },
+    "guardrails": [
+      "Political rhetoric and statutory text are separate evidence lanes.",
+      "No TRUE/FALSE label when the statute supports only a qualified comparison.",
+      "Absence of an unconditional guarantee in the reviewed provisions is not proof of later real-world outcomes.",
+      "Do not infer motive, deception, fraud, or intent from a mismatch between rhetoric and legal mechanism."
+    ],
+    "release_readiness": "CLAIM_MAP_READY_FOR_HUMAN_GATE"
+  },
+  "tcja_child_credit": {
+    "schema_version": "42",
+    "bill_id": "TCJA",
+    "claim": {
+      "claim": "The child tax credit is $2,000.",
+      "source_type": "headline_test_claim"
+    },
+    "verdict": {
+      "classification": "SUPPORTED_BUT_INCOMPLETE",
+      "short": "The law raises the headline child-credit amount to $2,000 for the temporary period, but that number does not by itself describe refundability or eligibility conditions."
+    },
+    "support_fact_ids": [
+      "child_credit_amount",
+      "refundable_cap",
+      "child_ssn"
+    ],
+    "public_render": {
+      "claim": "The child tax credit is $2,000.",
+      "law_answer": "Yes as a headline amount, but the law also caps the refundable portion at $1,400 under those temporary rules and requires the qualifying child's Social Security number for the credit."
+    }
+  }
+}

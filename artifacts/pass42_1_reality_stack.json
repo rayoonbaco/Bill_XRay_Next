@@ -1,0 +1,216 @@
+{
+  "schema_version": "42.1",
+  "bill_id": "ACA",
+  "topic": "keep-your-doctor claim",
+  "source_registry": {
+    "schema_version": "42.1-source-registry",
+    "topic": "ACA keep-your-doctor claim",
+    "sources": [
+      {
+        "source_id": "rhetoric_white_house_green_bay_2009",
+        "lane": "RHETORIC",
+        "authority_tier": 1,
+        "publisher": "The White House",
+        "date": "2009-06-11",
+        "url": "https://obamawhitehouse.archives.gov/blog/2009/06/11/a-town-hall-and-a-health-care-model-green-bay",
+        "supported_meaning": "President Obama publicly promised that people who liked their doctors and health plans would be able to keep them.",
+        "limits": [
+          "This is evidence of the public promise, not evidence that the statute guaranteed the promise or that later outcomes matched it."
+        ]
+      },
+      {
+        "source_id": "law_aca_claim_excerpt",
+        "lane": "ENACTED_LAW",
+        "authority_tier": 1,
+        "publisher": "United States statute excerpt preserved in Bill X-Ray",
+        "date": "2010-03-23",
+        "local_source": "sources/aca_claim_law_excerpt.txt",
+        "supported_meaning": "The ACA protects certain existing coverage, protects choice among participating and available primary care providers, and requires qualified plans to ensure sufficient provider choice.",
+        "limits": [
+          "These provisions do not establish an unconditional statutory right to one specific physician regardless of network participation or availability."
+        ]
+      },
+      {
+        "source_id": "implementation_cms_2014_qhp_network_adequacy",
+        "lane": "IMPLEMENTATION",
+        "authority_tier": 1,
+        "publisher": "Centers for Medicare & Medicaid Services",
+        "date": "2013-04-05",
+        "url": "https://www.cms.gov/cciio/resources/regulations-and-guidance/downloads/2014_letter_to_issuers_04052013.pdf",
+        "supported_meaning": "CMS told qualified-health-plan issuers that network adequacy rules require a network sufficient in number and types of providers so covered services are accessible without unreasonable delay.",
+        "limits": [
+          "Network adequacy is an access standard; it is not a rule requiring every particular physician to contract with every plan or remain in a network."
+        ]
+      },
+      {
+        "source_id": "implementation_cms_2025_final_rule_network_adequacy",
+        "lane": "IMPLEMENTATION",
+        "authority_tier": 1,
+        "publisher": "Centers for Medicare & Medicaid Services",
+        "date": "2024-04-02",
+        "url": "https://www.cms.gov/newsroom/fact-sheets/hhs-notice-benefit-and-payment-parameters-2025-final-rule",
+        "supported_meaning": "CMS later strengthened Marketplace network-adequacy oversight, including quantitative time-and-distance standards and pre-certification review requirements for certain marketplaces beginning in 2026.",
+        "limits": [
+          "Later implementation changes show that the regulatory layer evolves; they do not retroactively change what the 2010 statute literally guaranteed."
+        ]
+      },
+      {
+        "source_id": "official_analysis_gao_16_761",
+        "lane": "OFFICIAL_ANALYSIS",
+        "authority_tier": 1,
+        "publisher": "U.S. Government Accountability Office",
+        "date": "2016-09-12",
+        "url": "https://www.gao.gov/assets/gao-16-761.pdf",
+        "supported_meaning": "GAO reported concerns about exchange enrollees' ability to obtain or continue care as narrow provider networks became more prevalent; GAO cited an analysis finding exchange plans included fewer providers on average than plans outside the exchanges.",
+        "limits": [
+          "This is evidence about market experience and access concerns, not proof that the ACA statute itself caused any particular patient to lose a doctor.",
+          "The report includes evidence from studies, stakeholders, and program experience rather than a universal finding for every enrollee."
+        ]
+      },
+      {
+        "source_id": "official_analysis_gao_19_215",
+        "lane": "OBSERVED_OUTCOME",
+        "authority_tier": 1,
+        "publisher": "U.S. Government Accountability Office",
+        "date": "2019-03-06",
+        "url": "https://www.gao.gov/pdf/product/696603",
+        "supported_meaning": "GAO reported that some issuers narrowed provider networks over time and that selected issuers said narrower networks were used in part to manage claims costs and price plans competitively.",
+        "limits": [
+          "Issuer network decisions have multiple causes and incentives; this source does not establish that the ACA alone caused narrower networks.",
+          "A market-level network trend does not determine what happened to a specific patient's doctor relationship."
+        ]
+      }
+    ],
+    "empty_lanes": [
+      {
+        "lane": "COURT_INTERPRETATION",
+        "status": "NO_RELEVANT_COURT_SOURCE_LOADED_IN_PASS_42_1",
+        "meaning": "The engine must not imply that no relevant case exists. It means this pass has not loaded a controlling court interpretation of the keep-your-doctor promise."
+      },
+      {
+        "lane": "SECONDARY_INTERPRETATION",
+        "status": "INTENTIONALLY_NOT_USED_FOR_INITIAL_GATE",
+        "meaning": "Pass 42.1 proves the reality-stack architecture first with primary government sources and official analysis. Secondary commentary can be added later with explicit ideology and provenance labels."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "lane": "RHETORIC",
+      "question": "What was the public actually told?",
+      "status": "EVIDENCE_LOADED",
+      "source_ids": [
+        "rhetoric_white_house_green_bay_2009"
+      ],
+      "safe_conclusion": "The public promise was broad: people who liked their doctors and health plans were told they would be able to keep them.",
+      "cannot_conclude": [
+        "Whether the promise was legally guaranteed",
+        "Whether later implementation fulfilled it",
+        "Speaker motive or intent"
+      ]
+    },
+    {
+      "lane": "ENACTED_LAW",
+      "question": "What did Congress actually enact?",
+      "status": "EVIDENCE_LOADED",
+      "source_ids": [
+        "law_aca_claim_excerpt"
+      ],
+      "safe_conclusion": "The law protects provider choice and some existing coverage, but the reviewed provisions do not guarantee that every person can keep one specific doctor regardless of network participation or availability.",
+      "cannot_conclude": [
+        "Later regulatory choices",
+        "Later market behavior",
+        "A universal real-world outcome for every patient"
+      ]
+    },
+    {
+      "lane": "IMPLEMENTATION",
+      "question": "How did agencies turn the statute into operating rules?",
+      "status": "EVIDENCE_LOADED",
+      "source_ids": [
+        "implementation_cms_2014_qhp_network_adequacy",
+        "implementation_cms_2025_final_rule_network_adequacy"
+      ],
+      "safe_conclusion": "CMS implementation focused on network adequacy and access standards, and those standards evolved over time. That regulates network sufficiency; it still does not convert the statute into a guarantee that one named doctor must remain in every plan network.",
+      "cannot_conclude": [
+        "That agency rules preserved every preexisting doctor relationship",
+        "That later rules describe the statute's original text"
+      ]
+    },
+    {
+      "lane": "COURT_INTERPRETATION",
+      "question": "Did a court materially reinterpret this issue?",
+      "status": "NO_SOURCE_LOADED",
+      "source_ids": [],
+      "safe_conclusion": "No court interpretation is being used in this Pass 42.1 example.",
+      "cannot_conclude": [
+        "That no relevant case exists",
+        "That courts agreed with any political or administrative interpretation"
+      ]
+    },
+    {
+      "lane": "OFFICIAL_ANALYSIS",
+      "question": "What did official reviewers later find?",
+      "status": "EVIDENCE_LOADED",
+      "source_ids": [
+        "official_analysis_gao_16_761"
+      ],
+      "safe_conclusion": "GAO later documented concerns about obtaining or continuing care as narrow networks became more prevalent in exchange coverage and summarized evidence that exchange networks could include fewer providers than plans outside the exchanges.",
+      "cannot_conclude": [
+        "That every exchange enrollee lost provider access",
+        "That the statute alone caused the observed network pattern"
+      ]
+    },
+    {
+      "lane": "OBSERVED_OUTCOME",
+      "question": "What happened in the operating market?",
+      "status": "EVIDENCE_LOADED",
+      "source_ids": [
+        "official_analysis_gao_19_215"
+      ],
+      "safe_conclusion": "GAO reported that some issuers narrowed provider networks over time, with selected issuers describing cost management and competitive pricing as reasons for doing so.",
+      "cannot_conclude": [
+        "That every issuer narrowed networks",
+        "That every narrow network was caused by the ACA",
+        "That a particular person lost a particular doctor"
+      ]
+    },
+    {
+      "lane": "SECONDARY_INTERPRETATION",
+      "question": "How did journalists, scholars, advocates, and critics interpret the record?",
+      "status": "INTENTIONALLY_HELD",
+      "source_ids": [],
+      "safe_conclusion": "Secondary commentary is not used in the initial Pass 42.1 gate. The architecture supports it, but later versions must label source perspective and keep commentary subordinate to primary evidence.",
+      "cannot_conclude": [
+        "That secondary sources are unnecessary",
+        "That later commentary should be treated as equivalent to enacted law"
+      ]
+    }
+  ],
+  "gap_analysis": {
+    "public_claim": "If you like your doctor, you can keep your doctor.",
+    "claim_vs_law": "CLAIM_BROADER_THAN_STATUTORY_GUARANTEE",
+    "law_vs_implementation": "IMPLEMENTATION_ADDS_OPERATING_STANDARDS_WITHOUT_CREATING_SPECIFIC_DOCTOR_GUARANTEE",
+    "implementation_vs_outcome": "NETWORK_ADEQUACY_RULES_COEXIST_WITH_REPORTED_NARROW_NETWORK_CONCERNS",
+    "causation_status": "NOT_ESTABLISHED_BY_THIS_STACK",
+    "why": "The sources support a broad public promise, a narrower conditional statutory mechanism, agency network-adequacy rules, and later official evidence of narrow-network concerns. They do not establish one simple causal chain from statute to every person's doctor relationship."
+  },
+  "public_answer": {
+    "headline": "WHAT THEY SAID / WHAT THE LAW DID / WHAT HAPPENED",
+    "rhetoric": "The public promise was broad: people who liked their doctors and health plans were told they would be able to keep them.",
+    "law": "The law protects provider choice and some existing coverage, but the reviewed provisions do not guarantee that every person can keep one specific doctor regardless of network participation or availability.",
+    "implementation": "CMS implementation focused on network adequacy and access standards, and those standards evolved over time. That regulates network sufficiency; it still does not convert the statute into a guarantee that one named doctor must remain in every plan network.",
+    "official_review": "GAO later documented concerns about obtaining or continuing care as narrow networks became more prevalent in exchange coverage and summarized evidence that exchange networks could include fewer providers than plans outside the exchanges.",
+    "observed_outcome": "GAO reported that some issuers narrowed provider networks over time, with selected issuers describing cost management and competitive pricing as reasons for doing so.",
+    "bottom_line": "The promise was broader than the statutory guarantee. The law protected provider choice through conditions such as participation and availability; regulators then policed network adequacy rather than guaranteeing one specific doctor. Later official reviews found real concerns about narrow networks and continuing access. That is enough to show a gap between slogan, legal mechanism, and operating reality - but not enough to say the ACA alone caused any particular person to lose a doctor."
+  },
+  "guardrails": [
+    "Never rewrite an implementation rule into the enacted statute.",
+    "Never rewrite a later market outcome into the speaker's original intent.",
+    "Never flatten source authority: statute, regulation, GAO review, journalism, and advocacy are different evidence objects.",
+    "A missing lane means not loaded, not nonexistent.",
+    "Observed correlation or market experience is not automatic proof of statutory causation.",
+    "When sources disagree, preserve the disagreement and source provenance instead of averaging it into false certainty."
+  ],
+  "release_readiness": "REALITY_STACK_READY_FOR_HUMAN_GATE"
+}

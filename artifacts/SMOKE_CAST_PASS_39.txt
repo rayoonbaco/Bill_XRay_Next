@@ -1,0 +1,52 @@
+========================================================================
+ BILL X-RAY NEXT - PASS 39 SMOKE CAST
+ ADVERSARIAL TRUTH COURT
+========================================================================
+
+YOUR DUTIES THIS PASS
+  1. Run ONE_CLICK_PASS_39.bat from this project folder.
+  2. Read the CLEAR / NEEDS REVIEW result at the end.
+  3. If CLEAR, no file moving, dependency install, or UI testing is required.
+  4. Optional human gate: read the court examples printed below.
+
+WHAT THIS PASS MUST PROVE
+  - Investigation leads are argued from more than one perspective.
+  - A question can survive even when a factual claim cannot.
+  - Only verified atomic meaning may become a narrow factual statement here.
+  - Motive, corruption, cost, winners/losers, causation, and satire remain forbidden unless separately proved.
+
+PASS 39: adjudicated 40 candidates; 2 narrow statements allowed; 38 remain question-only
+Dependency-free focused checks: 5/5 passed
+
+TRUTH COURT HUMAN CHECK
+  [QUESTION_ONLY] SEC. 11001 - delegated_authority
+    Prosecutor: Congress may be leaving an important implementation choice to an agency or official.
+    Defense: Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text.
+    Referee: The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.
+    Allowed statement: NONE
+    Allowed question: Exactly what decision is delegated in MODIFICATION OF RATES, what limits apply, and who is affected by that decision?
+  [QUESTION_ONLY] SEC. 11045 - override
+    Prosecutor: An override can reveal which ordinary rule Congress chose not to apply in this situation.
+    Defense: Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended.
+    Referee: The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.
+    Allowed statement: NONE
+    Allowed question: What ordinary rule does SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS override, and what changes because of that override?
+  [SUPPORTED_NARROWLY] SEC. 11022 - large_before_after_change
+    Prosecutor: The verified before/after change is large enough to deserve explanation: The bill changes Credit amount from $1,000 to $2,000.
+    Defense: A large numerical change can reflect inflation, consolidation of prior rules, a policy reset, or a threshold that affects relatively few people; size alone does not establish importance.
+    Referee: The narrow numerical change is supported because it came from a publishable atomic meaning event. Broader consequence claims are not supported here.
+    Allowed statement: The bill changes Credit amount from $1,000 to $2,000.
+    Allowed question: Who is affected by the change in Credit amount, how often does it matter, and what is the real financial consequence?
+  [QUESTION_ONLY] SEC. 11001 - exception
+    Prosecutor: Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.
+    Defense: Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions.
+    Referee: The excerpt supports noticing the drafting construct and asking the investigation question. It does not yet prove the substantive consequence implied by that question.
+    Allowed statement: NONE
+    Allowed question: Who falls inside and outside the exception in MODIFICATION OF RATES, and what practical difference does it make?
+
+Court opinions: 40
+Narrow factual statements allowed: 2
+Question-only opinions: 38
+
+CLEAR: PASS 39 completed. Curiosity has been separated from proof before the Human Story Engine.
+Smoke cast saved to: artifacts\SMOKE_CAST_PASS_39.txt

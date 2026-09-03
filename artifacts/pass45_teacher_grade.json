@@ -1,0 +1,52 @@
+{
+  "bill_id": "chips",
+  "score": 100,
+  "grade": "A",
+  "story_word_count": 698,
+  "short_word_count": 80,
+  "receipt_count": 9,
+  "criteria": [
+    {
+      "name": "Source fidelity",
+      "points": 20,
+      "earned": 20,
+      "ok": true,
+      "note": "Every receipt has a statutory section, official source pointer, excerpt, and explicit limit."
+    },
+    {
+      "name": "Claim-to-receipt traceability",
+      "points": 20,
+      "earned": 20,
+      "ok": true,
+      "note": "Every public paragraph names the receipts that support it."
+    },
+    {
+      "name": "Human translation",
+      "points": 20,
+      "earned": 20,
+      "ok": true,
+      "note": "The long piece is readable rather than exhaustive, and the 30-second version is genuinely short."
+    },
+    {
+      "name": "Semantic precision",
+      "points": 15,
+      "earned": 15,
+      "ok": true,
+      "note": "The essay distinguishes loan principal from appropriated cash and distinguishes grants from tax credits."
+    },
+    {
+      "name": "Synthesis",
+      "points": 15,
+      "earned": 15,
+      "ok": true,
+      "note": "The column finds one thesis across money, conditions, industrial capacity, and science rather than listing sections."
+    },
+    {
+      "name": "Restraint and uncertainty",
+      "points": 10,
+      "earned": 10,
+      "ok": true,
+      "note": "The public story separates enacted mechanics from later wisdom, success, motive, and outcomes."
+    }
+  ]
+}

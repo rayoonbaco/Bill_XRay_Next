@@ -1,0 +1,20 @@
+BILL X-RAY NEXT - PASS 36 SMOKE CAST
+RESULT: CLEAR
+
+DOCTRINE GATE:
+AI creates intellectual access; it does not replace human judgment.
+
+Atomic events produced: 14
+Events still requiring context: 8
+
+CHILD TAX CREDIT - TWO DISTINCT CHANGES:
+1. Credit amount: $1,000 -> $2,000
+2. Earned income threshold for refundable credit: $3,000 -> $2,500
+
+WHY THIS MATTERS:
+The old summarization path could blend both numbers into one section summary.
+The new engine treats them as separate semantic events before writing prose.
+
+HUMAN DUTY:
+No manual code or button testing required for this pass.
+Read the two examples. If they look like genuinely different concepts, the pass did its job.

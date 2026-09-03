@@ -1,0 +1,12 @@
+BILL X-RAY NEXT - PASS 45 SMOKE CAST
+FRESH BILL A-GRADE TRIAL
+CHIPS essay: 100/100 -> A
+Long-form words: 698
+30-second words: 80
+Homework receipts: 9
+[PASS] Source fidelity: 20/20 - Every receipt has a statutory section, official source pointer, excerpt, and explicit limit.
+[PASS] Claim-to-receipt traceability: 20/20 - Every public paragraph names the receipts that support it.
+[PASS] Human translation: 20/20 - The long piece is readable rather than exhaustive, and the 30-second version is genuinely short.
+[PASS] Semantic precision: 15/15 - The essay distinguishes loan principal from appropriated cash and distinguishes grants from tax credits.
+[PASS] Synthesis: 15/15 - The column finds one thesis across money, conditions, industrial capacity, and science rather than listing sections.
+[PASS] Restraint and uncertainty: 10/10 - The public story separates enacted mechanics from later wisdom, success, motive, and outcomes.

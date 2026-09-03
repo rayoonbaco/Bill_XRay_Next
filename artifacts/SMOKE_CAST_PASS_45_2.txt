@@ -1,0 +1,4 @@
+PASS 45.2 CLEAR
+Launch-finish checks: 8/8
+Synthesis: 1402 -> 40 -> 33 -> 14 -> 660
+Status: LAUNCH_CANDIDATE_PENDING_RAY_GATE

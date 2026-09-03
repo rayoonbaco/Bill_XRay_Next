@@ -1,0 +1,344 @@
+{
+  "schema_version": "36.0",
+  "bill_id": "tcja",
+  "doctrine": "atomic_meaning_before_prose",
+  "event_count": 14,
+  "publishable_count": 6,
+  "needs_context_count": 8,
+  "events": [
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:11021:substitution:1",
+      "section": "SEC. 11021",
+      "official_heading": "INCREASE IN STANDARD DEDUCTION",
+      "semantic_label": "Increase in standard deduction",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "the standard deduction",
+      "before": "$4,400",
+      "after": "$18,000",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "B",
+      "context_required": [
+        "Resolve the referenced pre-amendment Internal Revenue Code category before naming the filing status publicly."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 1233,
+      "source_end_line": 1233,
+      "evidence_excerpt": " rules for taxable years 2018 through 2025.--In the case of a taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(A) Increase in standard deduction.--Paragraph (2) shall be applied-- ``(i) by substituting `$18,000' for `$4,400' in subparagraph (B), and ``(ii) by substituting `$12,000' for `$3,000' in subparagraph (C). ``(B) Adjustment for inflation.-- [[Page 131 STAT. 2073]] ``(i) In general.--Paragraph (4) shall not apply to the dollar amoun",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:11021:substitution:2",
+      "section": "SEC. 11021",
+      "official_heading": "INCREASE IN STANDARD DEDUCTION",
+      "semantic_label": "Increase in standard deduction",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "the standard deduction",
+      "before": "$3,000",
+      "after": "$12,000",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "C",
+      "context_required": [
+        "Resolve the referenced pre-amendment Internal Revenue Code category before naming the filing status publicly."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 1235,
+      "source_end_line": 1235,
+      "evidence_excerpt": "ear beginning after December 31, 2017, and before January 1, 2026-- ``(A) Increase in standard deduction.--Paragraph (2) shall be applied-- ``(i) by substituting `$18,000' for `$4,400' in subparagraph (B), and ``(ii) by substituting `$12,000' for `$3,000' in subparagraph (C). ``(B) Adjustment for inflation.-- [[Page 131 STAT. 2073]] ``(i) In general.--Paragraph (4) shall not apply to the dollar amounts contained in paragraphs (2)(B) and (2)(C). ``(ii) Adjustment of incr",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:11022:substitution:1",
+      "section": "SEC. 11022",
+      "official_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "semantic_label": "Credit amount",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "the child tax credit \u2014 credit amount",
+      "before": "$1,000",
+      "after": "$2,000",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "a",
+      "context_required": [],
+      "confidence": 0.93,
+      "uncertainty": [],
+      "source_start_line": 1275,
+      "source_end_line": 1275,
+      "evidence_excerpt": "the case of a taxable year beginning after December 31, 2017, and before January 1, 2026, this section shall be applied as provided in paragraphs (2) through (7). ``(2) Credit amount.--Subsection (a) shall be applied by substituting `$2,000' for `$1,000'. ``(3) Limitation.--In lieu of the amount determined under subsection (b)(2), the threshold amount shall be $400,000 in the case of a joint return ($200,000 in any other case). ``(4) Partial credit allowed for certain ",
+      "publishable": true
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:11022:substitution:2",
+      "section": "SEC. 11022",
+      "official_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "semantic_label": "Earned income threshold for refundable credit",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "the child tax credit \u2014 earned income threshold for refundable credit",
+      "before": "$3,000",
+      "after": "$2,500",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "d(1)",
+      "context_required": [],
+      "confidence": 0.93,
+      "uncertainty": [],
+      "source_start_line": 1318,
+      "source_end_line": 1318,
+      "evidence_excerpt": "ncrease under this clause is not a multiple of $100, such increase shall be rounded to the next lowest multiple of $100. ``(6) Earned income threshold for refundable credit.-- Subsection (d)(1)(B)(i) shall be applied by substituting `$2,500' for `$3,000'. ``(7) Social security number required.--No credit shall be allowed under this section to a taxpayer with respect to any qualifying child unless the taxpayer includes the social security number of such child on the ret",
+      "publishable": true
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:11061:substitution:1",
+      "section": "SEC. 11061",
+      "official_heading": "INCREASE IN ESTATE AND GIFT TAX EXEMPTION",
+      "semantic_label": "Increase in basic exclusion amount",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "estate and gift tax exemption \u2014 increase in basic exclusion amount",
+      "before": "$5,000,000",
+      "after": "$10,000,000",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "A",
+      "context_required": [],
+      "confidence": 0.93,
+      "uncertainty": [],
+      "source_start_line": 2431,
+      "source_end_line": 2431,
+      "evidence_excerpt": "he following new subparagraph: ``(C) Increase in basic exclusion amount.--In the case of estates of decedents dying or gifts made after December 31, 2017, and before January 1, 2026, subparagraph (A) shall be applied by substituting `$10,000,000' for `$5,000,000'.''. (b) Conforming Amendment.--Subsection (g) of section 2001 is amended to read as follows: ``(g) Modifications to Tax Payable.-- ``(1) Modifications to gift tax payable to reflect different tax rates.--For purposes o",
+      "publishable": true
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:12003:substitution:1",
+      "section": "SEC. 12003",
+      "official_heading": "INCREASED EXEMPTION FOR INDIVIDUALS",
+      "semantic_label": "In general",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "increased exemption for individuals",
+      "before": "$78,750",
+      "after": "$109,400",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "A",
+      "context_required": [],
+      "confidence": 0.93,
+      "uncertainty": [],
+      "source_start_line": 2698,
+      "source_end_line": 2698,
+      "evidence_excerpt": "or taxable years beginning after 2017 and before 2026.-- ``(A) In general.--In the case of any taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(i) paragraph (1) shall be applied-- ``(I) by substituting `$109,400' for `$78,750' in subparagraph (A), and ``(II) by substituting `$70,300' for `$50,600' in subparagraph (B), and ``(ii) paragraph (2) shall be applied-- ``(I) by substituting `$1,000,000' for `$150,000' in subparagraph (A), ``(II) by ",
+      "publishable": true
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:12003:substitution:2",
+      "section": "SEC. 12003",
+      "official_heading": "INCREASED EXEMPTION FOR INDIVIDUALS",
+      "semantic_label": "In general",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "increased exemption for individuals",
+      "before": "$50,600",
+      "after": "$70,300",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "B",
+      "context_required": [],
+      "confidence": 0.93,
+      "uncertainty": [],
+      "source_start_line": 2700,
+      "source_end_line": 2700,
+      "evidence_excerpt": ".--In the case of any taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(i) paragraph (1) shall be applied-- ``(I) by substituting `$109,400' for `$78,750' in subparagraph (A), and ``(II) by substituting `$70,300' for `$50,600' in subparagraph (B), and ``(ii) paragraph (2) shall be applied-- ``(I) by substituting `$1,000,000' for `$150,000' in subparagraph (A), ``(II) by substituting `50 percent of the dollar amount applicable under subparagr",
+      "publishable": true
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:12003:substitution:3",
+      "section": "SEC. 12003",
+      "official_heading": "INCREASED EXEMPTION FOR INDIVIDUALS",
+      "semantic_label": "In general",
+      "actor": "Congress",
+      "action": "changes",
+      "target": "increased exemption for individuals",
+      "before": "$150,000",
+      "after": "$1,000,000",
+      "timing": [
+        "tax years 2018 through 2025"
+      ],
+      "legal_pointer": "A",
+      "context_required": [],
+      "confidence": 0.93,
+      "uncertainty": [],
+      "source_start_line": 2703,
+      "source_end_line": 2703,
+      "evidence_excerpt": "aph (1) shall be applied-- ``(I) by substituting `$109,400' for `$78,750' in subparagraph (A), and ``(II) by substituting `$70,300' for `$50,600' in subparagraph (B), and ``(ii) paragraph (2) shall be applied-- ``(I) by substituting `$1,000,000' for `$150,000' in subparagraph (A), ``(II) by substituting `50 percent of the dollar amount applicable under subparagraph (A)' for `$112,500' in subparagraph (B), and ``(III) in the case of a taxpayer described in paragraph (1)(D), w",
+      "publishable": true
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:13001:rate:1",
+      "section": "SEC. 13001",
+      "official_heading": "21-PERCENT CORPORATE TAX RATE",
+      "semantic_label": "21-PERCENT CORPORATE TAX RATE",
+      "actor": "Congress",
+      "action": "sets",
+      "target": "the corporate income-tax rate",
+      "before": null,
+      "after": "21%",
+      "timing": [
+        "tax years beginning after 2017"
+      ],
+      "legal_pointer": "",
+      "context_required": [
+        "Retrieve the pre-amendment Internal Revenue Code rule before stating the prior corporate rate."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 2759,
+      "source_end_line": 2759,
+      "evidence_excerpt": "SEC. 13001. 21-PERCENT CORPORATE TAX RATE. (a) In General.--Subsection (b) of section 11 <<NOTE: 26 USC 11.>> is amended to read as follows: ``(b) Amount of Tax.--The amount of the tax imposed by subsection (a) shall be 21 percent of taxable income.''. (b) Conforming Amendments.-- (1) The following sections are each amended by striking ``section 11(b)(1)'' and inserting ``section 11(b)'': (A) Section 280C(c)(3)(B)(ii)(II). (B) Paragraphs (2)(B) a",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:13515:rate:1",
+      "section": "SEC. 13515",
+      "official_heading": "MODIFICATION OF PRORATION RULES FOR PROPERTY AND",
+      "semantic_label": "MODIFICATION OF PRORATION RULES FOR PROPERTY AND",
+      "actor": "Congress",
+      "action": "sets",
+      "target": "proration rules for property and",
+      "before": null,
+      "after": "5.25%",
+      "timing": [
+        "tax years beginning after 2017"
+      ],
+      "legal_pointer": "",
+      "context_required": [
+        "Retrieve the pre-amendment Internal Revenue Code rule before stating the prior corporate rate."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 5875,
+      "source_end_line": 5875,
+      "evidence_excerpt": ")(5)(B) is amended-- (1) by striking ``15 percent'' and inserting ``the applicable percentage'', and (2) by inserting at the end the following new sentence: ``For purposes of this subparagraph, the applicable percentage is 5.25 percent divided by the highest rate in effect under section 11(b).''. (b) <<NOTE: 26 USC 832 note.>>  Effective Date.--The amendments made by this section shall apply to taxable years beginning after December 31, 2017.",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:14103:rate:1",
+      "section": "SEC. 14103",
+      "official_heading": "TREATMENT OF DEFERRED FOREIGN INCOME UPON TRANSITION",
+      "semantic_label": "TREATMENT OF DEFERRED FOREIGN INCOME UPON TRANSITION",
+      "actor": "Congress",
+      "action": "sets",
+      "target": "treatment of deferred foreign income upon transition",
+      "before": null,
+      "after": "100%",
+      "timing": [],
+      "legal_pointer": "",
+      "context_required": [
+        "Retrieve the pre-amendment Internal Revenue Code rule before stating the prior corporate rate."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 9366,
+      "source_end_line": 9366,
+      "evidence_excerpt": "such United States shareholder which is held by other includible corporations in such affiliated group. Notwithstanding the preceding sentence, the group ownership percentage of the common parent of the affiliated group is 100 percent. Any term used in this subparagraph which is also used in section 1504 shall have the same meaning as when used in such section. ``(c) Application of Participation Exemption to Included Income.-- ``(1) In general.--In t",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:14401:rate:1",
+      "section": "SEC. 14401",
+      "official_heading": "BASE EROSION AND ANTI-ABUSE TAX",
+      "semantic_label": "BASE EROSION AND ANTI-ABUSE TAX",
+      "actor": "Congress",
+      "action": "sets",
+      "target": "base erosion and anti-abuse tax",
+      "before": null,
+      "after": "3%",
+      "timing": [
+        "tax years beginning after 2017"
+      ],
+      "legal_pointer": "",
+      "context_required": [
+        "Retrieve the pre-amendment Internal Revenue Code rule before stating the prior corporate rate."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 11412,
+      "source_end_line": 11412,
+      "evidence_excerpt": "ceipts of which for the 3-taxable-year period ending with the preceding taxable year are at least $500,000,000, and ``(C) the base erosion percentage (as determined under subsection (c)(4)) of which for the taxable year is 3 percent (2 percent in the case of a taxpayer described in subsection (b)(3)(B)) or higher. ``(2) Gross receipts.-- ``(A) Special rule for foreign persons.--In the case of a foreign person the gross receipts of which are taken i",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:14501:rate:1",
+      "section": "SEC. 14501",
+      "official_heading": "RESTRICTION ON INSURANCE BUSINESS EXCEPTION TO PASSIVE",
+      "semantic_label": "RESTRICTION ON INSURANCE BUSINESS EXCEPTION TO PASSIVE",
+      "actor": "Congress",
+      "action": "sets",
+      "target": "restriction on insurance business exception to passive",
+      "before": null,
+      "after": "25%",
+      "timing": [
+        "tax years beginning after 2017"
+      ],
+      "legal_pointer": "",
+      "context_required": [
+        "Retrieve the pre-amendment Internal Revenue Code rule before stating the prior corporate rate."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 11676,
+      "source_end_line": 11676,
+      "evidence_excerpt": "ernative facts and circumstances test for certain corporations.--If a corporation fails to qualify as a qualified insurance corporation under paragraph (1) solely because the percentage determined under paragraph (1)(B) is 25 percent or less, a United States person that owns stock in such corporation may elect to treat such stock as stock of a qualifying insurance corporation if-- ``(A) the percentage so determined for the corporation is at least 10",
+      "publishable": false
+    },
+    {
+      "bill_id": "tcja",
+      "event_id": "tcja:20001:rate:1",
+      "section": "SEC. 20001",
+      "official_heading": "<<NOTE: 26 USC 3143 note.>>  OIL AND GAS PROGRAM",
+      "semantic_label": "<<NOTE: 26 USC 3143 note.>>  OIL AND GAS PROGRAM",
+      "actor": "Congress",
+      "action": "sets",
+      "target": "<<note: 26 usc 3143 note.>>  oil and gas program",
+      "before": null,
+      "after": "16.67%",
+      "timing": [],
+      "legal_pointer": "",
+      "context_required": [
+        "Retrieve the pre-amendment Internal Revenue Code rule before stating the prior corporate rate."
+      ],
+      "confidence": 0.88,
+      "uncertainty": [],
+      "source_start_line": 11801,
+      "source_end_line": 11801,
+      "evidence_excerpt": "erves Production Act of 1976 (42 U.S.C. 6501 et seq.) (including regulations). (4) Royalties.--Notwithstanding the Mineral Leasing Act (30 U.S.C. 181 et seq.), the royalty rate for leases issued pursuant to this section shall be 16.67 percent. (5) Receipts.--Notwithstanding the Mineral Leasing Act (30 U.S.C. 181 et seq.), of the amount of adjusted bonus, rental, and royalty receipts derived from the oil and gas program and operations on Federal land authoriz",
+      "publishable": false
+    }
+  ]
+}

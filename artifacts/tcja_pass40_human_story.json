@@ -1,0 +1,19 @@
+{
+  "schema_version": "40.0",
+  "bill_id": "TCJA",
+  "title": "I READ THE BILL",
+  "dek": "Here is what we can actually say so far.",
+  "story": "Congress wrote a very large tax law. Bill X-Ray is trying something harder than shortening it: reconstruct what changed, prove each statement, and only then explain it in ordinary language.\n\nSo far, the evidence court lets us say two things plainly. The bill changes the child tax credit from $1,000 to $2,000. The bill changes the basic estate and gift tax exclusion amount from $5,000,000 to $10,000,000.\n\nThat is not yet the story of the Tax Cuts and Jobs Act. It is the part of the story we have earned the right to tell without pretending that a legal phrase explains its own consequence.\n\nThe more interesting questions are still under examination: exactly what decision is delegated in MODIFICATION OF RATES, what limits apply, and who is affected by that decision; what ordinary rule does SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS override, and what changes because of that override; who falls inside and outside the exception in MODIFICATION OF RATES, and what practical difference does it make; what changes when the temporary or transition rule in MODIFICATION OF RATES begins or ends. Those are questions, not conclusions.\n\nThat restraint is deliberate. A citizen does not need another confident voice telling them what Congress meant. The useful machine is the one willing to keep digging until the legal machinery becomes human meaning - and willing to say 'not yet' when it has not earned the translation.\n\nThis first draft therefore ends earlier than a newspaper column should. That is a feature of the evidence gate, and a diagnosis of what Bill X-Ray must solve next: reconstruct enough context that the final essay can be both interesting and true.",
+  "word_count": 281,
+  "supported_fact_count": 2,
+  "question_count_used": 4,
+  "source_opinion_count": 40,
+  "doctrine": "court_cleared_human_story_only",
+  "guardrail": "The story may simplify court-cleared statements and label unresolved questions. It may not invent facts, consequences, motives, beneficiaries, or humor.",
+  "release_readiness": "NOT_FINAL_EDITORIAL",
+  "diagnosis": "Truth Court is working, but the current evidence packet is too thin for a genuinely explanatory TCJA essay.",
+  "facts_used": [
+    "The bill changes the child tax credit from $1,000 to $2,000.",
+    "The bill changes the basic estate and gift tax exclusion amount from $5,000,000 to $10,000,000."
+  ]
+}

@@ -1,0 +1,858 @@
+{
+  "schema_version": "38.0",
+  "bill_id": "TCJA",
+  "doctrine": "investigate_before_editorialize",
+  "candidate_count": 40,
+  "category_counts": {
+    "delegated_authority": 8,
+    "exception": 8,
+    "large_before_after_change": 2,
+    "override": 8,
+    "specific_class": 7,
+    "temporary_or_transition": 7
+  },
+  "public_claims_allowed": 0,
+  "guardrail": "These are investigation candidates, not findings of wrongdoing and not public prose.",
+  "candidates": [
+    {
+      "candidate_id": "TCJA:text:182:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 181,
+      "source_end_line": 183,
+      "evidence_excerpt": "``(B) Subsequent years.--For taxable years beginning after December 31, 2018, the Secretary shall prescribe tables which shall apply in lieu of the tables contained",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in MODIFICATION OF RATES, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:2236:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 11045",
+      "section_heading": "SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 2235,
+      "source_end_line": 2237,
+      "evidence_excerpt": "``(g) Suspension for Taxable Years 2018 Through 2025.-- Notwithstanding subsection (a), no miscellaneous itemized deduction shall be allowed for any taxable year beginning after December 31, 2017,",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:atomic:tcja:11022:substitution:1",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "large_before_after_change",
+      "score": 80,
+      "source_start_line": 1275,
+      "source_end_line": 1275,
+      "evidence_excerpt": "the case of a taxable year beginning after December 31, 2017, and before January 1, 2026, this section shall be applied as provided in paragraphs (2) through (7). ``(2) Credit amount.--Subsection (a) shall be applied by substituting `$2,000' for `$1,000'. ``(3) Limitation.--In lieu of the amount determined under subsection (b)(2), the threshold amount shall be $400,000 in the case of a joint return ($200,000 in any other case). ``(4) Partial credit allowed for certain ",
+      "why_human_might_care": "This verified before/after event changes Credit amount from $1,000 to $2,000, large enough to deserve context before the final story is written.",
+      "question_to_investigate": "Who is affected by the change in Credit amount, how often does it matter, and what is the real financial consequence?",
+      "ordinary_explanations": [
+        "A large numerical change can reflect inflation, consolidation of prior rules, a policy reset, or a threshold that affects relatively few people; size alone does not establish importance."
+      ],
+      "uncertainty": [
+        "The statutory number alone does not establish budget cost, number of beneficiaries, distributional effect, or whether another limitation offsets the apparent change."
+      ],
+      "source_basis": "verified_atomic_meaning_event",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:51:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 50,
+      "source_end_line": 52,
+      "evidence_excerpt": "after December 31, 2017, and before January 1, 2026-- ``(A) subsection (i) shall not apply, and ``(B) this section (other than subsection (i)) shall",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in MODIFICATION OF RATES, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:48:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 47,
+      "source_end_line": 49,
+      "evidence_excerpt": "``(j) Modifications for Taxable Years 2018 Through 2025.-- ``(1) In general.--In the case of a taxable year beginning",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in MODIFICATION OF RATES begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:195:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 194,
+      "source_end_line": 196,
+      "evidence_excerpt": "``(iii) subsection (f)(8) shall not apply. ``(4) Special rules for certain children with unearned income.--",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in MODIFICATION OF RATES, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1016:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 1015,
+      "source_end_line": 1017,
+      "evidence_excerpt": "chapter. ``(4) Regulations.--The Secretary shall prescribe such regulations as are necessary to carry out the purposes of this",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in DEDUCTION FOR QUALIFIED BUSINESS INCOME, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:4093:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13221",
+      "section_heading": "CERTAIN SPECIAL RULES FOR TAXABLE YEAR OF INCLUSION",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 4092,
+      "source_end_line": 4094,
+      "evidence_excerpt": "(e) <<NOTE: 26 USC 451 note.>> Special Rules for Original Issue Discount.--Notwithstanding subsection (c), in the case of income from a debt instrument having original issue discount--",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does CERTAIN SPECIAL RULES FOR TAXABLE YEAR OF INCLUSION override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:atomic:tcja:11061:substitution:1",
+      "bill_id": "TCJA",
+      "section": "SEC. 11061",
+      "section_heading": "INCREASE IN ESTATE AND GIFT TAX EXEMPTION",
+      "category": "large_before_after_change",
+      "score": 80,
+      "source_start_line": 2431,
+      "source_end_line": 2431,
+      "evidence_excerpt": "he following new subparagraph: ``(C) Increase in basic exclusion amount.--In the case of estates of decedents dying or gifts made after December 31, 2017, and before January 1, 2026, subparagraph (A) shall be applied by substituting `$10,000,000' for `$5,000,000'.''. (b) Conforming Amendment.--Subsection (g) of section 2001 is amended to read as follows: ``(g) Modifications to Tax Payable.-- ``(1) Modifications to gift tax payable to reflect different tax rates.--For purposes o",
+      "why_human_might_care": "This verified before/after event changes Increase in basic exclusion amount from $5,000,000 to $10,000,000, large enough to deserve context before the final story is written.",
+      "question_to_investigate": "Who is affected by the change in Increase in basic exclusion amount, how often does it matter, and what is the real financial consequence?",
+      "ordinary_explanations": [
+        "A large numerical change can reflect inflation, consolidation of prior rules, a policy reset, or a threshold that affects relatively few people; size alone does not establish importance."
+      ],
+      "uncertainty": [
+        "The statutory number alone does not establish budget cost, number of beneficiaries, distributional effect, or whether another limitation offsets the apparent change."
+      ],
+      "source_basis": "verified_atomic_meaning_event",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:366:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11002",
+      "section_heading": "INFLATION ADJUSTMENTS BASED ON CHAINED CPI",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 365,
+      "source_end_line": 367,
+      "evidence_excerpt": "``(ii) the CPI for calendar year 2016. ``(C) Special rule for adjustments with a base year after 2016.--For purposes of any provision of this title",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in INFLATION ADJUSTMENTS BASED ON CHAINED CPI, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:50:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11001",
+      "section_heading": "MODIFICATION OF RATES",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 49,
+      "source_end_line": 51,
+      "evidence_excerpt": "``(1) In general.--In the case of a taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(A) subsection (i) shall not apply, and",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in MODIFICATION OF RATES begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:606:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11002",
+      "section_heading": "INFLATION ADJUSTMENTS BASED ON CHAINED CPI",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 605,
+      "source_end_line": 607,
+      "evidence_excerpt": "PART II--DEDUCTION FOR QUALIFIED BUSINESS INCOME OF PASS-THRU ENTITIES",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in INFLATION ADJUSTMENTS BASED ON CHAINED CPI, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1211:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "section_heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 1210,
+      "source_end_line": 1212,
+      "evidence_excerpt": "an item. ``(5) Additional reporting.--The Secretary shall prescribe such additional reporting requirements as the Secretary",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:4962:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13309",
+      "section_heading": "RECHARACTERIZATION OF CERTAIN GAINS IN THE CASE OF",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 4961,
+      "source_end_line": 4963,
+      "evidence_excerpt": "shall be treated as short-term capital gain, notwithstanding section 83 or any election in effect under section 83(b).",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does RECHARACTERIZATION OF CERTAIN GAINS IN THE CASE OF override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:397:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11002",
+      "section_heading": "INFLATION ADJUSTMENTS BASED ON CHAINED CPI",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 396,
+      "source_end_line": 398,
+      "evidence_excerpt": "follows: ``(A) except as provided in paragraph (8), by increasing the minimum and maximum dollar amounts for",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in INFLATION ADJUSTMENTS BASED ON CHAINED CPI, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1077:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 1076,
+      "source_end_line": 1078,
+      "evidence_excerpt": "``(i) Termination.--This section shall not apply to taxable years beginning after December 31, 2025.''.",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in DEDUCTION FOR QUALIFIED BUSINESS INCOME begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:608:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 607,
+      "source_end_line": 609,
+      "evidence_excerpt": "SEC. 11011. DEDUCTION FOR QUALIFIED BUSINESS INCOME.",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:4298:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13301",
+      "section_heading": "LIMITATION ON DEDUCTION FOR INTEREST",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 4297,
+      "source_end_line": 4299,
+      "evidence_excerpt": "election shall be made at such time and in such manner as the Secretary shall prescribe, and, once made, shall be irrevocable.",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in LIMITATION ON DEDUCTION FOR INTEREST, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:5508:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13501",
+      "section_heading": "TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 5507,
+      "source_end_line": 5509,
+      "evidence_excerpt": "of certain partnership interests.-- ``(A) In general.--Notwithstanding any other provision of this subtitle, if a nonresident alien",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:668:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 667,
+      "source_end_line": 669,
+      "evidence_excerpt": "``(3) Modifications to limit based on taxable income.-- ``(A) Exception from limit.--In the case of any taxpayer whose taxable income for the taxable year does",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1151:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11012",
+      "section_heading": "LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 1150,
+      "source_end_line": 1152,
+      "evidence_excerpt": "other than a corporation beginning after December 31, 2017, and before January 1, 2026-- ``(A) subsection (j) (relating to limitation on",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in LIMITATION ON LOSSES FOR TAXPAYERS OTHER THAN begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:645:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 644,
+      "source_end_line": 646,
+      "evidence_excerpt": "``(A) the sum of the amounts determined under paragraph (2) for each qualified trade or business carried on by the taxpayer, plus",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:5638:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13501",
+      "section_heading": "TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 5637,
+      "source_end_line": 5639,
+      "evidence_excerpt": "when used in such section. ``(6) Regulations.--The Secretary shall prescribe such regulations or other guidance as may be necessary to carry out",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in TREATMENT OF GAIN OR LOSS OF FOREIGN PERSONS FROM SALE, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:7098:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13603",
+      "section_heading": "TREATMENT OF QUALIFIED EQUITY GRANTS",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 7097,
+      "source_end_line": 7099,
+      "evidence_excerpt": "substantial risk of forfeiture, notwithstanding whether the value of the stock has declined during the deferral",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does TREATMENT OF QUALIFIED EQUITY GRANTS override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1002:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 1001,
+      "source_end_line": 1003,
+      "evidence_excerpt": "include the Commonwealth of Puerto Rico. ``(ii) Special rule for applying limit.--In the case of any taxpayer described in clause (i),",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1228:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11021",
+      "section_heading": "INCREASE IN STANDARD DEDUCTION",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 1227,
+      "source_end_line": 1229,
+      "evidence_excerpt": "is amended by adding at the end the following new paragraph: ``(7) Special rules for taxable years 2018 through 2025.--In the case of a taxable year beginning after December 31, 2017,",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in INCREASE IN STANDARD DEDUCTION begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:672:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 671,
+      "source_end_line": 673,
+      "evidence_excerpt": "applied without regard to subparagraph (B). ``(B) Phase-in of limit for certain taxpayers.-- ``(i) In general.--If--",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:6177:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13520",
+      "section_heading": "TAX REPORTING FOR LIFE SETTLEMENT TRANSACTIONS",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 6176,
+      "source_end_line": 6178,
+      "evidence_excerpt": "return for such taxable year (at such time and in such manner as the Secretary shall prescribe) setting forth-- ``(A) the name, address, and TIN of such person,",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in TAX REPORTING FOR LIFE SETTLEMENT TRANSACTIONS, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:8117:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 13821",
+      "section_heading": "MODIFICATION OF TAX TREATMENT OF ALASKA NATIVE",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 8116,
+      "source_end_line": 8118,
+      "evidence_excerpt": "``(e) Prohibition on Deduction.--Notwithstanding section 247, no deduction shall be allowed to a Native Corporation for purposes of any",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does MODIFICATION OF TAX TREATMENT OF ALASKA NATIVE override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1077:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 1076,
+      "source_end_line": 1078,
+      "evidence_excerpt": "``(i) Termination.--This section shall not apply to taxable years beginning after December 31, 2025.''.",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1230:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11021",
+      "section_heading": "INCREASE IN STANDARD DEDUCTION",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 1229,
+      "source_end_line": 1231,
+      "evidence_excerpt": "the case of a taxable year beginning after December 31, 2017, and before January 1, 2026-- ``(A) Increase in standard deduction.--Paragraph (2)",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in INCREASE IN STANDARD DEDUCTION begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:736:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 735,
+      "source_end_line": 737,
+      "evidence_excerpt": "or business during the taxable year. ``(6) Qualified property.--For purposes of this section: ``(A) In general.--The term `qualified property'",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:6827:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13602",
+      "section_heading": "EXCISE TAX ON EXCESS TAX-EXEMPT ORGANIZATION EXECUTIVE",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 6826,
+      "source_end_line": 6828,
+      "evidence_excerpt": "``(d) Regulations.--The Secretary shall prescribe such regulations as may be necessary to prevent avoidance of the tax under this section,",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in EXCISE TAX ON EXCESS TAX-EXEMPT ORGANIZATION EXECUTIVE, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:8872:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 14101",
+      "section_heading": "DEDUCTION FOR FOREIGN-SOURCE PORTION OF DIVIDENDS",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 8871,
+      "source_end_line": 8873,
+      "evidence_excerpt": "respect to which such domestic corporation is also a United States shareholder, then, notwithstanding any other provision of this title--",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does DEDUCTION FOR FOREIGN-SOURCE PORTION OF DIVIDENDS override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1285:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 1284,
+      "source_end_line": 1286,
+      "evidence_excerpt": "qualifying child described in subsection (c). ``(B) Exception for certain noncitizens.-- Subparagraph (A) shall not apply with respect to any",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1269:temporary_or_transition",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "temporary_or_transition",
+      "score": 74,
+      "source_start_line": 1268,
+      "source_end_line": 1270,
+      "evidence_excerpt": "``(h) Special Rules for Taxable Years 2018 Through 2025.-- ``(1) In general.--In the case of a taxable year beginning",
+      "why_human_might_care": "Temporary rules can make the immediate effect and the long-term effect very different.",
+      "question_to_investigate": "What changes when the temporary or transition rule in INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT begins or ends?",
+      "ordinary_explanations": [
+        "Temporary provisions may reflect budget rules, transition needs, experimentation, or a deliberate future reconsideration point."
+      ],
+      "uncertainty": [
+        "The detected date may be only one part of a larger effective-date or transition scheme."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:836:specific_class",
+      "bill_id": "TCJA",
+      "section": "SEC. 11011",
+      "section_heading": "DEDUCTION FOR QUALIFIED BUSINESS INCOME",
+      "category": "specific_class",
+      "score": 68,
+      "source_start_line": 835,
+      "source_end_line": 837,
+      "evidence_excerpt": "means any trade or business other than-- ``(A) a specified service trade or business, or ``(B) the trade or business of performing services",
+      "why_human_might_care": "A narrowly defined class may matter because small wording differences decide who qualifies and who does not.",
+      "question_to_investigate": "Who actually qualifies for the narrowly defined class in DEDUCTION FOR QUALIFIED BUSINESS INCOME, and why was that boundary chosen?",
+      "ordinary_explanations": [
+        "Specific eligibility language is normal when Congress needs a program or tax rule to have enforceable boundaries."
+      ],
+      "uncertainty": [
+        "The class may be broad in practice; the definition and real affected population must be traced before drawing conclusions."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:8729:delegated_authority",
+      "bill_id": "TCJA",
+      "section": "SEC. 13823",
+      "section_heading": "OPPORTUNITY ZONES",
+      "category": "delegated_authority",
+      "score": 84,
+      "source_start_line": 8728,
+      "source_end_line": 8730,
+      "evidence_excerpt": "income as provided by section 691. ``(4) Regulations.--The Secretary shall prescribe such regulations as may be necessary or appropriate to carry out the",
+      "why_human_might_care": "Congress may be leaving an important implementation choice to an agency or official.",
+      "question_to_investigate": "Exactly what decision is delegated in OPPORTUNITY ZONES, what limits apply, and who is affected by that decision?",
+      "ordinary_explanations": [
+        "Detailed administration often has to be delegated because Congress cannot specify every operational rule in statutory text."
+      ],
+      "uncertainty": [
+        "The sentence alone does not show how broad the discretion is or whether later text tightly limits it."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:9046:override",
+      "bill_id": "TCJA",
+      "section": "SEC. 14102",
+      "section_heading": "SPECIAL RULES RELATING TO SALES OR TRANSFERS INVOLVING",
+      "category": "override",
+      "score": 82,
+      "source_start_line": 9045,
+      "source_end_line": 9047,
+      "evidence_excerpt": "foreign corporation held for 1 year or more, then, notwithstanding any other provision of this title-- ``(i) the foreign-source portion of such",
+      "why_human_might_care": "An override can reveal which ordinary rule Congress chose not to apply in this situation.",
+      "question_to_investigate": "What ordinary rule does SPECIAL RULES RELATING TO SALES OR TRANSFERS INVOLVING override, and what changes because of that override?",
+      "ordinary_explanations": [
+        "Overrides are common drafting tools used to resolve conflicts between statutes or make a narrow rule work as intended."
+      ],
+      "uncertainty": [
+        "The overridden rule must be identified before judging whether the override is unusual or consequential."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    },
+    {
+      "candidate_id": "TCJA:text:1286:exception",
+      "bill_id": "TCJA",
+      "section": "SEC. 11022",
+      "section_heading": "INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT",
+      "category": "exception",
+      "score": 76,
+      "source_start_line": 1285,
+      "source_end_line": 1287,
+      "evidence_excerpt": "``(B) Exception for certain noncitizens.-- Subparagraph (A) shall not apply with respect to any individual who would not be a dependent if subparagraph",
+      "why_human_might_care": "Exceptions can change who actually receives a benefit, bears a burden, or falls outside the headline rule.",
+      "question_to_investigate": "Who falls inside and outside the exception in INCREASE IN AND MODIFICATION OF CHILD TAX CREDIT, and what practical difference does it make?",
+      "ordinary_explanations": [
+        "Tax and regulatory systems routinely need exceptions to prevent double counting, edge-case unfairness, or unintended interactions."
+      ],
+      "uncertainty": [
+        "An exception is not evidence of favoritism; its beneficiaries, purpose, and effect still have to be reconstructed."
+      ],
+      "source_basis": "official_bill_text_signal",
+      "public_claim_allowed": false
+    }
+  ]
+}

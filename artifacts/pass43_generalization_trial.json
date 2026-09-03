@@ -1,0 +1,101 @@
+{
+  "schema_version": "43.0",
+  "bill_id": "ira",
+  "title": "Inflation Reduction Act",
+  "trial_kind": "cold_generalization_from_verified_legacy_evidence",
+  "source_sha256": "4ae41512747979d2b5fa5db13db5734675d27ae593ed858e125ba9349b9971b4",
+  "expected_source_sha256": "4ae41512747979d2b5fa5db13db5734675d27ae593ed858e125ba9349b9971b4",
+  "legacy_release_status": "verified",
+  "citation_audit_status": "pass",
+  "challenge_status": "pass",
+  "available_verified_facts": 10,
+  "selected_fact_count": 6,
+  "topic_counts": {
+    "public finance and loans": 6,
+    "health and medicine": 1,
+    "taxes and corporate finance": 2,
+    "agriculture and conservation": 1
+  },
+  "selected_facts": [
+    {
+      "fact_id": "fact-001",
+      "section": "SEC. 50144",
+      "text": "The Secretary provides or sets $250,000,000,000 for projects under section 1706 of the Energy Policy Act of 2005 the total principal amount of which is not greater than $250,000,000,000",
+      "human_fact": "The Secretary may make loan-guarantee commitments through September 30, 2026 with total principal up to $250,000,000,000",
+      "confidence": 0.86,
+      "topic": "public finance and loans",
+      "source_kind": "money",
+      "citation_anchor": "bxr-ira-L14879-L14947-06eee8429f9a2b5b",
+      "missing_context": "The final recipient or payer is not identifiable from this provision alone. The clause points to section 1706; that cross-reference is not resolved as a same-bill section here",
+      "quality": 0.96
+    },
+    {
+      "fact_id": "fact-006",
+      "section": "SEC. 10101",
+      "text": "Congress sets or provides $1,000,000,000 for purposes of this subsection-- (i) a corporation meets the average annual adjusted financial statement income test for a taxable year if the average annual adjusted financial stat\u2026",
+      "human_fact": "The corporate alternative-minimum-tax section uses $1,000,000,000 as an average annual adjusted financial-statement-income threshold in the test described here",
+      "confidence": 0.82,
+      "topic": "taxes and corporate finance",
+      "source_kind": "verified_synthesis",
+      "citation_anchor": "bxr-ira-L37-L294-23b060ad25b0077a",
+      "missing_context": "The final recipient or payer is not identifiable from this provision alone. The clause points to section 55; that cross-reference is not resolved as a same-bill section here",
+      "quality": 0.95
+    },
+    {
+      "fact_id": "fact-003",
+      "section": "SEC. 11001",
+      "text": "The Secretary must establish a Drug Price Negotiation Program (in this part referred to as the program)",
+      "human_fact": "The Secretary must establish a Drug Price Negotiation Program (in this part referred to as the program)",
+      "confidence": 0.82,
+      "topic": "health and medicine",
+      "source_kind": "power",
+      "citation_anchor": "bxr-ira-L1012-L1100-6c8ce4e2d46f94f5",
+      "missing_context": "The clause points to section 1184; the full effect depends on that unresolved cross-reference",
+      "quality": 0.96
+    },
+    {
+      "fact_id": "fact-009",
+      "section": "SEC. 21002",
+      "text": "the Department of Agriculture for costs related to implementing this section may be disbursed after September 30, 2031)-- (1) $1,000,000,000 to provide conservation technical assistance through the Natural Resources Conservation Service",
+      "human_fact": "The law provides $1,000,000,000 for conservation technical assistance through the Natural Resources Conservation Service",
+      "confidence": 0.86,
+      "topic": "agriculture and conservation",
+      "source_kind": "verified_synthesis",
+      "citation_anchor": "bxr-ira-L13249-L13292-e21e6dda4aedf52a",
+      "missing_context": "",
+      "quality": 0.95
+    },
+    {
+      "fact_id": "fact-008",
+      "section": "SEC. 22004",
+      "text": "the Secretary sets or provides $9,700,000,000 for fiscal year 2022, out of any money in the Treasury not otherwise appropriated, $9,700,000,000, to remain available until September 30, 2031, for the long-term resiliency",
+      "human_fact": "The law makes $9,700,000,000 available for long-term resiliency, reliability, and affordability of rural electric systems",
+      "confidence": 0.82,
+      "topic": "public finance and loans",
+      "source_kind": "verified_synthesis",
+      "citation_anchor": "bxr-ira-L13407-L13456-4e55245c576d4a80",
+      "missing_context": "The final recipient or payer is not identifiable from this provision alone. The clause points to section 9003; that cross-reference is not resolved as a same-bill section here",
+      "quality": 0.95
+    },
+    {
+      "fact_id": "fact-010",
+      "section": "SEC. 23004",
+      "text": "the Secretary must not-- (1) enter into any agreement-- (A) that is for a term extending beyond September 30, 2031; or (B) under which any payment could be outlaid or funds disbursed after September 30, 2031",
+      "human_fact": "the Secretary must not-- (1) enter into any agreement-- (A) that is for a term extending beyond September 30, 2031; or (B) under which any payment could be outlaid or funds disbursed after September 30, 2031",
+      "confidence": 0.86,
+      "topic": "public finance and loans",
+      "source_kind": "verified_synthesis",
+      "citation_anchor": "bxr-ira-L13778-L13791-bdc2d1999d96f607",
+      "missing_context": "",
+      "quality": 0.94
+    }
+  ],
+  "reality_context": {
+    "cbo_status": "found",
+    "usaspending_status": "found",
+    "guardrail": "External estimates and award activity remain context; they do not rewrite the enacted text or prove causation."
+  },
+  "column": "Congress called it the Inflation Reduction Act. That is a neat name for a law whose verified machinery reaches into public finance and loans, taxes and corporate finance, health and medicine and agriculture and conservation. The first lesson of this cold test is simple: a title can name the argument, but it cannot substitute for the mechanisms underneath it.\n\nBill X-Ray was not told what thesis to find. It was handed a different, previously verified evidence packet and required to rebuild the shape from facts that survived source and citation gates. What emerged was not one lever marked with the law's title. It was several systems moving at once: prices, taxes, financing, grants, deadlines, and government duties.\n\nLook at public finance and loans. The Secretary may make loan-guarantee commitments through September 30, 2026 with total principal up to $250,000,000,000. The law makes $9,700,000,000 available for long-term resiliency, reliability, and affordability of rural electric systems.\n\nA useful X-ray rule appears immediately: a giant dollar figure is not self-explanatory. A grant, an appropriation, and authority to guarantee loan principal can all carry impressive zeros while doing legally different things.\n\nLook at taxes and corporate finance. The corporate alternative-minimum-tax section uses $1,000,000,000 as an average annual adjusted financial-statement-income threshold in the test described here.\n\nHere again the number needs its noun. A threshold used to decide which corporations enter a tax calculation is not the same thing as Congress spending that amount.\n\nLook at health and medicine. The Secretary must establish a Drug Price Negotiation Program (in this part referred to as the program).\n\nThat is a concrete operating mechanism, not a slogan. Whatever one thinks of the policy, the statute is assigning government an actual job involving drug prices and program administration.\n\nLook at agriculture and conservation. The law provides $1,000,000,000 for conservation technical assistance through the Natural Resources Conservation Service.\n\nThe law therefore reaches well beyond a single household calculation. It is also directing money and deadlines into long-running federal programs that operate on farms, forests, and rural infrastructure.\n\nThe honest conclusion is narrower than the politics around the title. This pass does not prove how much the law reduced inflation, whether every program worked, or whether the policy was wise. Those questions need the Reality Stack: official estimates, implementation records, later outcomes, and competing interpretations kept in their proper lanes.\n\nWhat this cold run does prove is architectural. Bill X-Ray can leave its familiar tax-law laboratory, encounter a law with a different shape, discover a different organizing idea, throw away facts that do not earn space in the column, and still keep every surviving statement attached to a receipt. Different law. Same doctrine. Understanding first; argument afterward.",
+  "column_word_count": 447,
+  "verdict": "GENERALIZES"
+}

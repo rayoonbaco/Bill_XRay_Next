@@ -1,57 +1,29 @@
-# Bill X-Ray
+# Bill X-Ray Next
 
-**Understanding first. Argument afterward.**
+Current checkpoint: **PASS 44.1 - Public Language Clean Room**
 
-Bill X-Ray is an AI-assisted legislative reasoning demonstration designed to turn cryptic Congressional language into ordinary human meaning without severing claims from their evidence.
+Current release checkpoint: **PASS 46 — Illinois SB 1570 / Public Act 103-0491**. The public product now contains five permanent cases. Run `ONE_CLICK_PASS_46.bat`; deploy `public/` as the Render static-site publish directory.
 
-The public experience is deliberately simple: read the human story first, then open **Check My Homework** to inspect the supporting statutory receipts and limits, or **How This Became Human** to see the transformation from raw legal language to defensible prose.
+PASS 46.1 adds a company-neutral **Illinois Business Development Lens** exclusively to SB 1570. It is not rendered for TCJA, IRA, ACA, or CHIPS.
 
-## Launch build
+PASS 46.2 makes `HOW THIS BECAME HUMAN` fully bill-aware: each of the five tabs now opens a transformation example from that selected law rather than reusing the CHIPS example.
 
-Pass 45.3 — **Four Laws, Four Synthesis Signatures**
+> **Complexity goes in. Human understanding comes out.**
 
-The launch build contains four worked examples:
+Pass 44.1 keeps the successful Pass 44 public design and removes development-lab language from the public articles. The reader gets the story first. **CHECK MY HOMEWORK** remains the single doorway to receipts, source excerpts, limits, and provenance.
 
-- Tax Cuts and Jobs Act (TCJA)
-- Inflation Reduction Act (IRA)
-- Affordable Care Act (ACA)
-- CHIPS and Science Act
+## Run the pass
+Double-click `ONE_CLICK_PASS_44_1.bat`.
 
-The same doctrine is applied across all four, while each law produces a different synthesis signature because its evidence and structure are different.
+## Open the public product
+Double-click `START_BILL_XRAY_PUBLIC.bat`.
 
-## The doctrine
+The public shell is local and dependency-free. It does not require a server or an internet connection to render the bundled evidence.
 
-Bill X-Ray separates several jobs that ordinary summaries often collapse:
 
-1. Decode recurring Congressional grammar.
-2. Break provisions into atomic meaning events.
-3. Restore missing context and legal nouns.
-4. Investigate interesting patterns without treating suspicion as proof.
-5. Challenge conclusions against evidence and uncertainty.
-6. Separate enacted text from rhetoric, implementation, official review, and observed outcomes when needed.
-7. Select only the facts that earn space in the human story.
-8. Keep every material public claim attached to a receipt.
+## Pass 45
+The public product now includes CHIPS as a fourth law and a teacher-style A-grade release gate. Run `ONE_CLICK_PASS_45.bat`, then open `START_BILL_XRAY_PUBLIC.bat` and click CHIPS.
 
-The goal is not to tell citizens what to think. It is to make difficult public documents understandable enough that they can think about them themselves.
 
-## Public product
-
-Open `public/index.html` or run `START_BILL_XRAY_PUBLIC.bat` on Windows.
-
-The public interface contains:
-
-- a 30-second version
-- a long-form explanatory essay
-- **Check My Homework** evidence receipts
-- **How This Became Human** transformation ladder
-- four distinct whole-law synthesis signatures
-
-## Deploy
-
-This repository includes `render.yaml` for a Render static-site deployment. See `DEPLOY.md`.
-
-## Development validation
-
-The project includes the complete staged smoke-test history used to protect semantic fidelity, public-language cleanliness, evidence traceability, and the launch experience.
-
-The final Pass 45.3 package cleared the complete inherited regression suite before launch packaging.
+## PASS 45.1 - THE TRANSFORMATION LADDER
+Run `ONE_CLICK_PASS_45_1.bat`, then open the public product and click `HOW THIS BECAME HUMAN`.

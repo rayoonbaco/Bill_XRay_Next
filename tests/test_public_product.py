@@ -11,12 +11,12 @@ def load_data():
 
 class PublicProductTests(unittest.TestCase):
     def test_public_files_exist(self):
-        for name in ['index.html','styles.css','app.js','data.js']:
+        for name in ['index.html','styles.css','app.js','data.js','business-lens.js','transformation-examples.js']:
             self.assertTrue((PUB/name).exists(), name)
 
     def test_first_surface_is_small(self):
         h=(PUB/'index.html').read_text(encoding='utf-8')
-        self.assertEqual(h.count('data-bill='),4)
+        self.assertEqual(h.count('data-bill='),5)
         self.assertEqual(h.count('id="homeworkButton"'),1)
         self.assertIn('THE 30-SECOND VERSION',h)
         self.assertIn('aria-hidden="true"',h)
@@ -25,7 +25,7 @@ class PublicProductTests(unittest.TestCase):
 
     def test_three_public_stories_have_receipts(self):
         d=load_data()
-        self.assertEqual(set(d),{'tcja','ira','aca','chips'})
+        self.assertEqual(set(d),{'tcja','ira','aca','chips','sb1570'})
         for key,b in d.items():
             self.assertTrue(b['title'])
             self.assertTrue(b['short'])
@@ -50,6 +50,7 @@ class PublicProductTests(unittest.TestCase):
         loaded_aca=sum(len(x.get('source_ids',[])) for x in aca['lanes'])
         self.assertEqual(len(d['aca']['receipts']),loaded_aca)
         self.assertEqual(len(d['chips']['receipts']),9)
+        self.assertEqual(len(d['sb1570']['receipts']),13)
 
     def test_launchers_live_in_root(self):
         self.assertTrue((ROOT/'ONE_CLICK_PASS_44.bat').exists())

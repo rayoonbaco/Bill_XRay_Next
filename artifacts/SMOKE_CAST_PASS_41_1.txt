@@ -1,0 +1,7 @@
+PASS 41.1 CLEAR
+available_facts=33
+selected_facts=14
+omitted_facts=19
+word_count=660
+hook_words=182
+readiness=COLUMN_READY_FOR_RAY_GATE

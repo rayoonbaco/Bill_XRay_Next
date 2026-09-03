@@ -1,0 +1,5 @@
+PASS 41 CLEAR
+story_words=1137
+facts_used=25
+editorial_moves=8
+readiness=EDITORIAL_READY_FOR_RAY_GATE

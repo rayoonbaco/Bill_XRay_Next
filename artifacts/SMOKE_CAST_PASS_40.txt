@@ -1,0 +1,40 @@
+========================================================================
+ BILL X-RAY NEXT - PASS 40 SMOKE CAST
+ HUMAN STORY ENGINE - FIRST MOMENT OF TRUTH
+========================================================================
+
+YOUR DUTIES THIS PASS
+  1. Run ONE_CLICK_PASS_40.bat from this project folder.
+  2. Read the story printed below as a HUMAN, not as a developer.
+  3. Read the machine verdict after the story.
+  4. Send the full smoke cast back to the team.
+
+WHAT THIS PASS MUST PROVE
+  - Court-cleared facts can become ordinary continuous prose.
+  - Question-only findings remain visibly questions.
+  - The writer does not fill evidence gaps with confident storytelling.
+  - The machine can admit when it has NOT earned a satisfying essay yet.
+
+PASS 40: wrote 281 words from 2 court-cleared facts
+Dependency-free focused checks: 6/6 passed
+
+--------------------- I READ THE BILL ---------------------
+Congress wrote a very large tax law. Bill X-Ray is trying something harder than shortening it: reconstruct what changed, prove each statement, and only then explain it in ordinary language.
+
+So far, the evidence court lets us say two things plainly. The bill changes the child tax credit from $1,000 to $2,000. The bill changes the basic estate and gift tax exclusion amount from $5,000,000 to $10,000,000.
+
+That is not yet the story of the Tax Cuts and Jobs Act. It is the part of the story we have earned the right to tell without pretending that a legal phrase explains its own consequence.
+
+The more interesting questions are still under examination: exactly what decision is delegated in MODIFICATION OF RATES, what limits apply, and who is affected by that decision; what ordinary rule does SUSPENSION OF MISCELLANEOUS ITEMIZED DEDUCTIONS override, and what changes because of that override; who falls inside and outside the exception in MODIFICATION OF RATES, and what practical difference does it make; what changes when the temporary or transition rule in MODIFICATION OF RATES begins or ends. Those are questions, not conclusions.
+
+That restraint is deliberate. A citizen does not need another confident voice telling them what Congress meant. The useful machine is the one willing to keep digging until the legal machinery becomes human meaning - and willing to say 'not yet' when it has not earned the translation.
+
+This first draft therefore ends earlier than a newspaper column should. That is a feature of the evidence gate, and a diagnosis of what Bill X-Ray must solve next: reconstruct enough context that the final essay can be both interesting and true.
+-----------------------------------------------------------
+
+MACHINE VERDICT: NOT_FINAL_EDITORIAL
+DIAGNOSIS: Truth Court is working, but the current evidence packet is too thin for a genuinely explanatory TCJA essay.
+
+CLEAR: PASS 40 completed as an honesty test. CLEAR does NOT mean the essay is finished.
+It means the Human Story Engine obeyed the evidence gate and exposed the next bottleneck instead of bluffing.
+Smoke cast saved to: artifacts\SMOKE_CAST_PASS_40.txt

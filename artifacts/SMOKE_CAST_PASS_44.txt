@@ -1,0 +1,37 @@
+========================================================================
+ BILL X-RAY NEXT - PASS 44 SMOKE CAST
+ PUBLIC PRODUCT INVERSION
+========================================================================
+
+YOUR DUTIES THIS PASS
+  1. Run ONE_CLICK_PASS_44.bat from this project folder.
+  2. Read the CLEAR / NEEDS REVIEW result.
+  3. If CLEAR, double-click START_BILL_XRAY_PUBLIC.bat.
+  4. Look at the FIRST SCREEN before clicking anything.
+  5. Ask: does this feel like an article, not a dashboard?
+  6. Then click CHECK MY HOMEWORK once and confirm the receipts appear.
+
+WHAT THIS PASS MUST PROVE
+  - Human meaning is the default surface.
+  - The 30-second version and column come before evidence machinery.
+  - There is exactly one public evidence doorway: CHECK MY HOMEWORK.
+  - Receipts remain hidden until requested.
+  - Backstage agent/process language does not leak onto the first screen.
+
+PUBLIC SURFACE CONTRACT
+  Bill choices: 3 -> TCJA, IRA, ACA
+  Default first story: TCJA - The Tax Cut With More Than One Clock
+  Initial visible evidence panels: 0
+  Public evidence doorways: 1
+  TCJA receipts behind drawer: 14
+  IRA receipts behind drawer: 6
+  ACA Reality Stack receipts behind drawer: 6
+  Dependency requirement: none beyond a normal web browser
+
+AUTOMATED VERDICT: CLEAR
+
+RAY PUBLIC-SCREEN GATE
+  Open START_BILL_XRAY_PUBLIC.bat.
+  Before touching anything, take one screenshot of the first screen.
+  The pass fails if it feels like a dashboard, evidence console, or AI process demo.
+  The intended reaction is: "This looks like something I might actually read."

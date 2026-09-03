@@ -1,0 +1,25 @@
+BILL X-RAY NEXT - PASS 37 SMOKE CAST
+RESULT: CLEAR
+
+DOCTRINE GATE:
+Congressional grammar is decoded into operations, not mistaken for complete human meaning.
+No grammar hit is allowed to become a public factual claim by itself.
+
+Rosetta rules defined: 13
+Grammar uses recognized in TCJA: 1402
+Construct types found in TCJA: 11
+Public claims allowed from grammar alone: 0
+
+MOST COMMON CONSTRUCTS:
+- effective_date: 482
+- for_purposes_of: 347
+- strike_insert: 242
+- treated_as: 100
+- redesignate: 78
+- subject_to: 39
+- except_as_provided: 37
+- appropriation: 30
+
+HUMAN DUTY:
+No manual code or UI testing required for this pass.
+Optional: read the four Rosetta examples printed in the console and judge whether they explain the operation without pretending to explain the whole law.

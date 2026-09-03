@@ -30,9 +30,9 @@ class PublicLanguageCleanRoomTests(unittest.TestCase):
 
     def test_public_shell_is_unchanged_in_shape(self):
         data=load_data()
-        self.assertEqual(set(data), {'tcja','ira','aca','chips'})
+        self.assertEqual(set(data), {'tcja','ira','aca','chips','sb1570'})
         h=(PUB/'index.html').read_text(encoding='utf-8')
-        self.assertEqual(h.count('data-bill='), 4)
+        self.assertEqual(h.count('data-bill='), 5)
         self.assertEqual(h.count('CHECK MY HOMEWORK'), 1)
         self.assertIn('THE 30-SECOND VERSION', h)
 
@@ -42,10 +42,12 @@ class PublicLanguageCleanRoomTests(unittest.TestCase):
         self.assertEqual(len(data['ira']['receipts']),6)
         self.assertEqual(len(data['aca']['receipts']),6)
         self.assertEqual(len(data['chips']['receipts']),9)
+        self.assertEqual(len(data['sb1570']['receipts']),13)
         self.assertTrue(data['tcja']['homework_note'])
         self.assertTrue(data['ira']['homework_note'])
         self.assertTrue(data['aca']['homework_note'])
         self.assertTrue(data['chips']['homework_note'])
+        self.assertTrue(data['sb1570']['homework_note'])
 
     def test_ira_public_story_is_citizen_facing(self):
         data=load_data(); text=self.public_text(data['ira'])

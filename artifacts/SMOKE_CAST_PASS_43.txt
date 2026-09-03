@@ -1,0 +1,58 @@
+========================================================================
+ BILL X-RAY NEXT - PASS 43 SMOKE CAST
+ COLD GENERALIZATION TRIAL
+========================================================================
+
+YOUR DUTIES THIS PASS
+  1. Read the cold-trial verdict.
+  2. Read the column without asking whether you agree with the policy.
+  3. Ask whether this sounds like Bill X-Ray understood a DIFFERENT law.
+  4. Check that the engine found a different thesis instead of reusing TCJA clocks/doors.
+
+WHAT THIS PASS MUST PROVE
+  - The Next doctrine can consume a different verified law without bill-specific prose code.
+  - The editor discovers topic mix before choosing a thesis.
+  - The columnist selects rather than dumps the evidence.
+  - External CBO/award context remains context, not statutory truth or causal proof.
+
+TRIAL BILL: Inflation Reduction Act (ira)
+VERIFIED FACTS AVAILABLE: 10
+TOPICS DISCOVERED: 4 -> agriculture and conservation, health and medicine, public finance and loans, taxes and corporate finance
+FACTS KEPT BY COLUMNIST: 6
+COLUMN WORD COUNT: 447
+MACHINE VERDICT: GENERALIZES
+
+--------------------- COLD COLUMN ---------------------
+Congress called it the Inflation Reduction Act. That is a neat name for a law whose verified machinery reaches into public finance and loans, taxes and corporate finance, health and medicine and agriculture and conservation. The first lesson of this cold test is simple: a title can name the argument, but it cannot substitute for the mechanisms underneath it.
+
+Bill X-Ray was not told what thesis to find. It was handed a different, previously verified evidence packet and required to rebuild the shape from facts that survived source and citation gates. What emerged was not one lever marked with the law's title. It was several systems moving at once: prices, taxes, financing, grants, deadlines, and government duties.
+
+Look at public finance and loans. The Secretary may make loan-guarantee commitments through September 30, 2026 with total principal up to $250,000,000,000. The law makes $9,700,000,000 available for long-term resiliency, reliability, and affordability of rural electric systems.
+
+A useful X-ray rule appears immediately: a giant dollar figure is not self-explanatory. A grant, an appropriation, and authority to guarantee loan principal can all carry impressive zeros while doing legally different things.
+
+Look at taxes and corporate finance. The corporate alternative-minimum-tax section uses $1,000,000,000 as an average annual adjusted financial-statement-income threshold in the test described here.
+
+Here again the number needs its noun. A threshold used to decide which corporations enter a tax calculation is not the same thing as Congress spending that amount.
+
+Look at health and medicine. The Secretary must establish a Drug Price Negotiation Program (in this part referred to as the program).
+
+That is a concrete operating mechanism, not a slogan. Whatever one thinks of the policy, the statute is assigning government an actual job involving drug prices and program administration.
+
+Look at agriculture and conservation. The law provides $1,000,000,000 for conservation technical assistance through the Natural Resources Conservation Service.
+
+The law therefore reaches well beyond a single household calculation. It is also directing money and deadlines into long-running federal programs that operate on farms, forests, and rural infrastructure.
+
+The honest conclusion is narrower than the politics around the title. This pass does not prove how much the law reduced inflation, whether every program worked, or whether the policy was wise. Those questions need the Reality Stack: official estimates, implementation records, later outcomes, and competing interpretations kept in their proper lanes.
+
+What this cold run does prove is architectural. Bill X-Ray can leave its familiar tax-law laboratory, encounter a law with a different shape, discover a different organizing idea, throw away facts that do not earn space in the column, and still keep every surviving statement attached to a receipt. Different law. Same doctrine. Understanding first; argument afterward.
+-------------------------------------------------------
+
+REALITY CONTEXT
+  CBO lane: found
+  USAspending lane: found
+  Guardrail: External estimates and award activity remain context; they do not rewrite the enacted text or prove causation.
+
+HUMAN GENERALIZATION GATE
+  Did Bill X-Ray find a coherent story in a different law without being told what story to find?
+  If yes, the architecture generalizes enough to move toward the public-product inversion.

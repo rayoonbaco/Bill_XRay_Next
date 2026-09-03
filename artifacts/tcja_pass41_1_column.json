@@ -1,0 +1,188 @@
+{
+  "schema_version": "41.1",
+  "bill_id": "TCJA",
+  "title": "I READ THE BILL",
+  "column_title": "The Tax Cut With More Than One Clock",
+  "dek": "The revealing part of TCJA is what happens after the headline number gets its conditions back.",
+  "thesis": "The revealing thing about TCJA is not one tax rate. It is how often a simple public headline turns into a different rule once the statute's clocks, conditions, and gatekeepers are put back in.",
+  "voice": "Original Bill X-Ray columnist voice: plainspoken, curious, dry when complexity earns it, nonpartisan, and more interested in revealing structure than displaying expertise.",
+  "available_fact_count": 33,
+  "selected_fact_count": 14,
+  "selected_fact_ids": [
+    "rates_window",
+    "personal_exemption_zero",
+    "salt_cap",
+    "child_credit_amount",
+    "refundable_cap",
+    "child_ssn",
+    "qbi_20_percent",
+    "qbi_wage_property_limit",
+    "corporate_rate",
+    "estate_exclusion",
+    "oz_definition",
+    "oz_nomination",
+    "oz_180_days",
+    "oz_ten_year"
+  ],
+  "omitted_fact_count": 19,
+  "paragraphs": [
+    {
+      "paragraph_no": 1,
+      "kind": "WIT",
+      "text": "Congress called it the Tax Cuts and Jobs Act, which has the great advantage of fitting on a bumper sticker. The law itself is less cooperative. Open it up and the headline tax cut immediately acquires dates, caps, thresholds, identification rules, and government officials with defined roles in parts of the system.",
+      "support_fact_ids": [
+        "rates_window",
+        "salt_cap",
+        "child_credit_amount",
+        "child_ssn",
+        "oz_nomination"
+      ],
+      "word_count": 52
+    },
+    {
+      "paragraph_no": 2,
+      "kind": "SYNTHESIS",
+      "text": "That is the useful story hiding in this bill. A tax law is discussed in public as a handful of numbers. In the statute, those numbers behave more like doors: each one has hinges, a lock, and instructions about who may walk through it. If you remove the machinery, you have not simplified the law. You have changed its meaning.",
+      "support_fact_ids": [
+        "child_credit_amount",
+        "refundable_cap",
+        "qbi_20_percent",
+        "qbi_wage_property_limit"
+      ],
+      "word_count": 60
+    },
+    {
+      "paragraph_no": 3,
+      "kind": "SYNTHESIS",
+      "text": "Start with time. The individual rate tables in this evidence packet run from 2018 through 2025. The personal exemption is set to zero for a temporary period. The covered state-and-local-tax deduction is capped at $10,000 during its temporary period. Yet the corporate-rate provision simply sets the federal corporate rate at 21% in the cited section, without that same temporary window. The statute is therefore carrying more than one clock.",
+      "support_fact_ids": [
+        "rates_window",
+        "personal_exemption_zero",
+        "salt_cap",
+        "corporate_rate"
+      ],
+      "word_count": 70
+    },
+    {
+      "paragraph_no": 4,
+      "kind": "WIT",
+      "text": "Washington can fit a remarkable amount of policy inside the word 'temporary.' A citizen hearing 'the tax law' might reasonably imagine one object with one expiration date. What Congress actually built is closer to a house where different rooms have different leases.",
+      "support_fact_ids": [
+        "rates_window",
+        "personal_exemption_zero",
+        "salt_cap",
+        "corporate_rate"
+      ],
+      "word_count": 42
+    },
+    {
+      "paragraph_no": 5,
+      "kind": "SYNTHESIS",
+      "text": "The child tax credit shows the same trick in miniature. The headline is wonderfully clean: the credit rises from $1,000 to $2,000 for the temporary period. But the refundable portion is capped at $1,400 per qualifying child under those rules, and the child must have the required Social Security number on the return. The $2,000 figure is real. It is simply not the whole sentence.",
+      "support_fact_ids": [
+        "child_credit_amount",
+        "refundable_cap",
+        "child_ssn"
+      ],
+      "word_count": 69
+    },
+    {
+      "paragraph_no": 6,
+      "kind": "ANALOGY",
+      "text": "That distinction matters because public debate loves nouns: rate, credit, deduction, cut. Statutes live in verbs and conditions: qualifies, expires, phases in, carries forward, must provide. Bill X-Ray's job is to put the verbs back. Otherwise we are translating a recipe by listing only the ingredients.",
+      "support_fact_ids": [
+        "child_credit_amount",
+        "refundable_cap",
+        "child_ssn",
+        "qbi_20_percent",
+        "qbi_wage_property_limit",
+        "rates_window"
+      ],
+      "word_count": 46
+    },
+    {
+      "paragraph_no": 7,
+      "kind": "WIT",
+      "text": "The new deduction for many noncorporate businesses provides another example. 'Twenty percent deduction' can be said before a waiter returns with your coffee. The law then introduces limits tied to W-2 wages and certain business property for some taxpayers. The short version is easy to remember. The conditions are part of the law anyway.",
+      "support_fact_ids": [
+        "qbi_20_percent",
+        "qbi_wage_property_limit"
+      ],
+      "word_count": 54
+    },
+    {
+      "paragraph_no": 8,
+      "kind": "SYNTHESIS",
+      "text": "Then the law wanders into territory that barely resembles the kitchen-table image of filing taxes. It doubles the referenced basic estate-and-gift-tax exclusion from $5 million to $10 million before inflation adjustments. It also creates Qualified Opportunity Zones around designated low-income census tracts. State chief executives nominate the tracts, and the Treasury Secretary certifies and designates them under the statute's timetable.",
+      "support_fact_ids": [
+        "estate_exclusion",
+        "oz_definition",
+        "oz_nomination"
+      ],
+      "word_count": 60
+    },
+    {
+      "paragraph_no": 9,
+      "kind": "WIT",
+      "text": "That Opportunity Zone provision is where a tax bill quietly starts behaving like a mapmaker. Congress did not choose every neighborhood itself. It wrote the rules for choosing the neighborhoods, then attached tax consequences to money that followed the map.",
+      "support_fact_ids": [
+        "oz_definition",
+        "oz_nomination",
+        "oz_180_days",
+        "oz_ten_year"
+      ],
+      "word_count": 40
+    },
+    {
+      "paragraph_no": 10,
+      "kind": "FACT",
+      "text": "An investor can elect to defer eligible capital gain by putting it into a qualified Opportunity Fund within 180 days of the sale or exchange. For a qualifying investment held at least ten years, the taxpayer can elect to use fair market value as basis when the investment is sold or exchanged.",
+      "support_fact_ids": [
+        "oz_180_days",
+        "oz_ten_year"
+      ],
+      "word_count": 52
+    },
+    {
+      "paragraph_no": 11,
+      "kind": "SYNTHESIS",
+      "text": "None of this proves that the law was good, bad, fair, unfair, brilliant, or foolish. Those are judgments. But it does reveal why a citizen trying to form an opinion from a slogan is starting several miles behind the starting line. The meaningful unit is rarely the headline number by itself. It is the number plus the clock, the conditions, the exceptions, and sometimes the official holding the pencil.",
+      "support_fact_ids": [
+        "rates_window",
+        "child_credit_amount",
+        "child_ssn",
+        "qbi_20_percent",
+        "qbi_wage_property_limit",
+        "oz_nomination"
+      ],
+      "word_count": 69
+    },
+    {
+      "paragraph_no": 12,
+      "kind": "SYNTHESIS",
+      "text": "That may be the real X-ray. Not 'here are more facts about taxes,' but: here is the skeleton underneath the sentence you were handed. Once the skeleton is visible, the argument can finally belong to you. Keep the receipts downstairs. Give the citizen the meaning upstairs.",
+      "support_fact_ids": [
+        "rates_window",
+        "child_credit_amount",
+        "qbi_20_percent",
+        "corporate_rate",
+        "oz_definition"
+      ],
+      "word_count": 46
+    }
+  ],
+  "story": "Congress called it the Tax Cuts and Jobs Act, which has the great advantage of fitting on a bumper sticker. The law itself is less cooperative. Open it up and the headline tax cut immediately acquires dates, caps, thresholds, identification rules, and government officials with defined roles in parts of the system.\n\nThat is the useful story hiding in this bill. A tax law is discussed in public as a handful of numbers. In the statute, those numbers behave more like doors: each one has hinges, a lock, and instructions about who may walk through it. If you remove the machinery, you have not simplified the law. You have changed its meaning.\n\nStart with time. The individual rate tables in this evidence packet run from 2018 through 2025. The personal exemption is set to zero for a temporary period. The covered state-and-local-tax deduction is capped at $10,000 during its temporary period. Yet the corporate-rate provision simply sets the federal corporate rate at 21% in the cited section, without that same temporary window. The statute is therefore carrying more than one clock.\n\nWashington can fit a remarkable amount of policy inside the word 'temporary.' A citizen hearing 'the tax law' might reasonably imagine one object with one expiration date. What Congress actually built is closer to a house where different rooms have different leases.\n\nThe child tax credit shows the same trick in miniature. The headline is wonderfully clean: the credit rises from $1,000 to $2,000 for the temporary period. But the refundable portion is capped at $1,400 per qualifying child under those rules, and the child must have the required Social Security number on the return. The $2,000 figure is real. It is simply not the whole sentence.\n\nThat distinction matters because public debate loves nouns: rate, credit, deduction, cut. Statutes live in verbs and conditions: qualifies, expires, phases in, carries forward, must provide. Bill X-Ray's job is to put the verbs back. Otherwise we are translating a recipe by listing only the ingredients.\n\nThe new deduction for many noncorporate businesses provides another example. 'Twenty percent deduction' can be said before a waiter returns with your coffee. The law then introduces limits tied to W-2 wages and certain business property for some taxpayers. The short version is easy to remember. The conditions are part of the law anyway.\n\nThen the law wanders into territory that barely resembles the kitchen-table image of filing taxes. It doubles the referenced basic estate-and-gift-tax exclusion from $5 million to $10 million before inflation adjustments. It also creates Qualified Opportunity Zones around designated low-income census tracts. State chief executives nominate the tracts, and the Treasury Secretary certifies and designates them under the statute's timetable.\n\nThat Opportunity Zone provision is where a tax bill quietly starts behaving like a mapmaker. Congress did not choose every neighborhood itself. It wrote the rules for choosing the neighborhoods, then attached tax consequences to money that followed the map.\n\nAn investor can elect to defer eligible capital gain by putting it into a qualified Opportunity Fund within 180 days of the sale or exchange. For a qualifying investment held at least ten years, the taxpayer can elect to use fair market value as basis when the investment is sold or exchanged.\n\nNone of this proves that the law was good, bad, fair, unfair, brilliant, or foolish. Those are judgments. But it does reveal why a citizen trying to form an opinion from a slogan is starting several miles behind the starting line. The meaningful unit is rarely the headline number by itself. It is the number plus the clock, the conditions, the exceptions, and sometimes the official holding the pencil.\n\nThat may be the real X-ray. Not 'here are more facts about taxes,' but: here is the skeleton underneath the sentence you were handed. Once the skeleton is visible, the argument can finally belong to you. Keep the receipts downstairs. Give the citizen the meaning upstairs.",
+  "word_count": 660,
+  "release_readiness": "COLUMN_READY_FOR_RAY_GATE",
+  "hook_gate": {
+    "rule": "After the first three paragraphs, a non-tax reader should want paragraph four.",
+    "first_three_word_count": 182
+  },
+  "doctrine": "Do not tell the reader everything the machine learned. Tell the one true story the evidence reveals.",
+  "guardrails": [
+    "No paragraph may use a fact outside the court-cleared semantic substrate.",
+    "The columnist may omit facts aggressively but may not distort the basic shape of the law.",
+    "Wit must reveal structure, not assign motive or guilt.",
+    "The column makes no distributional, causal, partisan, or motive claim not supported by the current evidence packet."
+  ]
+}

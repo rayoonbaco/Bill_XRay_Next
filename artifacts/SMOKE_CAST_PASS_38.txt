@@ -1,0 +1,13 @@
+PASS 38 CLEAR
+{
+  "candidate_count": 40,
+  "category_counts": {
+    "delegated_authority": 8,
+    "exception": 8,
+    "large_before_after_change": 2,
+    "override": 8,
+    "specific_class": 7,
+    "temporary_or_transition": 7
+  },
+  "public_claims_allowed": 0
+}
