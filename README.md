@@ -2,7 +2,9 @@
 
 Current checkpoint: **PASS 44.1 - Public Language Clean Room**
 
-Current release checkpoint: **PASS 46 — Illinois SB 1570 / Public Act 103-0491**. The public product now contains five permanent cases. Run `ONE_CLICK_PASS_46.bat`; deploy `public/` as the Render static-site publish directory.
+Current release checkpoint: **PASS 46.3 — Illinois SB 1570 current-law correction through P.A. 104-0395**. Public Act 103-0491 remains the foundation act. Run `ONE_CLICK_PASS_46_3.bat`; deploy `public/` as the Render static-site publish directory. The private `PSI_SB1570_HANDOFF/` directory is evidence and implementation guidance for PSI and is not referenced by the public site.
+
+Official sources: [foundation P.A. 103-0491](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491) and [current municipal amendment P.A. 104-0395](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395).
 
 PASS 46.1 adds a company-neutral **Illinois Business Development Lens** exclusively to SB 1570. It is not rendered for TCJA, IRA, ACA, or CHIPS.
 

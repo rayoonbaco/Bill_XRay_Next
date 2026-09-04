@@ -1,0 +1,561 @@
+diff --git a/ONE_CLICK_PASS_46_3.bat b/ONE_CLICK_PASS_46_3.bat
+new file mode 100644
+index 0000000..e10af34
+--- /dev/null
++++ b/ONE_CLICK_PASS_46_3.bat
+@@ -0,0 +1,12 @@
++@echo off
++cd /d "%~dp0"
++python SMOKE_TEST_PASS_46_3.py
++if errorlevel 1 (
++  echo.
++  echo PASS 46.3 FAILED. Read the errors above.
++  pause
++  exit /b 1
++)
++echo.
++echo PASS 46.3 PASSED. SB 1570 is current through P.A. 104-0395.
++pause
+diff --git a/PSI_SB1570_HANDOFF/BUSINESS_DEVELOPMENT_LENS_MACHINE.json b/PSI_SB1570_HANDOFF/BUSINESS_DEVELOPMENT_LENS_MACHINE.json
+index c0792a2..6450694 100644
+--- a/PSI_SB1570_HANDOFF/BUSINESS_DEVELOPMENT_LENS_MACHINE.json
++++ b/PSI_SB1570_HANDOFF/BUSINESS_DEVELOPMENT_LENS_MACHINE.json
+@@ -1,8 +1,10 @@
+ {
+-  "schema_version":"1.0",
+-  "scope":{"bill_id":"sb1570","public_act":"103-0491","lens_applies_only_to":"SB 1570 / Public Act 103-0491","eligible_owner_types":["ILLINOIS_MUNICIPALITY"],"parallel_but_separate_owner_type":["ILLINOIS_SCHOOL_DISTRICT"],"excluded_without_separate_authority_check":["COUNTY","PARK_DISTRICT","STATE_AGENCY","OTHER_SPECIAL_DISTRICT"]},
++  "schema_version":"1.1",
++  "current_law":{"status":"CURRENT LAW CHECKED THROUGH P.A. 104-0395","foundation_act":"103-0491","foundation_source":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491","municipal_amendment":"104-0395","amendment_effective_date":"2025-07-01","amendment_source":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"},
++  "scope":{"bill_id":"sb1570","public_act":"103-0491","lens_applies_only_to":"SB 1570 / Public Act 103-0491 as currently amended","eligible_owner_types":["ILLINOIS_MUNICIPALITY"],"parallel_but_separate_owner_type":["ILLINOIS_SCHOOL_DISTRICT"],"excluded_without_separate_authority_check":["COUNTY","PARK_DISTRICT","STATE_AGENCY","OTHER_SPECIAL_DISTRICT"]},
+   "evidence_classes":{"STATUTORY_FACT":"Directly established by enacted law.","DERIVED_FACT":"Logical consequence reconstructed from two or more statutory requirements.","OBSERVED_PUBLIC_FACT":"Dated fact from an identified owner record.","INVESTIGATIVE_HYPOTHESIS":"Plausible interpretation requiring corroboration.","UNKNOWN":"Material question not answered by available evidence."},
+   "hard_rules":[
++    {"id":"R0","if":["municipal_phase_i_response_count == 1","municipality_best_interest_finding == true"],"then":"MAY_PROCEED_TO_SINGLE_RESPONDENT_PHASE_II_EVALUATION","reason":"P.A. 104-0395 creates a discretionary municipal single-response pathway; the ordinary shortlist remains two to six."},
+     {"id":"R1","if":["owner_type != ILLINOIS_MUNICIPALITY"],"then":"DO_NOT_APPLY_MUNICIPAL_SB1570_AUTHORITY","reason":"Owner coverage must be established separately."},
+     {"id":"R2","if":["only_signal_count < 2"],"then":"NO_OPPORTUNITY_CLASSIFICATION","reason":"A keyword or isolated record is not intelligence."},
+     {"id":"R3","if":["notice_of_intent_found == true"],"then":"MATURITY_AT_LEAST_FORMAL_PREPROCUREMENT","reason":"The statute requires notice at least 14 days before RFP."},
+diff --git a/PSI_SB1570_HANDOFF/EXECUTIVE_SUMMARY_FOR_TOM.md b/PSI_SB1570_HANDOFF/EXECUTIVE_SUMMARY_FOR_TOM.md
+index 14425ec..67891b8 100644
+--- a/PSI_SB1570_HANDOFF/EXECUTIVE_SUMMARY_FOR_TOM.md
++++ b/PSI_SB1570_HANDOFF/EXECUTIVE_SUMMARY_FOR_TOM.md
+@@ -1,6 +1,8 @@
+ # What SB 1570 Means for Tom and Performance Services
+ 
+-SB 1570 created something commercially meaningful but narrower than a pipeline: Illinois municipalities and school districts may now choose a single design-build contract for design and construction. If they choose that route, Public Act 103-0491 requires structured notice, scope development, qualifications, technical/cost evaluation, conflict protections, and reporting. It does not compel adoption, appropriate money, identify projects, or guarantee savings.
++SB 1570 created something commercially meaningful but narrower than a pipeline: Illinois municipalities and school districts may choose a single design-build contract for design and construction. If they choose that route, foundation Public Act 103-0491 requires structured notice, scope development, qualifications, technical/cost evaluation, conflict protections, and reporting. Public Act 104-0395 amended the municipal selection procedure effective July 1, 2025: the ordinary Phase II shortlist remains two to six, but a municipality receiving only one Phase I response may evaluate that respondent in Phase II when it finds, in its discretion, that proceeding is in its best interest. Neither Act compels adoption, appropriates money, identifies projects, or guarantees savings.
++
++Current law checked through P.A. 104-0395. Official sources: [foundation P.A. 103-0491](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491) and [current amendment P.A. 104-0395](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395).
+ 
+ For Performance Services, the strongest opening is upstream of the RFP. By public notice, the owner has already selected a delivery method and developed enough schedule, budget, funding, scope, and performance criteria to solicit proposals. PSI should therefore reconstruct the earlier public story: facility need, deferred maintenance, energy or capacity problem, capital-plan appearance, feasibility or facility study, funding formation, professional-services selection, and governing-body discussion of delivery options. None of those traces is guaranteed by this Act; each must be sourced and labeled as an investigative hypothesis.
+ 
+diff --git a/PSI_SB1570_HANDOFF/OWNER_AUTHORITY_BOUNDARIES.md b/PSI_SB1570_HANDOFF/OWNER_AUTHORITY_BOUNDARIES.md
+index a9ed61b..8236ca0 100644
+--- a/PSI_SB1570_HANDOFF/OWNER_AUTHORITY_BOUNDARIES.md
++++ b/PSI_SB1570_HANDOFF/OWNER_AUTHORITY_BOUNDARIES.md
+@@ -4,6 +4,8 @@
+ - Authorization is optional. Traditional and other lawful delivery approaches remain possible.
+ - A professional preparing statutory scope and performance criteria cannot join the proposing design-build entity for that project.
+ - A pecuniary interest, relationship, or circumstance that creates advantage or the appearance of impropriety can bar consideration.
+-- Previous school-district awards alone do not disqualify an entity, but that express sentence is not mirrored in the municipal provision.
++- Previous awards under an applicable Illinois public-procurement statute do not, by themselves, disqualify an entity under the current municipal selection provision. P.A. 104-0395 added that municipal sentence effective July 1, 2025. Municipal and school pathways remain legally separate.
++
++Current municipal law checked through [P.A. 104-0395](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395), using [P.A. 103-0491](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491) as the foundation act.
+ - Early education and relationship development must remain lawful, transparent, and outside prohibited scope preparation or unfair advantage. PSI cannot decide fact-specific compliance.
+ - Route project-specific contact, lobbying, gifts, conflicts, procurement communications, and team-eligibility questions to qualified Illinois counsel and the owner's published rules.
+diff --git a/PSI_SB1570_HANDOFF/SB1570_PLAIN_ENGLISH.md b/PSI_SB1570_HANDOFF/SB1570_PLAIN_ENGLISH.md
+index ab4c744..b2b7663 100644
+--- a/PSI_SB1570_HANDOFF/SB1570_PLAIN_ENGLISH.md
++++ b/PSI_SB1570_HANDOFF/SB1570_PLAIN_ENGLISH.md
+@@ -2,6 +2,8 @@
+ 
+ The law lets Illinois municipalities and school districts choose design-build, where one entity is responsible under one contract for both design and construction. Once an owner chooses it, the owner must announce the coming solicitation online at least 14 days before the RFP; include schedule, budget, funding, qualifications, contract, performance, and scoring information; use qualified professional help to define the project; and follow the prescribed evaluation process.
+ 
+-Phase I centers on qualifications and excludes price. Phase II examines technical and cost proposals, with total project cost weighted no more than 30%. Municipal shortlists contain two to six firms. The school rules allow a narrow one-respondent path. Smaller projects may combine phases while retaining every required evaluation. The selected entity later reports on specified utilization goals.
++Phase I centers on qualifications and excludes price. Phase II examines technical and cost proposals, with total project cost weighted no more than 30%. The ordinary municipal shortlist contains two to six firms. Under Public Act 104-0395, effective July 1, 2025, a municipality receiving only one Phase I response may evaluate that single respondent in Phase II if the municipality, in its discretion, finds proceeding to be in its best interest. Municipal and school pathways remain legally separate; the single-response option is not a school-only distinction. Smaller projects may combine phases while retaining every required evaluation. The selected entity later reports on specified utilization goals.
++
++Current law checked through P.A. 104-0395. Sources: [foundation P.A. 103-0491](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491) and [current amendment P.A. 104-0395](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395).
+ 
+ This is legal authorization, not evidence that a named owner has selected design-build or that a project exists.
+diff --git a/PSI_SB1570_HANDOFF/SOURCES.md b/PSI_SB1570_HANDOFF/SOURCES.md
+index 9d72436..4111b6e 100644
+--- a/PSI_SB1570_HANDOFF/SOURCES.md
++++ b/PSI_SB1570_HANDOFF/SOURCES.md
+@@ -3,7 +3,8 @@
+ ## Authoritative enacted law
+ 
+ - Illinois General Assembly, Public Act 103-0491, printer-friendly enacted text: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491
++- Illinois General Assembly, Public Act 104-0395, municipal selection amendment effective July 1, 2025: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395
+ - Illinois General Assembly, enrolled SB 1570 PDF: https://www.ilga.gov/legislation/103/SB/PDF/10300SB1570enr.pdf
+ - Illinois Effective Date of Laws Act, 5 ILCS 75/1: https://my.ilga.gov/Legislation/ILCS/Articles?ActID=80&Chapter=GENERAL+PROVISIONS&ChapterID=2&MajorTopic=GOVERNMENT
+ 
+-The enacted text—not summaries or the introduced bill—controls this handoff. The municipal regime begins at 65 ILCS 5/Art. 11 Div. 39.2; the school regime begins at 105 ILCS 5/Art. 15A. The Act contains no special effective-date clause; the January 1, 2024 date follows 5 ILCS 75/1 for a bill passed before June 1 without its own date. External owner records have not been used to claim adoption or demand. Those must be collected project by project.
++The enacted law—not summaries or the introduced bill—controls this handoff. P.A. 103-0491 is the foundation. P.A. 104-0395 supplies the current municipal selection amendment, effective July 1, 2025. The municipal regime begins at 65 ILCS 5/Art. 11 Div. 39.2; the school regime begins at 105 ILCS 5/Art. 15A. External owner records have not been used to claim adoption or demand. Those must be collected project by project.
+diff --git a/PSI_SB1570_HANDOFF/START_HERE_FOR_PSI.md b/PSI_SB1570_HANDOFF/START_HERE_FOR_PSI.md
+index 09369e9..e380e9f 100644
+--- a/PSI_SB1570_HANDOFF/START_HERE_FOR_PSI.md
++++ b/PSI_SB1570_HANDOFF/START_HERE_FOR_PSI.md
+@@ -1,6 +1,8 @@
+ # Start Here for PSI
+ 
+-Bill X-Ray analyzed the final enacted Illinois SB 1570, Public Act 103-0491, effective January 1, 2024—not the introduced bill. It adds municipal design-build authority at 65 ILCS 5/Art. 11 Div. 39.2 and school design-build authority at 105 ILCS 5/Art. 15A.
++Bill X-Ray uses Illinois SB 1570, Public Act 103-0491, effective January 1, 2024, as the foundation act—not the introduced bill. It adds municipal design-build authority at 65 ILCS 5/Art. 11 Div. 39.2 and school design-build authority at 105 ILCS 5/Art. 15A. Municipal selection law is checked through Public Act 104-0395, effective July 1, 2025, which adds a discretionary municipal single-response pathway while preserving the ordinary two-to-six shortlist.
++
++Official sources: [foundation P.A. 103-0491](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491) and [current amendment P.A. 104-0395](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395).
+ 
+ ## Evidence classes
+ 
+diff --git a/PSI_SB1570_HANDOFF/STATUTORY_RULES.json b/PSI_SB1570_HANDOFF/STATUTORY_RULES.json
+index bb2284d..bb391b7 100644
+--- a/PSI_SB1570_HANDOFF/STATUTORY_RULES.json
++++ b/PSI_SB1570_HANDOFF/STATUTORY_RULES.json
+@@ -1,10 +1,12 @@
+ {
++  "current_law":{"status":"CURRENT LAW CHECKED THROUGH P.A. 104-0395","foundation_source":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491","amendment_source":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395","amendment_effective_date":"2025-07-01"},
+   "authority":{"classification":"STATUTORY_FACT","rule":"Municipalities and school districts may elect design-build; use is not mandatory.","citations":["65 ILCS 5/11-39.2-5, -15(a)","105 ILCS 5/15A-5, -15(a)"]},
+   "notice":{"classification":"STATUTORY_FACT","rule":"Online notice of intent is required at least 14 days before the RFP.","citations":["65 ILCS 5/11-39.2-15(a)","105 ILCS 5/15A-15(a)"]},
+   "rfp":{"classification":"STATUTORY_FACT","rule":"The RFP must disclose schedule, budget, funding source, available funds, prequalification, material terms, performance criteria, evaluation criteria, and Phase II field size.","citations":["65 ILCS 5/11-39.2-15(b)","105 ILCS 5/15A-15(b)"]},
+   "scope":{"classification":"STATUTORY_FACT","rule":"A licensed design professional or public art designer must assist with scope and performance criteria.","citations":["65 ILCS 5/11-39.2-20", "105 ILCS 5/15A-20"]},
+   "scope_conflict":{"classification":"STATUTORY_FACT","rule":"The scope-preparing professional may not participate in a design-build proposal for that project.","citations":["65 ILCS 5/11-39.2-20(d)","105 ILCS 5/15A-20(d)"]},
+   "selection":{"classification":"STATUTORY_FACT","rule":"Phase I is qualifications-based with no price; Phase II evaluates technical and cost factors; total-project-cost weighting is capped at 30%.","citations":["65 ILCS 5/11-39.2-25","105 ILCS 5/15A-25"]},
++  "municipal_shortlist":{"classification":"STATUTORY_FACT","rule":"The ordinary municipal Phase II shortlist is two to six entities. If only one Phase I response is received, the municipality may evaluate that single respondent in Phase II if, in its discretion, it finds proceeding to be in its best interest.","citations":["65 ILCS 5/11-39.2-25(b)","P.A. 104-0395, eff. 7-1-25"],"sources":["https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491","https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"]},
+   "timing":{"classification":"STATUTORY_FACT","rule":"RFP-to-proposal minimum is 21 days, or 28 days above $12 million; Phase II development minimum is 30 days.","citations":["65 ILCS 5/11-39.2-15(d)","105 ILCS 5/15A-15(d)"]},
+   "small_projects":{"classification":"STATUTORY_FACT","rule":"Combined evaluation is permitted below $12 million for municipalities and at $12 million or less for schools if all evaluation requirements remain.","citations":["65 ILCS 5/11-39.2-30","105 ILCS 5/15A-30"]},
+   "impropriety":{"classification":"STATUTORY_FACT","rule":"An entity may not be considered where interests or relationships create tangible advantage or appearance of impropriety.","citations":["65 ILCS 5/11-39.2-25(b)","105 ILCS 5/15A-25(b)"]},
+diff --git a/README.md b/README.md
+index 010d144..16ccbd4 100644
+--- a/README.md
++++ b/README.md
+@@ -2,7 +2,9 @@
+ 
+ Current checkpoint: **PASS 44.1 - Public Language Clean Room**
+ 
+-Current release checkpoint: **PASS 46 — Illinois SB 1570 / Public Act 103-0491**. The public product now contains five permanent cases. Run `ONE_CLICK_PASS_46.bat`; deploy `public/` as the Render static-site publish directory. The private `PSI_SB1570_HANDOFF/` directory is evidence and implementation guidance for PSI and is not referenced by the public site.
++Current release checkpoint: **PASS 46.3 — Illinois SB 1570 current-law correction through P.A. 104-0395**. Public Act 103-0491 remains the foundation act. Run `ONE_CLICK_PASS_46_3.bat`; deploy `public/` as the Render static-site publish directory. The private `PSI_SB1570_HANDOFF/` directory is evidence and implementation guidance for PSI and is not referenced by the public site.
++
++Official sources: [foundation P.A. 103-0491](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491) and [current municipal amendment P.A. 104-0395](https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395).
+ 
+ PASS 46.1 adds a company-neutral **Illinois Business Development Lens** exclusively to SB 1570. It is not rendered for TCJA, IRA, ACA, or CHIPS.
+ 
+diff --git a/SMOKE_TEST_PASS_46_3.py b/SMOKE_TEST_PASS_46_3.py
+new file mode 100644
+index 0000000..ac39ada
+--- /dev/null
++++ b/SMOKE_TEST_PASS_46_3.py
+@@ -0,0 +1,42 @@
++from pathlib import Path
++from functools import partial
++from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
++import json
++import subprocess
++import sys
++import threading
++from urllib.request import urlopen
++
++root = Path(__file__).resolve().parent
++raw = (root / "public" / "data.js").read_text(encoding="utf-8").strip()
++data = json.loads(raw[len("window.BXR_DATA = "):-1])
++sb = data["sb1570"]
++
++assert len(data) == 5
++assert sb["current_law_status"] == "CURRENT LAW CHECKED THROUGH P.A. 104-0395"
++assert "best interest" in json.dumps(sb).lower()
++assert "single-respondent option appears in the school provision" not in json.dumps(sb).lower()
++
++for asset in ("index.html", "styles.css", "data.js", "transformation.js", "transformation-examples.js", "business-lens.js", "app.js"):
++    assert (root / "public" / asset).is_file(), asset
++
++# Serve the actual Render publish directory and request every browser asset over HTTP.
++handler = partial(SimpleHTTPRequestHandler, directory=str(root / "public"))
++server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
++thread = threading.Thread(target=server.serve_forever, daemon=True)
++thread.start()
++try:
++    base = f"http://127.0.0.1:{server.server_port}"
++    for asset in ("index.html", "styles.css", "data.js", "transformation.js", "transformation-examples.js", "business-lens.js", "app.js"):
++        with urlopen(f"{base}/{asset}", timeout=5) as response:
++            body = response.read()
++            assert response.status == 200 and body, asset
++finally:
++    server.shutdown()
++    server.server_close()
++
++result = subprocess.run(
++    [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"],
++    cwd=root,
++)
++raise SystemExit(result.returncode)
+diff --git a/docs/PASS_46_3_WINDOWS_GITHUB_RENDER.md b/docs/PASS_46_3_WINDOWS_GITHUB_RENDER.md
+new file mode 100644
+index 0000000..db210c8
+--- /dev/null
++++ b/docs/PASS_46_3_WINDOWS_GITHUB_RENDER.md
+@@ -0,0 +1,57 @@
++# PASS 46.3 — Windows, GitHub, and Render Instructions
++
++## Windows test commands
++
++Open Command Prompt in the project folder, then run:
++
++```bat
++cd /d C:\PROJECTS\Bill_XRay_Next
++python -m unittest tests.test_sb1570_pa1040395_current_law -v
++python -m unittest discover -s tests -p "test_*.py"
++python SMOKE_TEST_PASS_46_3.py
++```
++
++Or double-click:
++
++```text
++ONE_CLICK_PASS_46_3.bat
++```
++
++Every command must end successfully before GitHub staging.
++
++## Exact GitHub commands
++
++```bat
++cd /d C:\PROJECTS\Bill_XRay_Next
++git status --short
++git add README.md ONE_CLICK_PASS_46_3.bat SMOKE_TEST_PASS_46_3.py PATCH_PASS_46_3_CURRENT_LAW.py PASS_46_3_CURRENT_LAW.patch docs/PASS_46_SB1570_REPORT.md docs/PASS_46_3_WINDOWS_GITHUB_RENDER.md public/app.js public/business-lens.js public/data.js public/index.html public/styles.css public/transformation-examples.js public/transformation.js sources/sb1570_public_act_receipts.json PSI_SB1570_HANDOFF/BUSINESS_DEVELOPMENT_LENS_MACHINE.json PSI_SB1570_HANDOFF/EXECUTIVE_SUMMARY_FOR_TOM.md PSI_SB1570_HANDOFF/SB1570_PLAIN_ENGLISH.md PSI_SB1570_HANDOFF/SOURCES.md PSI_SB1570_HANDOFF/START_HERE_FOR_PSI.md PSI_SB1570_HANDOFF/STATUTORY_RULES.json tests/test_sb1570_pa1040395_current_law.py
++git diff --cached --check
++git status --short
++git commit -m "PASS 46.3 correct SB 1570 current municipal selection law"
++git push origin main
++```
++
++Do not use `git add .` for this narrow pass. Review the staged list before committing.
++
++## Render verification checklist
++
++Render should auto-deploy the `main` branch to the existing static site.
++
++- Confirm the deployed commit matches the new GitHub commit.
++- Confirm Render reports `Live` with no build or publish error.
++- Open `https://bill-xray-uapi.onrender.com/` and press `Ctrl+F5`.
++- Confirm all five bill tabs remain present.
++- Select **IL SB 1570**.
++- Confirm **CURRENT LAW CHECKED THROUGH P.A. 104-0395** is visible.
++- Open both visible source links and confirm they reach official Illinois General Assembly pages for P.A. 103-0491 and P.A. 104-0395.
++- Read the selection paragraph: ordinary municipal shortlist **2–6**; a sole Phase I respondent may proceed only through municipal discretion and a best-interest finding.
++- Open **CHECK MY HOMEWORK** and inspect the municipal shortlist receipt, both official source links, both limitations, and the amendment excerpt.
++- Open **HOW THIS BECAME HUMAN** and confirm the SB 1570 source line names both P.A. 103-0491 and P.A. 104-0395.
++- Open **ILLINOIS BUSINESS DEVELOPMENT LENS** and confirm its current-law banner, both source links, ordinary rule, single-response exception, and legally separate school pathway.
++- Switch to TCJA, IRA, ACA, and CHIPS; confirm none shows the Illinois current-law banner or business-development lens.
++- Confirm browser developer console shows no JavaScript errors.
++
++Official sources:
++
++- Foundation: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491
++- Current municipal amendment: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395
+diff --git a/docs/PASS_46_SB1570_REPORT.md b/docs/PASS_46_SB1570_REPORT.md
+index c346a01..d7a376a 100644
+--- a/docs/PASS_46_SB1570_REPORT.md
++++ b/docs/PASS_46_SB1570_REPORT.md
+@@ -1,8 +1,8 @@
+-# PASS 46 — Illinois SB 1570 / Public Act 103-0491
++# PASS 46.3 — Illinois SB 1570 Current-Law Correction
+ 
+ ## Result
+ 
+-SB 1570 is now the fifth permanent public Bill X-Ray case. The public article uses the enacted Public Act, keeps the PSI-specific analysis private, and preserves the existing article-first interface and single receipt doorway.
++SB 1570 remains the fifth permanent public Bill X-Ray case. Public Act 103-0491 is the foundation act. Public Act 104-0395 amended the municipal selection procedure effective July 1, 2025. The ordinary municipal Phase II shortlist remains two to six; if only one Phase I response is received, a municipality may evaluate that respondent in Phase II when it finds, in its discretion, that proceeding is in its best interest.
+ 
+ ## PASS 46.1 add-on
+ 
+@@ -14,7 +14,7 @@ The transformation ladder previously kept its top example fixed on CHIPS while c
+ 
+ ## Nineteen-process case record
+ 
+-1. Identity resolution — SB 1570 resolved to Public Act 103-0491.
++1. Identity resolution — SB 1570 resolved to foundation Public Act 103-0491; current municipal selection law checked through Public Act 104-0395.
+ 2. Version control — enacted text selected over introduced text.
+ 3. Authority check — Illinois General Assembly source retained.
+ 4. Structural decomposition — municipal and school regimes separated.
+@@ -26,7 +26,7 @@ The transformation ladder previously kept its top example fixed on CHIPS while c
+ 10. Timeline reconstruction — need formation through award and reporting.
+ 11. Qualification reconstruction — Phase I mandatory criteria captured.
+ 12. Technical/cost reconstruction — Phase II factors and cost cap captured.
+-13. Exception analysis — small-project and school single-respondent rules captured.
++13. Exception analysis — small-project rules and the current municipal single-respondent exception captured without conflating the legally separate school pathway.
+ 14. Conflict analysis — scope-preparer and impropriety provisions captured.
+ 15. Claim-versus-law gate — market adoption and project pipeline claims refused.
+ 16. Investigative-question pass — pre-RFP records expressed as hypotheses.
+@@ -41,5 +41,6 @@ The Act creates a lawful delivery path, not demand. Public records before the RF
+ ## Authoritative sources
+ 
+ - Illinois General Assembly, Public Act 103-0491: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491
++- Illinois General Assembly, Public Act 104-0395: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395
+ - Enrolled SB 1570 PDF: https://www.ilga.gov/legislation/103/SB/PDF/10300SB1570enr.pdf
+ - Illinois Effective Date of Laws Act, 5 ILCS 75/1: https://my.ilga.gov/Legislation/ILCS/Articles?ActID=80&Chapter=GENERAL%20PROVISIONS&ChapterID=2&MajorTopic=GOVERNMENT
+diff --git a/public/app.js b/public/app.js
+index 213ada4..3c2659c 100644
+--- a/public/app.js
++++ b/public/app.js
+@@ -10,11 +10,19 @@
+   function renderReceipt(r){
+     const limits=(r.limits||[]).filter(Boolean).map(x=>`<p class="limit">Limit: ${esc(x)}</p>`).join('');
+     const excerpt=r.excerpt?`<details><summary>Show source excerpt</summary><blockquote>${esc(r.excerpt)}</blockquote></details>`:'';
+-    return `<section class="receipt"><h3>${esc(r.label)}</h3><p class="receipt-meta">${esc(r.section)}${r.heading?' · '+esc(r.heading):''}${r.source?' · '+esc(r.source):''}</p>${limits}${excerpt}</section>`;
++    const sourceLinks=r.source_links || (current==='sb1570' ? data.sb1570.source_links : []);
++    const links=(sourceLinks||[]).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.label)}</a>`).join(' · ');
++    return `<section class="receipt"><h3>${esc(r.label)}</h3><p class="receipt-meta">${esc(r.section)}${r.heading?' · '+esc(r.heading):''}${r.source?' · '+esc(r.source):''}</p>${links?`<p class="receipt-links">${links}</p>`:''}${limits}${excerpt}</section>`;
++  }
++  function renderCurrentLawSources(item){
++    if(!item.current_law_status || !item.source_links) return '';
++    const links=item.source_links.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.label)}</a>`).join('<span aria-hidden="true"> · </span>');
++    return `<div class="current-law-status"><strong>${esc(item.current_law_status)}</strong><div>${links}</div></div>`;
+   }
+   function renderBill(id){
+     current=id; const b=data[id];
+     q('#eyebrow').textContent=b.eyebrow; q('#story-title').textContent=b.title; q('#dek').textContent=b.dek; q('#short').textContent=b.short;
++    q('#currentLawSources').innerHTML=renderCurrentLawSources(b);
+     q('#story').innerHTML=b.story.map(p=>`<p>${esc(p.text)}</p>`).join('');
+     q('#homeworkNote').textContent=b.homework_note;
+     q('#receipts').innerHTML=b.receipts.map(renderReceipt).join('');
+@@ -34,7 +42,7 @@
+     const spoilers=lens.spoilers.map(x=>`<li>${esc(x)}</li>`).join('');
+     const red=lens.red_team.map(x=>`<li>${esc(x)}</li>`).join('');
+     const five=lens.five_things.map((x,i)=>`<li><span>${i+1}</span><p>${esc(x)}</p></li>`).join('');
+-    q('#businessLensBody').innerHTML=`<div class="lens-disclaimer">${esc(lens.disclaimer)}</div><section class="lens-opening"><h3>${esc(lens.premise)}</h3><p>${esc(lens.opening)}</p></section>${sections}<section class="lens-major"><p class="micro-label">WORKING BACKWARD FROM PROCUREMENT</p><h2>The Illinois Opportunity Clock</h2><p class="lens-caveat">${esc(lens.clock_caveat)}</p><div class="clock-grid">${clock}</div></section><section class="lens-major"><p class="micro-label">COMBINATIONS, NOT KEYWORDS</p><h2>Opportunity fingerprints</h2><div class="fingerprint-grid">${prints}</div></section><section class="lens-major golden"><p class="micro-label">THE GOLDEN WINDOW</p><h2>${esc(lens.golden_window.title)}</h2><p>${esc(lens.golden_window.body)}</p><p class="boundary">${esc(lens.golden_window.boundary)}</p></section><section class="lens-split"><div><p class="micro-label">WHAT COULD SPOIL IT?</p><ul>${spoilers}</ul></div><div><p class="micro-label">QUALIFICATION RADAR</p><p class="capability-rule">Capability is not qualification proof.</p><ul class="qualification-list">${radar}</ul></div></section><section class="lens-major"><p class="micro-label">RED TEAM</p><h2>Keep the unknowns visible</h2><ul class="red-team-list">${red}</ul></section><section class="five-things"><p class="micro-label">FINAL EXECUTIVE REDUCTION</p><h2>Five things to know</h2><ol>${five}</ol></section>`;
++    q('#businessLensBody').innerHTML=`${renderCurrentLawSources(lens)}<div class="lens-disclaimer">${esc(lens.disclaimer)}</div><section class="lens-opening"><h3>${esc(lens.premise)}</h3><p>${esc(lens.opening)}</p></section>${sections}<section class="lens-major"><p class="micro-label">WORKING BACKWARD FROM PROCUREMENT</p><h2>The Illinois Opportunity Clock</h2><p class="lens-caveat">${esc(lens.clock_caveat)}</p><div class="clock-grid">${clock}</div></section><section class="lens-major"><p class="micro-label">COMBINATIONS, NOT KEYWORDS</p><h2>Opportunity fingerprints</h2><div class="fingerprint-grid">${prints}</div></section><section class="lens-major golden"><p class="micro-label">THE GOLDEN WINDOW</p><h2>${esc(lens.golden_window.title)}</h2><p>${esc(lens.golden_window.body)}</p><p class="boundary">${esc(lens.golden_window.boundary)}</p></section><section class="lens-split"><div><p class="micro-label">WHAT COULD SPOIL IT?</p><ul>${spoilers}</ul></div><div><p class="micro-label">QUALIFICATION RADAR</p><p class="capability-rule">Capability is not qualification proof.</p><ul class="qualification-list">${radar}</ul></div></section><section class="lens-major"><p class="micro-label">RED TEAM</p><h2>Keep the unknowns visible</h2><ul class="red-team-list">${red}</ul></section><section class="five-things"><p class="micro-label">FINAL EXECUTIVE REDUCTION</p><h2>Five things to know</h2><ol>${five}</ol></section>`;
+   }
+ 
+   function renderTransformation(){
+@@ -43,7 +51,8 @@
+     const syn=transformation.synthesis[current] || transformation.synthesis.tcja;
+     const metrics=syn.metrics.map((m,i)=>`<div class="synthesis-metric"><div class="metric-number">${esc(m.value)}</div><div><p class="metric-label">${esc(m.label)}</p><p class="metric-note">${esc(m.note)}</p></div></div>`).join('');
+     const hold=syn.hadToHold.map(x=>`<span>${esc(x)}</span>`).join('');
+-    q('#transformationBody').innerHTML=`<div class="transformation-intro"><p class="micro-label">REAL EXAMPLE · ${esc(ex.bill)}</p><h3>${esc(ex.provision)}</h3><p>${esc(ex.thesis)}</p></div>${steps}<section class="before-after"><div><p class="micro-label">BEFORE</p><p>${esc(ex.before)}</p></div><div><p class="micro-label">AFTER</p><p>${esc(ex.after)}</p></div></section><p class="transformation-closer">${esc(ex.closer)}</p><section class="synthesis-reveal"><p class="synthesis-eyebrow">${esc(syn.eyebrow)}</p><h3>${esc(syn.title)}</h3><p class="synthesis-intro">${esc(syn.intro)}</p><div class="synthesis-metrics">${metrics}</div><div class="complexity-compare"><div class="complexity-left"><p class="micro-label">WHAT AI HAD TO HOLD</p><div class="complexity-tags">${hold}</div></div><div class="complexity-right"><p class="micro-label">WHAT YOU HAVE TO HOLD</p><blockquote>${esc(syn.humanHold)}</blockquote></div></div><p class="synthesis-doctrine">${esc(syn.doctrine)}</p><p class="synthesis-final">${esc(syn.final)}</p></section>`;
++    const status=current==='sb1570' ? renderCurrentLawSources(data.sb1570) : '';
++    q('#transformationBody').innerHTML=`${status}<div class="transformation-intro"><p class="micro-label">REAL EXAMPLE · ${esc(ex.bill)}</p><h3>${esc(ex.provision)}</h3><p>${esc(ex.thesis)}</p></div>${steps}<section class="before-after"><div><p class="micro-label">BEFORE</p><p>${esc(ex.before)}</p></div><div><p class="micro-label">AFTER</p><p>${esc(ex.after)}</p></div></section><p class="transformation-closer">${esc(ex.closer)}</p><section class="synthesis-reveal"><p class="synthesis-eyebrow">${esc(syn.eyebrow)}</p><h3>${esc(syn.title)}</h3><p class="synthesis-intro">${esc(syn.intro)}</p><div class="synthesis-metrics">${metrics}</div><div class="complexity-compare"><div class="complexity-left"><p class="micro-label">WHAT AI HAD TO HOLD</p><div class="complexity-tags">${hold}</div></div><div class="complexity-right"><p class="micro-label">WHAT YOU HAVE TO HOLD</p><blockquote>${esc(syn.humanHold)}</blockquote></div></div><p class="synthesis-doctrine">${esc(syn.doctrine)}</p><p class="synthesis-final">${esc(syn.final)}</p></section>`;
+   }
+   function openTransformation(){closeDrawer();renderTransformation();q('#transformation').classList.add('open');q('#transformation').setAttribute('aria-hidden','false');q('#transformationButton').setAttribute('aria-expanded','true');q('#scrim').hidden=false;document.body.classList.add('no-scroll');}
+   function closeTransformation(){q('#transformation').classList.remove('open');q('#transformation').setAttribute('aria-hidden','true');q('#transformationButton').setAttribute('aria-expanded','false');q('#scrim').hidden=true;document.body.classList.remove('no-scroll');}
+diff --git a/public/business-lens.js b/public/business-lens.js
+index 98589c6..3ad4ce3 100644
+--- a/public/business-lens.js
++++ b/public/business-lens.js
+@@ -1,12 +1,18 @@
+ window.BXR_BUSINESS_LENS={
+   bill_id:"sb1570",
++  current_law_status:"CURRENT LAW CHECKED THROUGH P.A. 104-0395",
++  source_links:[
++    {label:"Foundation: Public Act 103-0491",url:"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491"},
++    {label:"Current amendment: Public Act 104-0395",url:"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"}
++  ],
+   disclaimer:"This is practical statutory translation, not legal advice or a sales playbook. The time bands are analytical categories—not statutory deadlines or predictions.",
+   premise:"How should an experienced Illinois business-development leader at an integrated design, engineering and construction firm understand this law if the goal is to recognize legitimate municipal design-build opportunities before formal procurement?",
+-  opening:"Public Act 103-0491 opened a new municipal delivery path. It did not create projects, funding, adoption, or guaranteed competitive access. The useful question is therefore not simply whether an RFP exists, but whether independent public evidence shows an eligible owner moving from a consequential need toward a funded project while the delivery path remains genuinely open.",
++  opening:"Public Act 103-0491 opened a new municipal delivery path. Public Act 104-0395 later amended the municipal selection procedure, effective July 1, 2025, including a discretionary single-response path. Neither Act created projects, funding, adoption, or guaranteed competitive access. The useful question is therefore not simply whether an RFP exists, but whether independent public evidence shows an eligible owner moving from a consequential need toward a funded project while the delivery path remains genuinely open.",
+   executive_sections:[
+     {label:"WHAT CHANGED",title:"A municipality may buy design and construction together.",body:"Illinois municipalities may elect a design-build contract that places design and construction responsibility in one entity. If they elect it, the Act imposes advance notice, project-definition, qualifications, technical/cost evaluation, conflict, award, and reporting rules. Authorization is statutory fact. Adoption and commercial demand remain evidence questions."},
+     {label:"WHY IT MATTERS",title:"The law changes the set of possible delivery choices.",body:"An integrated firm can now compete under a municipal process that expressly values personnel, similar experience, financial capacity, performance, technical quality, innovation, constructability, cost, and time. Price is excluded from Phase I, and total-project-cost weighting may not exceed 30 percent in Phase II. That makes demonstrated integration potentially relevant; it does not prove qualification or competitive advantage."},
+-    {label:"WHO IS COVERED",title:"Municipalities—and, under a separate article, school districts.",body:"The Act creates parallel authority for Illinois municipalities and school districts. This municipal lens must not be silently extended to counties, park districts, state agencies, or other public bodies. School rules also contain differences, including the exact $12 million boundary and a single-respondent provision."},
++    {label:"WHO IS COVERED",title:"Municipalities—and, under a separate article, school districts.",body:"The foundation Act creates legally separate authority for Illinois municipalities and school districts. This municipal lens must not be silently extended to counties, park districts, state agencies, or other public bodies. The exact $12 million boundary remains one difference between the municipal and school pathways. A single-response option is no longer a school-only distinction: current municipal law also permits it, subject to municipal discretion and a best-interest finding."},
++    {label:"CURRENT MUNICIPAL SELECTION RULE",title:"Two to six ordinarily; one only through the statutory exception.",body:"The ordinary municipal Phase II shortlist remains two to six design-build entities. Under P.A. 104-0395, if the municipality receives only one Phase I response, it may proceed with a Phase II evaluation of that respondent if the municipality, in its discretion, finds proceeding to be in its best interest. One response creates permission to proceed, not a duty to do so."},
+     {label:"THE PUBLIC-RECORD FOOTPRINT",title:"The RFP is late evidence of earlier decisions.",body:"By RFP issuance, an owner must be able to state schedule, budget, funding source, available funds, qualifications, performance criteria, evaluation criteria, and Phase II field size. Earlier traces may appear in agendas, minutes, capital plans, budgets, facility assessments, master plans, professional-services selections, ordinances, financing records, bond material, grants, and project studies. Their relevance must be established document by document."},
+     {label:"WHEN TO INVESTIGATE",title:"Look for convergence, then ask what is still missing.",body:"Serious attention becomes more defensible when an eligible owner, documented need, governing-body attention, planning activity, and plausible funding path converge while delivery-method choice remains unresolved. The next question should target the weakest link: Is the project approved? Is money available? Who is advising the owner? Has delivery already been selected? Could prior involvement restrict later eligibility?"},
+     {label:"WHEN THE WINDOW CLOSES",title:"Formal structure replaces open possibility.",body:"A design-build notice of intent means the owner has already elected the method and the RFP is at least 14 days downstream. Draft criteria, an appointed scope professional, a settled team, or a substantially developed procurement may signal that solution space is narrowing even earlier. No public RFP does not prove an open competitive field."},
+diff --git a/public/data.js b/public/data.js
+index 38e730b..842485e 100644
+--- a/public/data.js
++++ b/public/data.js
+@@ -770,7 +770,12 @@ window.BXR_DATA = {
+     ]
+   },
+   "sb1570": {
+-    "eyebrow": "Illinois SB 1570 · Public Act 103-0491 · 2023",
++    "eyebrow": "Illinois SB 1570 · Public Act 103-0491 · current law through P.A. 104-0395",
++    "current_law_status": "CURRENT LAW CHECKED THROUGH P.A. 104-0395",
++    "source_links": [
++      {"label":"Foundation: Public Act 103-0491","url":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491"},
++      {"label":"Current amendment: Public Act 104-0395","url":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"}
++    ],
+     "title": "The Permission Before the Proposal",
+     "dek": "Illinois opened a design-build door for municipalities and school districts. It did not push anyone through it.",
+     "short": "Public Act 103-0491 lets Illinois municipalities and school districts choose one design-build contract for design and construction. If they choose it, they must publish advance notice, define the project with professional help, and evaluate qualifications before technical and cost proposals. The law creates a delivery path—not a project, an appropriation, or proof that any owner will use it.",
+@@ -780,13 +785,13 @@ window.BXR_DATA = {
+       {"paragraph_no":3,"kind":"FACT","text":"Once an owner elects design-build, the law becomes less optional. At least 14 days before the request for proposals, the owner must issue advance notice and post it online. The eventual request must identify a schedule, proposed budget, funding sources, available funds, prequalification rules, performance criteria, evaluation criteria, and the number of entities to reach the technical-and-cost phase.","support_fact_ids":["advance_notice","rfp_contents"],"word_count":62},
+       {"paragraph_no":4,"kind":"SYNTHESIS","text":"But the project must take shape before that notice can be useful. A licensed design professional or public art designer must help prepare scope and performance criteria describing the owner's needs, budget parameters, schedule, delivery requirements, and the design expected from proposers. The person who prepares those criteria may not join a proposing design-build team for that project.","support_fact_ids":["scope","scope_conflict"],"word_count":59},
+       {"paragraph_no":5,"kind":"ANALOGY","text":"The visible RFP is therefore not the beginning of the story. It is more like the box score: public, precise, and already downstream from the choices that made the game possible. The statute proves the required procurement machinery. It does not tell us when a town first noticed the failing roof, crowded school, obsolete boiler, or unaffordable energy bill.","support_fact_ids":["scope","advance_notice"],"word_count":59},
+-      {"paragraph_no":6,"kind":"FACT","text":"Selection is designed to keep price from swallowing the decision. Phase I is qualifications-based, and price may not be considered there. The shortlist ordinarily contains two to six entities. Phase II evaluates technical and cost proposals, but total project cost may carry no more than 30 percent of the weighting. For municipal projects estimated below $12 million—and school projects at $12 million or less—the phases may be combined if every required evaluation still occurs.","support_fact_ids":["phase_one","shortlist","phase_two","small_projects"],"word_count":75},
++      {"paragraph_no":6,"kind":"FACT","text":"Selection is designed to keep price from swallowing the decision. Phase I is qualifications-based, and price may not be considered there. The ordinary municipal shortlist contains two to six entities. Under the current municipal rule, if only one Phase I response is received, the municipality may proceed with a Phase II evaluation of that respondent if it finds, in its discretion, that proceeding is in its best interest. Phase II evaluates technical and cost proposals, but total project cost may carry no more than 30 percent of the weighting. For municipal projects estimated below $12 million—and school projects at $12 million or less—the phases may be combined if every required evaluation still occurs.","support_fact_ids":["phase_one","shortlist","phase_two","small_projects"],"word_count":108},
+       {"paragraph_no":7,"kind":"SYNTHESIS","text":"The qualifications reveal the bargain Illinois wrote. Experience, financial capability, timeliness, references, committed personnel, consultants, diversity-goal performance, technical quality, innovation, constructability, cost, and completion time all enter the record. The winning idea is not legally reduced to the cheapest number in the envelope.","support_fact_ids":["phase_one","phase_two"],"word_count":46},
+       {"paragraph_no":8,"kind":"FACT","text":"The law also draws an ethical line. An entity may be excluded for a financial interest or relationship that creates an advantage or the appearance of impropriety. After award, the selected entity must report every six months—and again before final payout—on efforts and success under specified business-enterprise and human-rights utilization requirements.","support_fact_ids":["impropriety","reporting"],"word_count":52},
+       {"paragraph_no":9,"kind":"SYNTHESIS","text":"So what did SB 1570 actually build? Not a bridge, school, plant, or guaranteed pipeline. It built a lawful route by which certain Illinois public owners can buy design and construction together, with public notice, professional scope-setting, scored qualifications, controlled price weighting, and written accountability.","support_fact_ids":["authority","advance_notice","scope","phase_one","phase_two","reporting"],"word_count":47},
+       {"paragraph_no":10,"kind":"SYNTHESIS","text":"The human idea is the space before the proposal. By the time the notice appears, the owner has chosen a delivery method and assembled enough need, money, schedule, and scope to describe a procurement. The statute makes that later machinery visible. Finding the earlier need requires evidence beyond the statute—and the discipline not to confuse a signal with a sale.","support_fact_ids":["rfp_contents","scope","advance_notice"],"word_count":59}
+     ],
+-    "homework_note":"Every receipt below comes from the enacted Public Act 103-0491. The law authorizes a process; it does not prove adoption, funding, demand, savings, or a future project for any particular owner.",
++    "homework_note":"The foundation is Public Act 103-0491. Municipal selection law is updated through Public Act 104-0395, effective July 1, 2025. The law authorizes a process; it does not prove adoption, funding, demand, savings, or a future project for any particular owner.",
+     "receipts":[
+       {"id":"authority","label":"Municipalities may enter design-build contracts; the Act's stated purpose is to authorize that process for public projects.","section":"65 ILCS 5/11-39.2-5 and 11-39.2-15(a)","heading":"PURPOSE; SOLICITATION","source":"Illinois General Assembly · Public Act 103-0491","limits":["Authorization is discretionary. It neither requires use nor creates or funds a project."],"excerpt":"The purpose of this Division is to authorize municipalities to use design-build processes... A municipality may enter into design-build contracts."},
+       {"id":"schools","label":"The Act separately authorizes school districts to use design-build contracts.","section":"105 ILCS 5/15A-5 and 15A-15(a)","heading":"SCHOOL DESIGN-BUILD CONTRACTS","source":"Illinois General Assembly · Public Act 103-0491","limits":["School-district provisions are similar but not identical to the municipal provisions."],"excerpt":"The purpose of this Article is to authorize school districts to use design-build processes..."},
+@@ -795,7 +800,7 @@ window.BXR_DATA = {
+       {"id":"scope","label":"A licensed design professional or public art designer must assist in preparing scope and performance criteria detailed enough to state needs, budget parameters, schedule, and delivery requirements.","section":"65 ILCS 5/11-39.2-20(a)-(c); 105 ILCS 5/15A-20(a)-(c)","heading":"DEVELOPMENT OF SCOPE AND PERFORMANCE CRITERIA","source":"Illinois General Assembly · Public Act 103-0491","limits":["The Act does not require this preparatory engagement to be publicly labeled as a future design-build project."],"excerpt":"The municipality must develop, with the assistance of a licensed design professional or public art designer, a request for proposal, which must include scope and performance criteria."},
+       {"id":"scope_conflict","label":"The professional who prepares scope and performance criteria may not participate in a design-build proposal for that project.","section":"65 ILCS 5/11-39.2-20(d); 105 ILCS 5/15A-20(d)","heading":"SCOPE-PREPARER PROHIBITION","source":"Illinois General Assembly · Public Act 103-0491","limits":["This receipt does not resolve every conflict question arising from earlier business development or advisory contact."],"excerpt":"The design professional... that prepares the scope and performance criteria is prohibited from participating in any design-build entity proposal for the project."},
+       {"id":"phase_one","label":"Phase I is qualifications-based; price is excluded, and specified experience, capability, performance, personnel, references, and utilization criteria must be evaluated.","section":"65 ILCS 5/11-39.2-15(b)(7), 11-39.2-25(a)-(b); 105 ILCS 5/15A-15(b)(7), 15A-25(a)-(b)","heading":"PHASE I","source":"Illinois General Assembly · Public Act 103-0491","limits":["Owners may add relevant criteria and weights, so the statute is not a complete scoring sheet."],"excerpt":"Price may not be used as a factor in the evaluation of Phase I proposals."},
+-      {"id":"shortlist","label":"The municipal shortlist must contain no fewer than two and no more than six entities; school districts may proceed with one respondent if they find it in their best interest.","section":"65 ILCS 5/11-39.2-25(b); 105 ILCS 5/15A-25(b)","heading":"SHORTLIST","source":"Illinois General Assembly · Public Act 103-0491","limits":["The single-respondent option appears in the school provision, not the municipal provision."],"excerpt":"No less than 2 design-build entities nor more than 6 are selected to submit Phase II proposals."},
++      {"id":"shortlist","label":"The ordinary municipal Phase II shortlist contains two to six entities. If only one Phase I response is received, the municipality may evaluate that single respondent in Phase II if, in its discretion, it finds proceeding to be in its best interest.","section":"65 ILCS 5/11-39.2-25(b)","heading":"MUNICIPAL SHORTLIST AND SINGLE-RESPONSE OPTION","source":"Illinois General Assembly · Foundation P.A. 103-0491 · Current amendment P.A. 104-0395 (eff. July 1, 2025)","source_links":[{"label":"Foundation: P.A. 103-0491","url":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491"},{"label":"Current amendment: P.A. 104-0395","url":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"}],"limits":["One response does not require the municipality to proceed; the statute leaves that decision to the municipality's discretion and best-interest finding.","Municipal and school pathways remain legally separate even though both now contain a single-response option."],"excerpt":"No less than 2 design-build entities nor more than 6 are selected to submit Phase II proposals. If a municipality receives one response to Phase I, nothing in this Section shall prohibit the municipality from proceeding with a Phase II evaluation of the single respondent if the municipality, in its discretion, finds proceeding to be in its best interest."},
+       {"id":"phase_two","label":"Phase II evaluates required technical factors plus cost and completion time; total project cost may carry no more than 30% of the weighting.","section":"65 ILCS 5/11-39.2-25(c); 105 ILCS 5/15A-25(c)","heading":"PHASE II","source":"Illinois General Assembly · Public Act 103-0491","limits":["A 30% maximum for total-project-cost weighting does not mean all cost-related considerations together are necessarily fixed at 30%."],"excerpt":"The total project cost criteria weighting factor may not exceed 30%."},
+       {"id":"small_projects","label":"Municipal projects estimated below $12 million and school projects estimated at $12 million or less may combine the phases if all required evaluations remain.","section":"65 ILCS 5/11-39.2-30; 105 ILCS 5/15A-30","heading":"SMALL PROJECTS","source":"Illinois General Assembly · Public Act 103-0491","limits":["The municipal and school threshold language differs at exactly $12 million."],"excerpt":"[The owner] may combine the two-phase procedure... into one combined step if all the requirements of evaluation are performed."},
+       {"id":"timing","label":"Proposals are due at least 21 days after the RFP, or at least 28 days for projects estimated above $12 million; Phase II receives at least 30 days after Phase I selection.","section":"65 ILCS 5/11-39.2-15(d); 105 ILCS 5/15A-15(d)","heading":"PROPOSAL TIMING","source":"Illinois General Assembly · Public Act 103-0491","limits":["These are minimum procurement periods, not forecasts of the full project-development timeline."],"excerpt":"The date that proposals are due must be at least 21 calendar days... [or] at least 28... [and] a minimum of 30 days to develop the Phase II submissions."},
+diff --git a/public/index.html b/public/index.html
+index a809c9b..674a64b 100644
+--- a/public/index.html
++++ b/public/index.html
+@@ -24,6 +24,7 @@
+       <p id="eyebrow" class="eyebrow"></p>
+       <h1 id="story-title"></h1>
+       <p id="dek" class="dek"></p>
++      <div id="currentLawSources"></div>
+     </section>
+ 
+     <section class="quick-read" aria-labelledby="quick-title">
+diff --git a/public/styles.css b/public/styles.css
+index 030b08e..6cfecd0 100644
+--- a/public/styles.css
++++ b/public/styles.css
+@@ -22,3 +22,9 @@ button,a{font:inherit}.masthead{position:sticky;top:0;z-index:20;display:flex;al
+ /* PASS 46.1 — SB 1570-only Illinois Business Development Lens */
+ .business-lens{position:fixed;z-index:46;inset:0;background:#f5f1e8;overflow:auto;transform:translateY(105%);transition:transform .28s ease}.business-lens.open{transform:translateY(0)}.business-lens-head{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding:25px max(28px,calc((100vw - 980px)/2));background:rgba(245,241,232,.97);border-bottom:1px solid #c9c1b2}.business-lens-head h2{font-size:clamp(30px,5vw,50px);line-height:1;margin:0 0 10px}.business-lens-head p:last-child{margin:0;max-width:720px;color:#555}.business-lens-body{max-width:980px;margin:auto;padding:45px 28px 90px}.lens-disclaimer{font-family:Arial,sans-serif;font-size:12px;font-weight:700;color:#6a514d;border-left:4px solid var(--accent);background:#fffdf8;padding:15px 18px}.lens-opening{padding:45px 0 30px;border-bottom:1px solid var(--line)}.lens-opening h3{font-size:31px;line-height:1.25;margin:0 0 15px}.lens-opening p,.lens-section p,.golden p{font-size:18px}.lens-section{padding:30px 0;border-bottom:1px solid var(--line)}.lens-section h3{font-size:28px;margin:0 0 10px}.lens-major{margin-top:65px}.lens-major>h2,.five-things>h2{font-size:42px;line-height:1.05;margin:0 0 16px}.lens-caveat{color:#655f56}.clock-grid,.fingerprint-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:28px}.clock-card,.fingerprint{background:#fffdf8;border:1px solid var(--line);padding:22px}.clock-card:last-child{grid-column:1/-1}.clock-period{font-family:Arial,sans-serif;font-size:11px;font-weight:900;letter-spacing:.12em;color:var(--accent);margin:0}.clock-card h3,.fingerprint h3{font-size:23px;line-height:1.2;margin:7px 0 16px}.clock-card dt{font-family:Arial,sans-serif;font-size:10px;font-weight:900;letter-spacing:.08em;color:#746e65;text-transform:uppercase}.clock-card dd{margin:2px 0 13px;font-size:15px;line-height:1.45}.fingerprint p{font-size:15px;line-height:1.45}.golden{background:#1c1c1c;color:#f7f2e7;padding:35px}.golden .micro-label{color:#d2c8b8}.golden .boundary{border-left:3px solid #c76656;padding-left:16px;color:#d9d1c4}.lens-split{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:55px}.lens-split>div{background:#fffdf8;border:1px solid var(--line);padding:25px}.lens-split ul{padding-left:20px}.lens-split li{margin-bottom:10px}.capability-rule{font-size:21px;font-weight:700;color:var(--accent)}.qualification-list span{display:block;font-size:13px;color:#665f56;margin-top:3px}.red-team-list{columns:2;column-gap:36px;padding-left:20px}.red-team-list li{break-inside:avoid;margin-bottom:13px}.five-things{margin-top:70px;background:var(--accent);color:white;padding:42px}.five-things .micro-label{color:#f0d9d5}.five-things ol{list-style:none;padding:0;margin:30px 0 0}.five-things li{display:grid;grid-template-columns:50px 1fr;gap:18px;border-top:1px solid rgba(255,255,255,.35);padding:19px 0}.five-things li>span{font-size:32px;font-weight:700}.five-things li p{font-size:18px;margin:4px 0 0}
+ @media(max-width:700px){.business-lens-head{padding:18px}.business-lens-body{padding:30px 18px 65px}.clock-grid,.fingerprint-grid,.lens-split{grid-template-columns:1fr}.clock-card:last-child{grid-column:auto}.red-team-list{columns:1}.lens-major>h2,.five-things>h2{font-size:34px}.five-things{padding:30px 22px}}
++
++/* PASS 46.3 — current-law source status */
++.current-law-status{margin-top:1rem;padding:.8rem 1rem;border-left:3px solid #a33a2b;background:#f5f1e8;font-family:Arial,sans-serif;font-size:.78rem;line-height:1.55;letter-spacing:.02em}
++.current-law-status strong{display:block;color:#7e2f24;letter-spacing:.08em;margin-bottom:.2rem}
++.current-law-status a,.receipt-links a{color:#174f7d;text-decoration:underline;text-underline-offset:2px}
++.receipt-links{font-family:Arial,sans-serif;font-size:.78rem;line-height:1.5;margin:.25rem 0 .7rem}
+diff --git a/public/transformation-examples.js b/public/transformation-examples.js
+index 53b2ee1..22d5d1d 100644
+--- a/public/transformation-examples.js
++++ b/public/transformation-examples.js
+@@ -35,9 +35,9 @@
+       raw:T.steps[0].body,rawNote:T.steps[0].note,grammar:T.steps[1].body,facts:T.steps[2].body,nouns:T.steps[3].body,court:T.steps[4].body,idea:T.steps[5].body,human:T.steps[6].body,receipt:T.steps[7].body,limit:T.steps[7].note,before:T.before,after:T.after
+     }),
+     sb1570:example({
+-      bill:"Illinois SB 1570 · Public Act 103-0491",provision:"65 ILCS 5/11-39.2-15(a) — Municipal design-build authority and notice",thesis:"The law opens a delivery path; it does not create a project pipeline.",
++      bill:"Illinois SB 1570 · Foundation Public Act 103-0491 · current through Public Act 104-0395",provision:"65 ILCS 5/11-39.2-15(a) — Municipal design-build authority and notice",thesis:"The law opens a delivery path; it does not create a project pipeline.",
+       raw:"A municipality may enter into design-build contracts. When it elects that delivery method, it must issue and post online a notice of intent at least 14 days before issuing the request for proposal.",rawNote:"The same provision contains discretionary authority followed by mandatory duties triggered by the municipality's choice.",
+-      grammar:"“May enter” authorizes design-build. “When ... elects” creates a condition. “Must issue” and “must ... post” impose duties only after that condition is satisfied.",facts:"Fact one: a municipality is permitted to use design-build. Fact two: use is optional. Fact three: choosing it triggers advance-notice duties. Fact four: the notice must be online at least 14 days before the RFP.",nouns:"The statute creates delivery-method authority and a procurement notice. It does not create an appropriation, capital project, owner need, adoption rate, or award.",court:"SUPPORTED: Illinois municipalities have this design-build option and must follow notice rules when they use it. NOT SUPPORTED: municipalities will use it, more projects will be funded, or any particular firm will benefit.",idea:"The Act unlocked a door and wrote rules for walking through it. It did not schedule anyone to arrive.",human:"Illinois municipalities may now choose design-build. Once one does, it must publicly signal the coming procurement at least 14 days before the RFP. The law creates the route—not the traveler, the project, or the money.",receipt:"Public Act 103-0491 · 65 ILCS 5/11-39.2-15(a) · Illinois General Assembly",limit:"The 14-day notice is a procurement-stage signal. Earlier need, funding, planning, adoption, and commercial opportunity require independent evidence.",before:"A municipality may enter into design-build contracts ... when [it] elects ... it must issue a notice ... at least 14 days before ... the request for proposal.",after:"Municipalities may choose design-build; choosing it triggers an online notice at least 14 days before the RFP. Permission is not proof of demand."
++      grammar:"“May enter” authorizes design-build. “When ... elects” creates a condition. “Must issue” and “must ... post” impose duties only after that condition is satisfied.",facts:"Fact one: a municipality is permitted to use design-build. Fact two: use is optional. Fact three: choosing it triggers advance-notice duties. Fact four: the notice must be online at least 14 days before the RFP.",nouns:"The statute creates delivery-method authority and a procurement notice. It does not create an appropriation, capital project, owner need, adoption rate, or award.",court:"SUPPORTED: Illinois municipalities have this design-build option and must follow notice rules when they use it. NOT SUPPORTED: municipalities will use it, more projects will be funded, or any particular firm will benefit.",idea:"The Act unlocked a door and wrote rules for walking through it. It did not schedule anyone to arrive.",human:"Illinois municipalities may now choose design-build. Once one does, it must publicly signal the coming procurement at least 14 days before the RFP. The law creates the route—not the traveler, the project, or the money.",receipt:"Foundation: Public Act 103-0491 · Current municipal amendment: Public Act 104-0395 (effective July 1, 2025) · Illinois General Assembly",limit:"The 14-day notice is a procurement-stage signal. Earlier need, funding, planning, adoption, and commercial opportunity require independent evidence.",before:"A municipality may enter into design-build contracts ... when [it] elects ... it must issue a notice ... at least 14 days before ... the request for proposal.",after:"Municipalities may choose design-build; choosing it triggers an online notice at least 14 days before the RFP. Permission is not proof of demand."
+     })
+   };
+ })();
+diff --git a/public/transformation.js b/public/transformation.js
+index de7b32b..3660df3 100644
+--- a/public/transformation.js
++++ b/public/transformation.js
+@@ -87,7 +87,7 @@ window.BXR_TRANSFORMATION = {
+       metrics:[
+         {value:"2",label:"public-owner categories authorized",note:"Municipalities and school districts receive parallel, but not perfectly identical, design-build authority."},
+         {value:"14 days",label:"minimum advance notice",note:"The online notice precedes the RFP but is already a procurement-stage signal."},
+-        {value:"2–6",label:"municipal Phase II shortlist",note:"School districts have a limited one-respondent exception."},
++        {value:"2–6",label:"ordinary municipal Phase II shortlist",note:"P.A. 104-0395 also permits a municipality with only one Phase I response to evaluate that respondent in Phase II when, in its discretion, proceeding is in its best interest."},
+         {value:"30%",label:"maximum project-cost weighting",note:"Qualifications and technical merit cannot be collapsed into lowest price."},
+         {value:"$12M",label:"procedural hinge",note:"The combined-phase rule and proposal timing turn on this threshold, with a subtle municipality/school wording difference."}
+       ],
+diff --git a/sources/sb1570_public_act_receipts.json b/sources/sb1570_public_act_receipts.json
+index 501501d..fcc81e2 100644
+--- a/sources/sb1570_public_act_receipts.json
++++ b/sources/sb1570_public_act_receipts.json
+@@ -5,13 +5,17 @@
+   "effective_date":"2024-01-01",
+   "authority":"Illinois General Assembly",
+   "canonical_html":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491",
++  "current_law_checked_through":"Public Act 104-0395",
++  "current_amendment_effective_date":"2025-07-01",
++  "current_amendment_html":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395",
+   "enrolled_pdf":"https://www.ilga.gov/legislation/103/SB/PDF/10300SB1570enr.pdf",
+   "scope":["65 ILCS 5/Art. 11 Div. 39.2","105 ILCS 5/Art. 15A"],
+   "public_receipt_ids":["authority","schools","advance_notice","rfp_contents","scope","scope_conflict","phase_one","shortlist","phase_two","small_projects","timing","impropriety","reporting"],
+   "material_warnings":[
+     "The authority is discretionary; the Act does not mandate design-build adoption.",
+     "The Act creates no appropriation or project pipeline.",
+-    "Municipal and school provisions are similar but differ at the $12 million threshold and single-respondent rule.",
++    "Municipal and school provisions are legally separate and differ at the exact $12 million threshold.",
++    "The ordinary municipal Phase II shortlist remains two to six entities, but P.A. 104-0395 permits evaluation of a sole Phase I respondent when the municipality, in its discretion, finds proceeding to be in its best interest.",
+     "Pre-RFP opportunity signals are investigative hypotheses unless expressly required by the Act.",
+     "Conflict and early-contact questions are fact-specific and may require Illinois procurement counsel."
+   ]
+diff --git a/tests/test_sb1570_pa1040395_current_law.py b/tests/test_sb1570_pa1040395_current_law.py
+new file mode 100644
+index 0000000..14e7b84
+--- /dev/null
++++ b/tests/test_sb1570_pa1040395_current_law.py
+@@ -0,0 +1,77 @@
++from pathlib import Path
++import json
++import unittest
++
++ROOT = Path(__file__).resolve().parents[1]
++FOUNDATION = "https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491"
++AMENDMENT = "https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"
++
++
++def load_public_data():
++    raw = (ROOT / "public" / "data.js").read_text(encoding="utf-8").strip()
++    return json.loads(raw[len("window.BXR_DATA = "):-1])
++
++
++class SB1570CurrentLawRegression(unittest.TestCase):
++    def test_visible_status_and_both_official_sources(self):
++        bill = load_public_data()["sb1570"]
++        self.assertEqual(bill["current_law_status"], "CURRENT LAW CHECKED THROUGH P.A. 104-0395")
++        urls = {item["url"] for item in bill["source_links"]}
++        self.assertEqual(urls, {FOUNDATION, AMENDMENT})
++
++        app = (ROOT / "public" / "app.js").read_text(encoding="utf-8")
++        html = (ROOT / "public" / "index.html").read_text(encoding="utf-8")
++        self.assertIn("renderCurrentLawSources", app)
++        self.assertIn('id="currentLawSources"', html)
++        self.assertIn("current==='sb1570' ? data.sb1570.source_links", app)
++        self.assertIn("current==='sb1570' ? renderCurrentLawSources(data.sb1570)", app)
++
++    def test_municipal_single_response_rule_is_complete(self):
++        bill = load_public_data()["sb1570"]
++        receipt = next(r for r in bill["receipts"] if r["id"] == "shortlist")
++        text = json.dumps(receipt).lower()
++        for required in ["two to six", "only one phase i response", "single respondent", "discretion", "best interest", "104-0395"]:
++            self.assertIn(required, text)
++        self.assertIn(FOUNDATION.lower(), text)
++        self.assertIn(AMENDMENT.lower(), text)
++
++    def test_school_only_error_cannot_return(self):
++        files = [
++            ROOT / "public" / "data.js",
++            ROOT / "public" / "business-lens.js",
++            ROOT / "public" / "transformation.js",
++            ROOT / "sources" / "sb1570_public_act_receipts.json",
++        ] + list((ROOT / "PSI_SB1570_HANDOFF").glob("*"))
++        corpus = "\n".join(p.read_text(encoding="utf-8", errors="ignore") for p in files if p.is_file()).lower()
++        forbidden = [
++            "single-respondent option appears in the school provision, not the municipal provision",
++            "school districts have a limited one-respondent exception",
++            "school rules allow a narrow one-respondent path",
++            "school single-respondent rules captured",
++        ]
++        for phrase in forbidden:
++            self.assertNotIn(phrase, corpus)
++        self.assertIn("single-response option is not a school-only distinction", corpus)
++
++    def test_business_lens_states_ordinary_rule_and_exception(self):
++        lens = (ROOT / "public" / "business-lens.js").read_text(encoding="utf-8").lower()
++        for required in ["ordinary municipal phase ii shortlist", "two to six", "only one phase i response", "best interest", "104-0395", FOUNDATION.lower(), AMENDMENT.lower()]:
++            self.assertIn(required, lens)
++
++    def test_machine_readable_sources_and_rule(self):
++        source = json.loads((ROOT / "sources" / "sb1570_public_act_receipts.json").read_text(encoding="utf-8"))
++        rules = json.loads((ROOT / "PSI_SB1570_HANDOFF" / "STATUTORY_RULES.json").read_text(encoding="utf-8"))
++        machine = json.loads((ROOT / "PSI_SB1570_HANDOFF" / "BUSINESS_DEVELOPMENT_LENS_MACHINE.json").read_text(encoding="utf-8"))
++        self.assertEqual(source["current_law_checked_through"], "Public Act 104-0395")
++        self.assertIn("single respondent", rules["municipal_shortlist"]["rule"].lower())
++        self.assertEqual(machine["current_law"]["municipal_amendment"], "104-0395")
++
++    def test_other_four_cases_do_not_gain_current_law_banner(self):
++        data = load_public_data()
++        for bill_id in ("tcja", "ira", "aca", "chips"):
++            self.assertNotIn("current_law_status", data[bill_id])
++            self.assertNotIn("source_links", data[bill_id])
++
++
++if __name__ == "__main__":
++    unittest.main()

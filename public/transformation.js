@@ -87,7 +87,7 @@ window.BXR_TRANSFORMATION = {
       metrics:[
         {value:"2",label:"public-owner categories authorized",note:"Municipalities and school districts receive parallel, but not perfectly identical, design-build authority."},
         {value:"14 days",label:"minimum advance notice",note:"The online notice precedes the RFP but is already a procurement-stage signal."},
-        {value:"2–6",label:"municipal Phase II shortlist",note:"School districts have a limited one-respondent exception."},
+        {value:"2–6",label:"ordinary municipal Phase II shortlist",note:"P.A. 104-0395 also permits a municipality with only one Phase I response to evaluate that respondent in Phase II when, in its discretion, proceeding is in its best interest."},
         {value:"30%",label:"maximum project-cost weighting",note:"Qualifications and technical merit cannot be collapsed into lowest price."},
         {value:"$12M",label:"procedural hinge",note:"The combined-phase rule and proposal timing turn on this threshold, with a subtle municipality/school wording difference."}
       ],

@@ -5,13 +5,17 @@
   "effective_date":"2024-01-01",
   "authority":"Illinois General Assembly",
   "canonical_html":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491",
+  "current_law_checked_through":"Public Act 104-0395",
+  "current_amendment_effective_date":"2025-07-01",
+  "current_amendment_html":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395",
   "enrolled_pdf":"https://www.ilga.gov/legislation/103/SB/PDF/10300SB1570enr.pdf",
   "scope":["65 ILCS 5/Art. 11 Div. 39.2","105 ILCS 5/Art. 15A"],
   "public_receipt_ids":["authority","schools","advance_notice","rfp_contents","scope","scope_conflict","phase_one","shortlist","phase_two","small_projects","timing","impropriety","reporting"],
   "material_warnings":[
     "The authority is discretionary; the Act does not mandate design-build adoption.",
     "The Act creates no appropriation or project pipeline.",
-    "Municipal and school provisions are similar but differ at the $12 million threshold and single-respondent rule.",
+    "Municipal and school provisions are legally separate and differ at the exact $12 million threshold.",
+    "The ordinary municipal Phase II shortlist remains two to six entities, but P.A. 104-0395 permits evaluation of a sole Phase I respondent when the municipality, in its discretion, finds proceeding to be in its best interest.",
     "Pre-RFP opportunity signals are investigative hypotheses unless expressly required by the Act.",
     "Conflict and early-contact questions are fact-specific and may require Illinois procurement counsel."
   ]

@@ -1,0 +1,12 @@
+{
+  "scoring_rule":"Never label an opportunity from one signal. Require owner eligibility plus at least two independent maturation categories; preserve missing evidence.",
+  "categories":[
+    {"name":"need","examples":["documented facility failure","capacity constraint","energy-cost problem","code or safety deficiency"]},
+    {"name":"planning","examples":["master plan","facility study","capital-plan entry","governing-body workshop"]},
+    {"name":"funding","examples":["appropriation","bond planning","referendum","grant","financing resolution"]},
+    {"name":"professional_services","examples":["RFQ","consultant selection","owner's representative","scope-development contract"]},
+    {"name":"delivery_path","examples":["design-build discussion","procurement ordinance","counsel review","notice of intent"]},
+    {"name":"competition","examples":["RFP","qualifications submission","shortlist","award"]}
+  ],
+  "false_positives":["old building without funded intent","generic capital wishlist","grant application without award","routine maintenance","design consultant engagement that precludes proposer participation","notice belonging to ineligible authority","project already hardened into competition"]
+}

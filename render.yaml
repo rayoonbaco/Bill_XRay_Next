@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: bill-xray-uapi
+    name: bill-xray
     runtime: static
-    buildCommand: echo "Bill X-Ray is a static site; no build step required."
     staticPublishPath: ./public
     pullRequestPreviewsEnabled: true
     routes:

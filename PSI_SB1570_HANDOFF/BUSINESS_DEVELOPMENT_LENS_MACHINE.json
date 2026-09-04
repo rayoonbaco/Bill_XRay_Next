@@ -1,0 +1,28 @@
+{
+  "schema_version":"1.1",
+  "current_law":{"status":"CURRENT LAW CHECKED THROUGH P.A. 104-0395","foundation_act":"103-0491","foundation_source":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491","municipal_amendment":"104-0395","amendment_effective_date":"2025-07-01","amendment_source":"https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395"},
+  "scope":{"bill_id":"sb1570","public_act":"103-0491","lens_applies_only_to":"SB 1570 / Public Act 103-0491 as currently amended","eligible_owner_types":["ILLINOIS_MUNICIPALITY"],"parallel_but_separate_owner_type":["ILLINOIS_SCHOOL_DISTRICT"],"excluded_without_separate_authority_check":["COUNTY","PARK_DISTRICT","STATE_AGENCY","OTHER_SPECIAL_DISTRICT"]},
+  "evidence_classes":{"STATUTORY_FACT":"Directly established by enacted law.","DERIVED_FACT":"Logical consequence reconstructed from two or more statutory requirements.","OBSERVED_PUBLIC_FACT":"Dated fact from an identified owner record.","INVESTIGATIVE_HYPOTHESIS":"Plausible interpretation requiring corroboration.","UNKNOWN":"Material question not answered by available evidence."},
+  "hard_rules":[
+    {"id":"R0","if":["municipal_phase_i_response_count == 1","municipality_best_interest_finding == true"],"then":"MAY_PROCEED_TO_SINGLE_RESPONDENT_PHASE_II_EVALUATION","reason":"P.A. 104-0395 creates a discretionary municipal single-response pathway; the ordinary shortlist remains two to six."},
+    {"id":"R1","if":["owner_type != ILLINOIS_MUNICIPALITY"],"then":"DO_NOT_APPLY_MUNICIPAL_SB1570_AUTHORITY","reason":"Owner coverage must be established separately."},
+    {"id":"R2","if":["only_signal_count < 2"],"then":"NO_OPPORTUNITY_CLASSIFICATION","reason":"A keyword or isolated record is not intelligence."},
+    {"id":"R3","if":["notice_of_intent_found == true"],"then":"MATURITY_AT_LEAST_FORMAL_PREPROCUREMENT","reason":"The statute requires notice at least 14 days before RFP."},
+    {"id":"R4","if":["rfp_found == true"],"then":"DELIVERY_PATH_HARDENED","reason":"Formal competition has begun."},
+    {"id":"R5","if":["scope_preparer_overlap == true"],"then":"MANDATORY_CONFLICT_COUNSEL_REVIEW","reason":"Scope-preparing professional is barred from proposal participation."},
+    {"id":"R6","if":["advantage_or_impropriety_risk == true"],"then":"MANDATORY_CONFLICT_COUNSEL_REVIEW","reason":"The Act contains a disqualifying interest/relationship boundary."},
+    {"id":"R7","if":["capability_match == true","qualification_evidence_complete != true"],"then":"LABEL_CAPABILITY_NOT_PROVEN_QUALIFICATION","reason":"Capability is not qualification proof."}
+  ],
+  "maturity_model":[
+    {"level":1,"label":"NEED_FORMING","minimum":"eligible owner plus documented durable need","typical_horizon":"3–5 years","action":"WATCH"},
+    {"level":2,"label":"PROJECT_FORMING","minimum":"need plus current planning and governing-body attention","typical_horizon":"1–3 years","action":"INVESTIGATE"},
+    {"level":3,"label":"FUNDING_OR_DELIVERY_FORMING","minimum":"project identity plus specific funding or delivery activity","typical_horizon":"6–18 months","action":"VERIFY_FUNDING_AND_DELIVERY"},
+    {"level":4,"label":"PRE_RFP_ACTIVE","minimum":"project-specific procurement preparation or scope activity","typical_horizon":"pre-RFP","action":"CONFLICT_CHECK_AND_PREPARE"},
+    {"level":5,"label":"FORMAL_PROCUREMENT","minimum":"notice of intent or RFP","typical_horizon":"formal","action":"QUALIFICATION_AND_COMPLIANCE_MODE"}
+  ],
+  "fingerprint_scoring":{"instruction":"Score evidence, not opportunity enthusiasm. Never sum away a contradiction.","positive_dimensions":["owner_eligibility","need_specificity","need_recency","planning_recurrence","named_sponsor","funding_specificity","fund_availability","professional_services_linkage","delivery_openness","schedule_specificity"],"negative_dimensions":["owner_out_of_scope","stale_need","funding_gap","delivery_fixed_elsewhere","adviser_or_incumbent_control","procurement_hardened","qualification_gap","conflict_risk","contradictory_record"],"required_output":["observed_signals","source_dates","likely_meaning","alternative_explanation","confidence","maturity","contradictions","unknowns","next_human_question"]},
+  "golden_window_logic":{"opening_indicators":["current documented need","owner sponsor","active planning","plausible funding path","delivery not selected","no disqualifying involvement detected"],"closing_indicators":["scope professional appointed","performance criteria in development","procurement schedule fixed","delivery method selected","notice preparation","notice issued","RFP issued"],"prohibited_inference":"No fixed calendar window may be asserted from the statute."},
+  "qualification_proof_fields":["named_personnel_evidence","similar_type_projects","similar_size_projects","financial_capability","timeliness_history","reference_results","personnel_commitment","consultant_qualifications","utilization_history_and_plan","technical_quality","innovation_evidence","constructability_evidence","cost_basis","completion_time_basis","bonding","insurance","conflict_clearance"],
+  "final_decisions":["WATCH","INVESTIGATE","BUILD_RELATIONSHIP_LAWFULLY","VERIFY_DELIVERY_PATH","VERIFY_FUNDING","PREPARE_QUALIFICATIONS","CONFLICT_COUNSEL_REVIEW","TOO_LATE_PROCUREMENT_HARDENED","REJECT"],
+  "permanent_red_team":["AUTHORIZATION_NOT_ADOPTION","NEED_NOT_PROJECT","PROJECT_NOT_DESIGN_BUILD","CAPITAL_PLAN_NOT_COMMITTED_FUNDING","FUNDING_AUTHORITY_NOT_AVAILABLE_MONEY","UNDISCOVERED_CONSULTANT_NOT_NO_CONSULTANT","NO_RFP_NOT_OPEN_FIELD","EARLY_INVOLVEMENT_NOT_LATER_ELIGIBILITY","CAPABILITY_MATCH_NOT_QUALIFICATION_PROOF"]
+}

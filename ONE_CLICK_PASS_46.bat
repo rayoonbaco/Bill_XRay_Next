@@ -8,5 +8,5 @@ if errorlevel 1 (
   exit /b 1
 )
 echo.
-echo PASS 46 PASSED. SB 1570 is the fifth public case and its release checks passed.
+echo PASS 46 PASSED. SB 1570 is the fifth public case and the PSI handoff is present.
 pause

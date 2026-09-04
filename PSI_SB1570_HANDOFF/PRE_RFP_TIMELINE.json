@@ -1,0 +1,11 @@
+{
+  "stages":[
+    {"stage":"PUBLIC_NEED_EXISTS","horizon":"5_YEAR","classification":"HYPOTHESIS","evidence":["facility-condition assessment","master plan","deferred-maintenance list","capacity or energy study"],"action":"WATCH"},
+    {"stage":"OWNER_DEFINES_PROJECT","horizon":"3_YEAR","classification":"HYPOTHESIS","evidence":["capital improvement plan","board or council workshop","feasibility study","owner's representative discussion"],"action":"INVESTIGATE"},
+    {"stage":"FUNDING_FORMS","horizon":"1_YEAR","classification":"HYPOTHESIS","evidence":["budget line","bond or referendum discussion","grant application or award","financing resolution"],"action":"VERIFY_FUNDING"},
+    {"stage":"DELIVERY_METHOD_CONSIDERED","horizon":"1_YEAR","classification":"HYPOTHESIS","evidence":["agenda packet","procurement-policy amendment","counsel or consultant memo","design-build presentation"],"action":"VERIFY_DELIVERY_PATH"},
+    {"stage":"SCOPE_AND_CRITERIA_DEVELOP","horizon":"6_MONTH","classification":"DERIVED","evidence":["professional-services selection","scope contract","meeting authorization","draft performance criteria"],"action":"CONFLICT_CHECK_AND_INVESTIGATE"},
+    {"stage":"NOTICE_OF_INTENT","horizon":"PROCUREMENT_STAGE","classification":"STATUTORY_FACT","evidence":["owner website notice posted at least 14 days before RFP"],"action":"PREPARE_QUALIFICATIONS"},
+    {"stage":"RFP_AND_COMPETITION","horizon":"PROCUREMENT_STAGE","classification":"STATUTORY_FACT","evidence":["RFP","Phase I scoring","shortlist notice","Phase II submission"],"action":"TOO_LATE_FOR_EARLY_DISCOVERY"}
+  ]
+}

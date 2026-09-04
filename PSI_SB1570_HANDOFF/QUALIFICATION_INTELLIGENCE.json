@@ -1,0 +1,7 @@
+{
+  "phase_i_required":["experience of personnel","successful experience with similar project types","financial capability","timeliness of past performance","experience with similarly sized projects","successful firm references","committed personnel and consultant qualifications","utilization-goal ability or good-faith performance"],
+  "phase_ii_technical_required":["project-objective compliance","RFP compliance","product and material quality","design-parameter quality","design concepts","innovation","constructability"],
+  "phase_ii_cost_required":["total project cost","construction cost","completion time"],
+  "commercial_preparation":["evidence-backed project sheets","named team availability","auditable schedule history","reference readiness","bonding and insurance readiness","partner and consultant commitments","utilization plan and history","innovation claims tied to comparable results"],
+  "limits":["Owners may add criteria and weights.","Total project cost weighting may not exceed 30%.","Team members generally cannot be changed after response submission without owner authorization."]
+}

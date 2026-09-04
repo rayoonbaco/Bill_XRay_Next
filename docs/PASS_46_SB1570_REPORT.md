@@ -1,12 +1,12 @@
-# PASS 46 — Illinois SB 1570 / Public Act 103-0491
+# PASS 46.3 — Illinois SB 1570 Current-Law Correction
 
 ## Result
 
-SB 1570 is now the fifth permanent public Bill X-Ray case. The public article uses the enacted Public Act and preserves the existing article-first interface and single receipt doorway.
+SB 1570 remains the fifth permanent public Bill X-Ray case. Public Act 103-0491 is the foundation act. Public Act 104-0395 amended the municipal selection procedure effective July 1, 2025. The ordinary municipal Phase II shortlist remains two to six; if only one Phase I response is received, a municipality may evaluate that respondent in Phase II when it finds, in its discretion, that proceeding is in its best interest.
 
 ## PASS 46.1 add-on
 
-SB 1570 alone now exposes a company-neutral **Illinois Business Development Lens**. Its button is conditionally rendered only for the SB 1570 case. It adds an evidence-labeled opportunity clock, public-record footprint, compound fingerprints, golden-window analysis, spoilers, qualification radar, permanent red team, and five-item executive reduction. No private person, company, or product names occur in the public directory.
+SB 1570 alone now exposes a company-neutral **Illinois Business Development Lens**. Its button is conditionally rendered only for the SB 1570 case. It adds an evidence-labeled opportunity clock, public-record footprint, compound fingerprints, golden-window analysis, spoilers, qualification radar, permanent red team, and five-item executive reduction. No private person, company, or product names occur in the public directory. A deeper rule representation is stored privately in `PSI_SB1570_HANDOFF/BUSINESS_DEVELOPMENT_LENS_MACHINE.json`.
 
 ## PASS 46.2 integrity repair
 
@@ -14,7 +14,7 @@ The transformation ladder previously kept its top example fixed on CHIPS while c
 
 ## Nineteen-process case record
 
-1. Identity resolution — SB 1570 resolved to Public Act 103-0491.
+1. Identity resolution — SB 1570 resolved to foundation Public Act 103-0491; current municipal selection law checked through Public Act 104-0395.
 2. Version control — enacted text selected over introduced text.
 3. Authority check — Illinois General Assembly source retained.
 4. Structural decomposition — municipal and school regimes separated.
@@ -26,7 +26,7 @@ The transformation ladder previously kept its top example fixed on CHIPS while c
 10. Timeline reconstruction — need formation through award and reporting.
 11. Qualification reconstruction — Phase I mandatory criteria captured.
 12. Technical/cost reconstruction — Phase II factors and cost cap captured.
-13. Exception analysis — small-project and school single-respondent rules captured.
+13. Exception analysis — small-project rules and the current municipal single-respondent exception captured without conflating the legally separate school pathway.
 14. Conflict analysis — scope-preparer and impropriety provisions captured.
 15. Claim-versus-law gate — market adoption and project pipeline claims refused.
 16. Investigative-question pass — pre-RFP records expressed as hypotheses.
@@ -41,5 +41,6 @@ The Act creates a lawful delivery path, not demand. Public records before the RF
 ## Authoritative sources
 
 - Illinois General Assembly, Public Act 103-0491: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/103-0491
+- Illinois General Assembly, Public Act 104-0395: https://www.ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0395
 - Enrolled SB 1570 PDF: https://www.ilga.gov/legislation/103/SB/PDF/10300SB1570enr.pdf
 - Illinois Effective Date of Laws Act, 5 ILCS 75/1: https://my.ilga.gov/Legislation/ILCS/Articles?ActID=80&Chapter=GENERAL%20PROVISIONS&ChapterID=2&MajorTopic=GOVERNMENT

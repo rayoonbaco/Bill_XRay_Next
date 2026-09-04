@@ -51,7 +51,7 @@ class SB1570PublicCase(unittest.TestCase):
 
     def test_public_files_are_private_name_free(self):
         public='\n'.join(p.read_text(encoding='utf-8',errors='ignore') for p in (ROOT/'public').glob('*') if p.is_file()).lower()
-        for forbidden in ['private client','private conversation','proprietary pursuit strategy']:
+        for forbidden in ['performance services','psi pursuit','tom terry','ray gomez']:
             self.assertNotIn(forbidden,public)
 
     def test_sb1570_transformation_is_not_chips(self):

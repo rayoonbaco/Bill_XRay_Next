@@ -7,5 +7,6 @@ data=json.loads(raw[len('window.BXR_DATA = '):-1])
 assert len(data)==5 and 'sb1570' in data
 assert len(data['sb1570']['receipts'])==13
 assert 'data-bill="sb1570"' in (root/'public'/'index.html').read_text(encoding='utf-8')
+assert (root/'PSI_SB1570_HANDOFF'/'START_HERE_FOR_PSI.md').exists()
 result=subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-p','test_*.py'],cwd=root)
 raise SystemExit(result.returncode)

@@ -1,0 +1,10 @@
+{
+  "records":[
+    {"record":"capital improvement plan or budget","classification":"HYPOTHESIS","possible_meaning":"need has entered an official planning horizon","does_not_prove":"design-build selection or funding certainty"},
+    {"record":"facility, energy, capacity, or feasibility study","classification":"HYPOTHESIS","possible_meaning":"owner is defining a consequential problem","does_not_prove":"approved project or delivery method"},
+    {"record":"professional-services RFQ or selection","classification":"HYPOTHESIS","possible_meaning":"scope formation may be advancing","does_not_prove":"the engagement is for statutory design-build criteria"},
+    {"record":"bond, referendum, grant, or financing record","classification":"HYPOTHESIS","possible_meaning":"funding is forming","does_not_prove":"award, sufficiency, or design-build"},
+    {"record":"online notice of intent","classification":"STATUTORY_FACT","possible_meaning":"owner has elected design-build for a project and RFP is at least 14 days downstream","does_not_prove":"Performance Services fit or award probability"},
+    {"record":"RFP","classification":"STATUTORY_FACT","possible_meaning":"formal competition has begun","does_not_prove":"award or fairness of any unstated relationship"}
+  ]
+}
